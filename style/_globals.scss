@@ -1,0 +1,55 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-primary {
+    background-color: #fff !important;
+    border: 2px solid !important ;
+    font-weight: 500;
+    color: $brandColor !important;
+    border-radius: 50px;
+    &-fill {
+      background-color: $brandColor !important;
+      color: #fff !important;
+    }
+  }
+  &-light {
+    border-radius: 50px;
+    color: $brandColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.01em;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pointer {
+  cursor: pointer;
+}
+body {
+  // overflow: hidden;
+}
+
+section {
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}

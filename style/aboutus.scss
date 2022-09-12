@@ -1,0 +1,98 @@
+.about {
+  &_mainSection {
+    min-height: 100vh;
+    h1 {
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 72px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.005em;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #050f2b;
+    }
+    &_content {
+      margin-top: 190px;
+    }
+  }
+}
+
+.whyUsSection {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  background: url("../public/imgs/tt.svg");
+  //   background-size: contain;
+  background-position: left 400px;
+  background-repeat: no-repeat;
+  &_card {
+    background: #ffffff;
+    box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
+    border-radius: 16px;
+    height: 420px;
+    padding: 45px 35px;
+    text-align: center;
+  }
+  img {
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+.ourMissionSection {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  h2 {
+    margin-bottom: 32px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 40px;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.about_serviceSection {
+  background: #f8f9fc;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  .container {
+    max-width: 1000px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 50px;
+  }
+}
+.innerPageContactSection {
+  padding-top: 130px;
+  .btn_wrapper {
+    margin-top: 50px !important;
+  }
+}
