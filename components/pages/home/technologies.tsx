@@ -80,7 +80,7 @@ const Technologies = () => {
         </ul>
         <div className="technologies_mobile d-block d-md-none">
           <div className="roww">
-            <div className="col-3">
+            <div className="">
               <div className="technology_item">
                 <img src="/imgs/php.svg" alt="The Last of us" />
                 <h4>PHP</h4>
