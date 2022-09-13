@@ -66,10 +66,6 @@
 }
 
 .engineeringBlock {
-  background: #ffffff;
-  box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
-  border-radius: 16px;
-  padding: 53px 40px;
   &_technologyList {
     display: flex;
     flex-wrap: wrap;
@@ -94,15 +90,6 @@
     // box-sizing: border-box;
     padding-right: 40px;
     border-right: 1px solid rgba(202, 210, 233, 0.5);
-  }
-
-  &_subTitle {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.155em;
-    text-transform: uppercase;
-    color: #5d606a;
   }
 
   h2 {
@@ -132,5 +119,44 @@
     font-size: 15px;
     line-height: 20px;
     padding-left: 25px;
+  }
+}
+
+.ServiceBlockContainer {
+  background: #ffffff;
+  box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
+  border-radius: 16px;
+  padding: 53px 40px;
+  &_subTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #5d606a;
+  }
+}
+
+.devops {
+  &_card {
+    background: #f8f9fc;
+    border-radius: 12px;
+    padding: 36px 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &_content {
+      padding-left: 36px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
   }
 }

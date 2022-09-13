@@ -1,9 +1,9 @@
 import React from "react";
+import ServiceBlockContainer from "../common/ServiceBlockContainer";
 
 const EngineeringBlock = () => {
   return (
-    <div className="engineeringBlock">
-      <div className="engineeringBlock_subTitle">Services</div>
+    <ServiceBlockContainer subTitle="Services" className="engineeringBlock">
       <div className="d-flex  ">
         <div className="engineeringBlock_description">
           <h2>Web Development</h2>
@@ -62,7 +62,7 @@ const EngineeringBlock = () => {
           </div>
         </div>
       </div>
-    </div>
+    </ServiceBlockContainer>
   );
 };
 

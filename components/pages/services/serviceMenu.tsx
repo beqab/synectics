@@ -1,11 +1,24 @@
 import Link from "next/link";
 import React from "react";
 
-const ServiceMenu = () => {
+interface IProp {
+  menuArray: { title: string; href: string }[];
+}
+
+const ServiceMenu: React.FC<IProp> = ({ menuArray }) => {
   return (
     <div className="ServiceMenu">
       <ul className="list-inline">
-        <li>
+        {menuArray.map((el, i) => {
+          return (
+            <li>
+              <Link href={el.href}>
+                <a>{el.title}</a>
+              </Link>
+            </li>
+          );
+        })}
+        {/* <li>
           <Link href="/">
             <a>Web Development</a>
           </Link>
@@ -44,7 +57,7 @@ const ServiceMenu = () => {
           <Link href="/">
             <a>Software Testing and QA</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

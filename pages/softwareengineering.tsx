@@ -5,6 +5,7 @@ import ServiceMenu from "../components/pages/services/serviceMenu";
 import ServiceSectionWrapper from "../components/pages/services/serviceSectionWrapper";
 import EngineeringBlock from "../components/pages/services/engineering/engineeringBlock";
 import InnerPageContact from "../components/pages/home/contact/innerPageContact";
+import { EngineeringData } from "../components/pages/services/engineering/engineeringData";
 
 const SoftwareEngineering = () => {
   return (
@@ -82,7 +83,7 @@ const SoftwareEngineering = () => {
           predefined chunks as necessary, making this the first true generator
           on the Internet."
         />
-        <ServiceSectionWrapper>
+        <ServiceSectionWrapper data={EngineeringData}>
           <EngineeringBlock />
         </ServiceSectionWrapper>
         <InnerPageContact />
