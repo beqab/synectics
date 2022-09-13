@@ -76,7 +76,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering"}>
                 <a>
                   <span>Software Engineering</span>
                 </a>
@@ -159,7 +159,7 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="footer_menuTitle">Our Approach</div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/aboutUs"}>
                 <a className="uppercase">
                   <span>About Us</span>
                 </a>
@@ -173,7 +173,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/contact"}>
                 <a className="uppercase">
                   <span>Contact Us</span>
                 </a>

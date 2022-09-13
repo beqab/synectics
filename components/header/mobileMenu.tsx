@@ -61,12 +61,12 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/aboutUs">
                 <a>About us</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contact Us</a>
               </Link>
             </li>

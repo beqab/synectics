@@ -133,7 +133,7 @@ const IndexPage = () => {
                     We deliver, scale and implement custom Software for Startups
                     and Enterprises to grow Your Business
                   </p>
-                  <Link href="/">
+                  <Link href="/contact">
                     <a className="btn btn-primary  btn-primary-fill">
                       Contact Us
                     </a>

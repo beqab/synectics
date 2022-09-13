@@ -28,7 +28,7 @@ const OutGlobal = () => {
         </div>
         <div className="d-flex align-items-center sutGlobal_aboutLink">
           <h4>Get to know us better</h4>
-          <Link href={"/"}>
+          <Link href={"/aboutUs"}>
             <a className="btn btn-primary btn-primary-fill">About Us</a>
           </Link>
         </div>

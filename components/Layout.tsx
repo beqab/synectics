@@ -6,7 +6,7 @@ const Layout: React.FC<{ title?: string }> = ({ children }) => {
   return (
     <div>
       <Header />
-      <br />
+
       {children}
       <Footer />
     </div>
