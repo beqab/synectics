@@ -11,8 +11,8 @@ const ServiceSectionWrapper: React.FC<IProps> = ({ children, data }) => {
     <section className="serviceSection">
       <div className="container">
         <ServiceMenu menuArray={data.menu} />
-        {children}
       </div>
+      {children}
     </section>
   );
 };

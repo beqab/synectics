@@ -478,7 +478,7 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </div>
                 <ul className="list-inline">
                   <li>
-                    <Link href="/">
+                    <Link href="/cloudinfrastructure">
                       <a>Cloud Transformation</a>
                     </Link>
                   </li>

@@ -18,7 +18,7 @@ export const InfrastructureData = {
     },
     {
       title: "Storage",
-      href: "storage",
+      href: "=storage",
     },
     {
       title: "Security",

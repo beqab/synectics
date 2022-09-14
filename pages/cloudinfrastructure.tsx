@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Layout from "../components/Layout";
 import ServiceHeading from "../components/pages/services/serviceHeading";
 import ServiceMenu from "../components/pages/services/serviceMenu";
@@ -7,8 +7,49 @@ import EngineeringBlock from "../components/pages/services/engineering/engineeri
 import InnerPageContact from "../components/pages/home/contact/innerPageContact";
 import Devops from "../components/pages/services/cloudInfrastructure/devops";
 import { InfrastructureData } from "../components/pages/services/cloudInfrastructure/infrstructureData";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
 
 const CloudInfrastructure = () => {
+  let [windowWidth, setWindowWidth] = useState<any>(1400);
+  const router = useRouter();
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (window) {
+      setWindowWidth(window.innerWidth);
+    }
+    let onScroll = (e) => {
+      console.log(window.innerWidth);
+    };
+    window.addEventListener("resize", onScroll);
+
+    return () => window.removeEventListener("resize", onScroll);
+  }, []);
+
+  useEffect(() => {
+    let sectionIndex = InfrastructureData.menu.map((el, i) => {
+      if (el.href === router.query.page) {
+        sliderRef.current.scrollLeft =
+          i * (windowWidth - (windowWidth - 1140 - (windowWidth - 1140) / 4));
+        return i;
+      }
+    });
+    // window.scrollTo(0, 0);
+    // if (sliderRef.current) {
+    //   if (router.query.pages === "devops") {
+    //     sliderRef.current.scrollLeft = 0;
+    //   }
+    //   if (router.query.pages === "databasemanagement") {
+    //     sliderRef.current.scrollLeft = 500;
+    //   } else {
+    //     sliderRef.current.scrollLeft = 1500;
+    //   }
+    // }
+  }, [router.query]);
+
   return (
     <div>
       <Layout>
@@ -63,7 +104,16 @@ const CloudInfrastructure = () => {
           text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
         />
         <ServiceSectionWrapper data={InfrastructureData}>
-          <Devops />
+          {/* <ServiceMenu menuArray={InfrastructureData.menu} /> */}
+
+          <div ref={sliderRef} className="serviceSliderWrapper">
+            <div className="sliderContainer">
+              {InfrastructureData.menu.map((el, i) => {
+                return <Devops />;
+              })}
+              <div></div>
+            </div>
+          </div>
         </ServiceSectionWrapper>
         <InnerPageContact />
       </Layout>

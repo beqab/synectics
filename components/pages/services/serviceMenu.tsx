@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 interface IProp {
@@ -6,14 +7,47 @@ interface IProp {
 }
 
 const ServiceMenu: React.FC<IProp> = ({ menuArray }) => {
+  const router = useRouter();
+
+  const pushRoute = (searchItems) => {
+    // setLoadStatements(true);
+    // const query = urlParcel(searchItems);
+    router.push(
+      {
+        pathname: "/cloudinfrastructure",
+
+        hash: searchItems,
+      },
+      undefined,
+      { scroll: false }
+    );
+  };
+
   return (
     <div className="ServiceMenu">
       <ul className="list-inline">
         {menuArray.map((el, i) => {
           return (
             <li>
-              <Link href={el.href}>
-                <a>{el.title}</a>
+              <Link href={router.pathname + "/?page=" + el.href} scroll={false}>
+                <a>
+                  {/* <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  pushRoute(el.href);
+                  // router.push(
+                  //   {
+                  //     pathname: router.pathname,
+                  //     query: { page: el.href },
+                  //   },
+                  //   undefined,
+                  //   { scroll: false }
+                  // );
+                }}
+              > */}
+                  {el.title}dd
+                </a>
+                {/* </button> */}
               </Link>
             </li>
           );

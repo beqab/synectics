@@ -69,7 +69,7 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="footer_menuTitle">Services</div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/cloudinfrastructure"}>
                 <a>
                   <span>Cloud & Infrastructure</span>
                 </a>
