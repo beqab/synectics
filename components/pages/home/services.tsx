@@ -46,7 +46,10 @@ const Services = () => {
             <div className="col-md-4">
               {" "}
               <div className="servicesSection_item">
-                <img src="/imgs/Layer 2 (1).svg" alt="The Last of us" />
+                <img
+                  src="/imgs/WEB_development_optimization.svg"
+                  alt="The Last of us"
+                />
                 <h3>
                   Software <br />
                   Engineering
@@ -85,10 +88,7 @@ const Services = () => {
             </div>
             <div className="col-md-4">
               <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
+                <img src="/imgs/Layer 2 (1).svg" alt="Mirror Edge" />
                 <h3>
                   Digital <br />
                   Transformation
@@ -97,7 +97,7 @@ const Services = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link href={"/"}>
+                <Link href={"/digitalTransformation"}>
                   <a className="btn btn-primary">
                     MORE
                     <ArrowRight />
@@ -105,28 +105,7 @@ const Services = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
-                <h3>
-                  Software <br />
-                  Engineering
-                </h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
+
             <div className="col-md-4">
               <div className="servicesSection_item">
                 <img
@@ -138,7 +117,7 @@ const Services = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link href={"/"}>
+                <Link href={"/itConsulting"}>
                   <a className="btn btn-primary">
                     MORE
                     <ArrowRight />
@@ -149,7 +128,7 @@ const Services = () => {
             <div className="col-md-4">
               <div className="servicesSection_item">
                 <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
+                  src="/imgs/work, co-working, office, workers, employees.svg"
                   alt="Mirror Edge"
                 />
                 <h3>
@@ -160,7 +139,7 @@ const Services = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link href={"/"}>
+                <Link href={"/cooperationModel"}>
                   <a className="btn btn-primary">
                     MORE
                     <ArrowRight />
@@ -173,7 +152,10 @@ const Services = () => {
         <div className="d-none d-md-block">
           <OwlCarousel options={options} n>
             <div className="servicesSection_item">
-              <img src="/imgs/Layer 2 (1).svg" alt="The Last of us" />
+              <img
+                src="/imgs/WEB_development_optimization.svg"
+                alt="The Last of us"
+              />
               <h3>
                 Software <br />
                 Engineering
@@ -182,7 +164,7 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
@@ -199,7 +181,7 @@ const Services = () => {
                 It is a long established fact that a reader will be distracted
                 by the readable content of a
               </p>
-              <Link href={"/"}>
+              <Link href={"/cloudinfrastructure"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
@@ -207,10 +189,7 @@ const Services = () => {
               </Link>
             </div>
             <div className="servicesSection_item">
-              <img
-                src="/imgs/negotiation, interview, conversation, communication.svg"
-                alt="Mirror Edge"
-              />
+              <img src="/imgs/Layer 2 (1).svg" alt="Mirror Edge" />
               <h3>
                 Digital <br />
                 Transformation
@@ -219,33 +198,14 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"/"}>
+              <Link href={"/digitalTransformation"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
                 </a>
               </Link>
             </div>
-            <div className="servicesSection_item">
-              <img
-                src="/imgs/negotiation, interview, conversation, communication.svg"
-                alt="Mirror Edge"
-              />
-              <h3>
-                Software <br />
-                Engineering
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <Link href={"/"}>
-                <a className="btn btn-primary">
-                  MORE
-                  <ArrowRight />
-                </a>
-              </Link>
-            </div>
+
             <div className="servicesSection_item">
               <img
                 src="/imgs/negotiation, interview, conversation, communication.svg"
@@ -256,7 +216,7 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"//itOutsourcing"}>
+              <Link href={"/itConsulting"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
@@ -265,7 +225,7 @@ const Services = () => {
             </div>
             <div className="servicesSection_item">
               <img
-                src="/imgs/negotiation, interview, conversation, communication.svg"
+                src="/imgs/programming, coding, hands, keyboard, typing (1).svg"
                 alt="Mirror Edge"
               />
               <h3>IT Outsourcing</h3>
@@ -273,7 +233,7 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"/"}>
+              <Link href={"/itOutsourcing"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
@@ -282,7 +242,7 @@ const Services = () => {
             </div>
             <div className="servicesSection_item">
               <img
-                src="/imgs/negotiation, interview, conversation, communication.svg"
+                src="/imgs/work, co-working, office, workers, employees.svg"
                 alt="Mirror Edge"
               />
               <h3>
