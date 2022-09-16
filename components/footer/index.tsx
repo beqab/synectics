@@ -114,35 +114,35 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="footer_menuTitle">Technologies</div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering?page=webdevelopment"}>
                 <a>
                   <span>Web Development</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering?page=mobiledevelopment"}>
                 <a>
                   <span>Mobile Development</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering?page=ERPsolutions"}>
                 <a>
                   <span>ERP Solutions</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering?page=CRMsolutions"}>
                 <a>
                   <span>CRM Solutions</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/softwareengineering?page=BigDataandDataAnalytics"}>
                 <a>
                   <span>BigData & Data Analytics</span>
                 </a>

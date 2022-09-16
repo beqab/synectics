@@ -1,12 +1,12 @@
 import React from "react";
 import ServiceBlockContainer from "../common/ServiceBlockContainer";
 
-const EngineeringBlock = () => {
+const EngineeringBlock = ({ title }) => {
   return (
     <ServiceBlockContainer subTitle="Services" className="engineeringBlock">
       <div className="d-flex  ">
         <div className="engineeringBlock_description">
-          <h2>Web Development</h2>
+          <h2>{title}</h2>
           <p>
             We at Synectics, have a very well-coordinated and dynamic delivery
             team who can perfectly harmonize the advanced, scalable solutions to

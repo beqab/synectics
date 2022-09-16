@@ -106,27 +106,30 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </svg>
               </div>
               <div className="serviceSubmenu_content">
-                <div className="serviceSubmenu_title">
-                  Cloud & Infrastructure
-                </div>
+                <Link href="/cloudinfrastructure">
+                  <a className="serviceSubmenu_title">
+                    {" "}
+                    Cloud & Infrastructure
+                  </a>
+                </Link>
                 <ul className="list-inline">
                   <li>
-                    <Link href="/">
+                    <Link href="/cloudinfrastructure?page=devops">
                       <a>DevOps</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/cloudinfrastructure">
                       <a>DevOps Assessment</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/cloudinfrastructure">
                       <a>Configuration Management</a>
                     </Link>
                   </li>
                 </ul>
-                <Link href="/">
+                <Link href="/cloudinfrastructure">
                   <a className="serviceSubmenu_seeMore">See more</a>
                 </Link>
               </div>

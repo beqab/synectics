@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { EngineeringData } from "./engineering/engineeringData";
 
 interface IProp {
-  menuArray: { title: string; href: string }[];
+  serviceList: typeof EngineeringData;
 }
 
-const ServiceMenu: React.FC<IProp> = ({ menuArray }) => {
+const ServiceMenu: React.FC<IProp> = ({ serviceList }) => {
   const router = useRouter();
 
   const pushRoute = (searchItems) => {
@@ -26,7 +27,7 @@ const ServiceMenu: React.FC<IProp> = ({ menuArray }) => {
   return (
     <div className="ServiceMenu">
       <ul className="list-inline">
-        {menuArray.map((el, i) => {
+        {serviceList.map((el, i) => {
           return (
             <li>
               <Link href={router.pathname + "/?page=" + el.href} scroll={false}>
@@ -45,7 +46,7 @@ const ServiceMenu: React.FC<IProp> = ({ menuArray }) => {
                   // );
                 }}
               > */}
-                  {el.title}dd
+                  {el.title}
                 </a>
                 {/* </button> */}
               </Link>

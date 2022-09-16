@@ -1,16 +1,16 @@
 import React from "react";
 import ServiceMenu from "./serviceMenu";
-import { InfrastructureData } from "./cloudInfrastructure/infrstructureData";
+import { EngineeringData } from "./engineering/engineeringData";
 
 interface IProps {
-  data?: typeof InfrastructureData;
+  data?: typeof EngineeringData;
 }
 
 const ServiceSectionWrapper: React.FC<IProps> = ({ children, data }) => {
   return (
     <section className="serviceSection">
       <div className="container">
-        <ServiceMenu menuArray={data.menu} />
+        <ServiceMenu serviceList={data} />
       </div>
       {children}
     </section>

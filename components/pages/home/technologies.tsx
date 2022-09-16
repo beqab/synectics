@@ -5,6 +5,243 @@ import classNames from "classnames";
 
 import OwlCarousel from "react-owl-carousel2";
 
+const TechnologiesObject = [
+  {
+    categoryName: "Web Development",
+    TechnologiesList: [
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+  {
+    categoryName: "Mobile Development",
+    TechnologiesList: [
+      {
+        img: "php.png",
+        title: "22php",
+      },
+      {
+        img: "php.png",
+        title: "21php",
+      },
+      {
+        img: "php.png",
+        title: "23php",
+      },
+      {
+        img: "php.png",
+        title: "21php",
+      },
+      {
+        img: "php.png",
+        title: "23php",
+      },
+      {
+        img: "php.png",
+        title: "21php",
+      },
+      {
+        img: "php.png",
+        title: "23php",
+      },
+    ],
+  },
+  {
+    categoryName: "ERP Solutions",
+    TechnologiesList: [
+      {
+        img: "23php.png",
+        title: "php",
+      },
+      {
+        img: "23php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+  {
+    categoryName: "CRM SOlutions",
+    TechnologiesList: [
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+  {
+    categoryName: "BigData and Data Analytics",
+    TechnologiesList: [
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+  {
+    categoryName: "Blockchain",
+    TechnologiesList: [
+      {
+        img: "ssphp.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+];
+
 const options = {
   items: 6,
   nav: true,
@@ -46,6 +283,7 @@ const categories = [
 
 const Technologies = () => {
   const [activeCategory, setActiveCategory] = useState(0);
+
   return (
     <>
       <div className="container">
@@ -80,60 +318,36 @@ const Technologies = () => {
         </ul>
         <div className="technologies_mobile d-block d-md-none">
           <div className="roww">
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.svg" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/python.png" alt="The Last of us" />
-                <h4>PYTHON</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
-            <div className="">
-              <div className="technology_item">
-                <img src="/imgs/php.png" alt="The Last of us" />
-                <h4>PHP</h4>
-              </div>
-            </div>
+            {TechnologiesObject[activeCategory].TechnologiesList.map(
+              (el, i) => {
+                return (
+                  <div className="">
+                    <div className="technology_item">
+                      <img
+                        src={"/imgs/php.svg" + el.img}
+                        alt="The Last of us"
+                      />
+                      <h4>{el.title}</h4>
+                    </div>
+                  </div>
+                );
+              }
+            )}
           </div>
         </div>
         <div className="d-none d-md-block">
-          <OwlCarousel options={options} n>
-            <div className="technology_item">
+          <OwlCarousel options={options}>
+            {TechnologiesObject[activeCategory].TechnologiesList.map(
+              (el, i) => {
+                return (
+                  <div className="technology_item">
+                    <img src={"/imgs/" + el.img} alt="The Last of us" />
+                    <h4>{el.title}</h4>
+                  </div>
+                );
+              }
+            )}
+            {/* <div className="technology_item">
               <img src="/imgs/php.svg" alt="The Last of us" />
               <h4>PHP</h4>
             </div>
@@ -160,7 +374,7 @@ const Technologies = () => {
             <div className="technology_item">
               <img src="/imgs/php.png" alt="The Last of us" />
               <h4>PHP</h4>
-            </div>
+            </div> */}
           </OwlCarousel>
         </div>
       </div>

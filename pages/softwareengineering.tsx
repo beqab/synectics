@@ -8,45 +8,9 @@ import EngineeringBlock from "../components/pages/services/engineering/engineeri
 import InnerPageContact from "../components/pages/home/contact/innerPageContact";
 import { EngineeringData } from "../components/pages/services/engineering/engineeringData";
 import { useRouter } from "next/router";
+import ServiceSlider from "../components/pages/services/common/serviceSlider";
 
 const SoftwareEngineering = () => {
-  let [windowWidth, setWindowWidth] = useState<any>(1400);
-  const router = useRouter();
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (window) {
-      setWindowWidth(window.innerWidth);
-    }
-    let onScroll = (e) => {
-      console.log(window.innerWidth);
-    };
-    window.addEventListener("resize", onScroll);
-
-    return () => window.removeEventListener("resize", onScroll);
-  }, []);
-
-  useEffect(() => {
-    let sectionIndex = EngineeringData.menu.map((el, i) => {
-      if (el.href === router.query.page) {
-        sliderRef.current.scrollLeft =
-          i * (windowWidth - (windowWidth - 1190 - (windowWidth - 1190) / 4));
-        return i;
-      }
-    });
-    // window.scrollTo(0, 0);
-    // if (sliderRef.current) {
-    //   if (router.query.pages === "devops") {
-    //     sliderRef.current.scrollLeft = 0;
-    //   }
-    //   if (router.query.pages === "databasemanagement") {
-    //     sliderRef.current.scrollLeft = 500;
-    //   } else {
-    //     sliderRef.current.scrollLeft = 1500;
-    //   }
-    // }
-  }, [router.query]);
-
   return (
     <div>
       <Layout>
@@ -123,7 +87,7 @@ const SoftwareEngineering = () => {
           on the Internet."
         />
         <ServiceSectionWrapper data={EngineeringData}>
-          <div ref={sliderRef} className="serviceSliderWrapper">
+          {/* <div ref={sliderRef} className="serviceSliderWrapper">
             <div className="sliderContainer">
               <div></div>
               {EngineeringData.menu.map((el, i) => {
@@ -131,7 +95,11 @@ const SoftwareEngineering = () => {
               })}
               <div></div>
             </div>
-          </div>
+          </div> */}
+          <ServiceSlider
+            data={EngineeringData}
+            ServiceItem={(data) => <EngineeringBlock {...data} />}
+          />
         </ServiceSectionWrapper>
         <InnerPageContact />
       </Layout>
