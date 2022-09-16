@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceBlockContainer from "../common/ServiceBlockContainer";
 
-const Devops = () => {
+const Devops = (d: any) => {
   return (
     <ServiceBlockContainer className="devops" subTitle="Cloud & Infrastructure">
       <h2>Devops</h2>
