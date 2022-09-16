@@ -256,7 +256,7 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"/"}>
+              <Link href={"//itOutsourcing"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />
@@ -293,7 +293,7 @@ const Services = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href={"/"}>
+              <Link href={"/cooperationModel"}>
                 <a className="btn btn-primary">
                   MORE
                   <ArrowRight />

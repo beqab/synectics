@@ -212,3 +212,230 @@
     max-width: 1200px;
   }
 }
+
+.serviceContent {
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.cooperation {
+  padding-top: 120px;
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8c919e;
+    max-width: 636px;
+    margin: auto;
+    width: 100%;
+  }
+
+  &_card {
+    background: #ffffff;
+    box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
+    border-radius: 16px;
+    padding: 36px;
+    margin-bottom: 20px;
+    min-height: 430px;
+    p {
+      color: #050f2b;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.cooperation_flow {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  > div {
+    width: 25%;
+  }
+  &_title {
+    background: #ffffff;
+    box-shadow: 0px 13px 24px rgba(4, 6, 50, 0.03);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    width: 280px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_content {
+    background: #f8f9fc;
+    border-radius: 16px;
+    padding: 32px 25px;
+    width: 280px;
+
+    &_top {
+      margin-bottom: 20px;
+    }
+    &_bottom {
+      margin-top: 26px;
+    }
+  }
+  &_step {
+    color: $brandColor;
+    font-size: 56px;
+    font-weight: bold;
+    height: 145px;
+    width: 145px;
+    border-radius: 200px;
+    border: 20px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+
+    &_top {
+      margin-bottom: 59px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 59px;
+        background-color: #cad2e97f;
+        bottom: -78px;
+      }
+    }
+
+    &_bottom {
+      margin-top: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 41px;
+        background-color: #cad2e97f;
+        top: -61px;
+      }
+    }
+  }
+}
+
+.cooperation {
+  .titleWidth {
+    max-width: 700px;
+    margin: auto;
+  }
+  .bigP {
+    max-width: 900px;
+  }
+
+  &_benefits {
+    background-color: #f8f9fc;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    &_card {
+      background: #ffffff;
+      box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
+      border-radius: 16px;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 0 30px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      svg {
+        max-height: 70px;
+      }
+
+      &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+.listItems_wrapper {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 58px;
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  .listItem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 23px;
+    h3 {
+    }
+    svg {
+      margin-right: 24px;
+    }
+  }
+}
+
+.methodologySection {
+  background: #f8f9fc;
+  padding-top: 64px;
+  padding-bottom: 54px;
+  .row {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 0;
+    }
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.faqSection {
+  padding-top: 70px;
+  > div {
+    display: flex;
+    h3 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      max-width: 560px;
+      padding-right: 110px;
+    }
+  }
+}
+
+.cooperation_card-digital {
+  min-height: 540px;
+  width: 380px;
+  margin: auto;
+  text-align: left !important;
+  margin-bottom: 30px;
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
