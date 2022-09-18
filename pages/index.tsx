@@ -149,13 +149,13 @@ const IndexPage = () => {
         <section className="servicesSection">
           <Services />
         </section>
-        <section className="technology">
+        <section id="technologies" className="technology">
           <Technologies />
         </section>
         <section className="collaboration">
           <Collaboration />
         </section>
-        <section className="ourApproach">
+        <section id="ourApproach" className="ourApproach">
           <Approach />
         </section>
         <section className="ourGlobal">

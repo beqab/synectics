@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -5,14 +6,13 @@ import { EngineeringData } from "./engineering/engineeringData";
 
 interface IProp {
   serviceList: typeof EngineeringData;
+  center?: boolean;
 }
 
-const ServiceMenu: React.FC<IProp> = ({ serviceList }) => {
+const ServiceMenu: React.FC<IProp> = ({ serviceList, center }) => {
   const router = useRouter();
 
   const pushRoute = (searchItems) => {
-    // setLoadStatements(true);
-    // const query = urlParcel(searchItems);
     router.push(
       {
         pathname: "/cloudinfrastructure",
@@ -25,74 +25,27 @@ const ServiceMenu: React.FC<IProp> = ({ serviceList }) => {
   };
 
   return (
-    <div className="ServiceMenu">
+    <div
+      className={classNames("ServiceMenu", {
+        center: center,
+      })}
+    >
       <ul className="list-inline">
         {serviceList.map((el, i) => {
           return (
             <li>
               <Link href={router.pathname + "/?page=" + el.href} scroll={false}>
-                <a>
-                  {/* <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  pushRoute(el.href);
-                  // router.push(
-                  //   {
-                  //     pathname: router.pathname,
-                  //     query: { page: el.href },
-                  //   },
-                  //   undefined,
-                  //   { scroll: false }
-                  // );
-                }}
-              > */}
+                <a
+                  className={classNames({
+                    active: router.asPath.includes(el.href),
+                  })}
+                >
                   {el.title}
                 </a>
-                {/* </button> */}
               </Link>
             </li>
           );
         })}
-        {/* <li>
-          <Link href="/">
-            <a>Web Development</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Mobile Development</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>ERP Solutions</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>CRM Solutions</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>BigData and Data Analytics</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Blockchain</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Software Development Assessment</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Software Testing and QA</a>
-          </Link>
-        </li> */}
       </ul>
     </div>
   );

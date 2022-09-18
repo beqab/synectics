@@ -4,13 +4,18 @@ import { EngineeringData } from "./engineering/engineeringData";
 
 interface IProps {
   data?: typeof EngineeringData;
+  menuCenter?: boolean;
 }
 
-const ServiceSectionWrapper: React.FC<IProps> = ({ children, data }) => {
+const ServiceSectionWrapper: React.FC<IProps> = ({
+  children,
+  data,
+  menuCenter,
+}) => {
   return (
     <section className="serviceSection">
       <div className="container">
-        <ServiceMenu serviceList={data} />
+        <ServiceMenu center={menuCenter} serviceList={data} />
       </div>
       {children}
     </section>

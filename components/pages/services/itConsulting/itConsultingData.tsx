@@ -1,7 +1,10 @@
+import TechnologyImplementation from "./technologyImplementation";
+import ProcessOptimization from "./ProcessOptimization";
 export const ItConsultingData = [
   {
     title: "Technology Consulting",
     href: "TechnologyConsulting",
+    renderBlock: () => <TechnologyImplementation />,
     description: () => {
       return (
         <>
@@ -68,6 +71,7 @@ export const ItConsultingData = [
   {
     title: "Process Optimization Consulting",
     href: "ProcessOptimizationConsulting",
+    renderBlock: () => <ProcessOptimization />,
     description: () => {
       return (
         <>

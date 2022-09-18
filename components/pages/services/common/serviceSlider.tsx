@@ -7,12 +7,13 @@ interface IServiceData {
   href: string;
   title: string;
   description: () => void;
+  renderBlock: (data: IServiceData) => React.ReactNode;
   weCanHelpWithList: string[];
   technologyList: { technologyName: string; technologyImg: string }[];
 }
 interface IServiceSlider {
   data: IServiceData[];
-  ServiceItem: (data: IServiceData) => React.ReactNode;
+  ServiceItem?: (data: IServiceData) => React.ReactNode;
 }
 
 const ServiceSlider: React.FC<IServiceSlider> = ({ data, ServiceItem }) => {
@@ -61,8 +62,9 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data, ServiceItem }) => {
       <div className="sliderContainer">
         <div></div>
         {data.map((el, i) => {
-          return ServiceItem(el);
+          return el.renderBlock(el);
         })}
+
         <div></div>
       </div>
     </div>

@@ -56,12 +56,12 @@ const Header = () => {
                 <ServicesDropdown />
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/#technologies"}>
                   <a>Technologies</a>
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/#ourApproach"}>
                   <a>Our Approach</a>
                 </Link>
               </li>

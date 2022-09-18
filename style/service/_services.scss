@@ -39,6 +39,16 @@
 }
 
 .ServiceMenu {
+  margin-bottom: 40px;
+  &.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      margin: auto;
+      justify-content: center;
+    }
+  }
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +159,10 @@
       padding-left: 36px;
     }
   }
+  h2{
+    margin-bottom: 30px;
+
+  }
   h3 {
     font-weight: 700;
     font-size: 16px;
@@ -175,6 +189,7 @@
     margin-right: calc((100vw - 1190px) / 4);
     display: flex;
     // width: 4000px;
+    align-items: flex-start;
 
     padding-bottom: 40px;
     > div {
@@ -437,5 +452,152 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+  }
+}
+
+.ImplementationBLock {
+  &_card {
+    border: 1px solid rgba(202, 210, 233, 0.5);
+    border-radius: 12px;
+    padding: 26px 40px;
+    min-height: 480px;
+    max-width: calc(50% - 10px);
+    position: relative;
+
+    p {
+      margin-top: 0 !important;
+    }
+    &_container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    margin-top: 25px;
+  }
+
+  p {
+    max-width: 660px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  &_stepsContainer {
+    display: flex;
+    margin-top: 65px;
+  }
+  &_step {
+    height: 297px;
+    background-color: rgb(38, 96, 238);
+    padding: 32px;
+    position: relative;
+    p {
+      margin-top: 8px !important;
+    }
+
+    &_arrow {
+      position: absolute;
+      right: -15px;
+      z-index: 2;
+    }
+
+    &:first-child {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    &-blue {
+      color: #fff;
+    }
+    &-light {
+      background: #f5f8ff;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.InfrastructureManagement {
+  &_textBlock {
+    max-width: 660px;
+  }
+
+  &_scalingContainer {
+    display: flex;
+    background: #f8f9fc;
+    padding: 38px;
+    border-radius: 12px;
+    margin-top: 77px;
+    h3 {
+      min-width: 200px;
+      width: 100%;
+    }
+    > div {
+      display: flex;
+      margin-left: 46px;
+      svg {
+        width: 50px;
+        margin-right: 15px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &_card {
+    border: 1px solid rgba(202, 210, 233, 0.5);
+    border-radius: 12px;
+    height: 321px;
+    width: calc(33% - 10px);
+    padding: 38px;
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      margin-top: 14px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #8c919e;
+    }
+    &_container {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

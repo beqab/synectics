@@ -1,51 +1,40 @@
+import Devops from "./devops";
+import InfrastructureManagement from "./InfrastructureManagement";
+
 export const InfrastructureData = [
   {
     title: "DevOps",
     href: "devops",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <Devops />,
   },
   {
     title: "Database Management",
     href: "databasemanagement",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <Devops />,
   },
   {
     title: "Infrastructure Management",
     href: "infrastructuremanagement",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <InfrastructureManagement />,
   },
   {
     title: "Virtualization",
     href: "virtualization",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <Devops />,
   },
   {
     title: "Storage",
-    href: "=storage",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    href: "storage",
+    renderBlock: () => <Devops />,
   },
   {
     title: "Security",
     href: "security",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <Devops />,
   },
   {
     title: "Monitoring",
     href: "monitoring",
-    description: () => <></>,
-    weCanHelpWithList: [],
-    technologyList: [],
+    renderBlock: () => <Devops />,
   },
 ];

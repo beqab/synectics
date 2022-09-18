@@ -9,6 +9,8 @@ import InnerPageContact from "../components/pages/home/contact/innerPageContact"
 import { ItConsultingData } from "../components/pages/services/itConsulting/itConsultingData";
 import { useRouter } from "next/router";
 import ServiceSlider from "../components/pages/services/common/serviceSlider";
+import TechnologyImplementation from "../components/pages/services/itConsulting/technologyImplementation";
+import ProcessOptimization from "../components/pages/services/itConsulting/ProcessOptimization";
 
 const ItConsulting = () => {
   return (
@@ -72,7 +74,7 @@ const ItConsulting = () => {
           title="IT Consulting"
           text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
         />
-        <ServiceSectionWrapper data={ItConsultingData}>
+        <ServiceSectionWrapper menuCenter data={ItConsultingData}>
           {/* <div ref={sliderRef} className="serviceSliderWrapper">
             <div className="sliderContainer">
               <div></div>
@@ -82,10 +84,7 @@ const ItConsulting = () => {
               <div></div>
             </div>
           </div> */}
-          <ServiceSlider
-            data={ItConsultingData}
-            ServiceItem={(data) => <EngineeringBlock {...data} />}
-          />
+          <ServiceSlider data={ItConsultingData} />
         </ServiceSectionWrapper>
         <InnerPageContact />
       </Layout>

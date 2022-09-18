@@ -106,7 +106,7 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </svg>
               </div>
               <div className="serviceSubmenu_content">
-                <Link href="/cloudinfrastructure">
+                <Link href="/cloudinfrastructure?page=devops">
                   <a className="serviceSubmenu_title">
                     {" "}
                     Cloud & Infrastructure
@@ -119,17 +119,17 @@ const ServicesDropdown: React.FC<IProps> = ({
                     </Link>
                   </li>
                   <li>
-                    <Link href="/cloudinfrastructure">
-                      <a>DevOps Assessment</a>
+                    <Link href="/cloudinfrastructure?page=databasemanagement">
+                      <a>Database Management</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/cloudinfrastructure">
-                      <a>Configuration Management</a>
+                    <Link href="/cloudinfrastructure?page=infrastructuremanagement">
+                      <a>Infrastructure Management</a>
                     </Link>
                   </li>
                 </ul>
-                <Link href="/cloudinfrastructure">
+                <Link href="/cloudinfrastructure?page=devops">
                   <a className="serviceSubmenu_seeMore">See more</a>
                 </Link>
               </div>
@@ -263,7 +263,7 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </svg>
               </div>
               <div className="serviceSubmenu_content">
-                <Link href="/softwareengineering">
+                <Link href="/softwareengineering?page=webdevelopment">
                   <a className="serviceSubmenu_title">Software Engineering</a>
                 </Link>
                 {/* <div >
@@ -271,22 +271,22 @@ const ServicesDropdown: React.FC<IProps> = ({
                   </div> */}
                 <ul className="list-inline">
                   <li>
-                    <Link href="/">
+                    <Link href="/softwareengineering?page=webdevelopment">
                       <a>Web Development</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/softwareengineering?page=mobiledevelopment">
                       <a>Mobile Development</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/softwareengineering?page=ERPsolutions">
                       <a>ERP Solutions</a>
                     </Link>
                   </li>
                 </ul>
-                <Link href="/softwareengineering">
+                <Link href="/softwareengineering?page=webdevelopment">
                   <a className="serviceSubmenu_seeMore">See more</a>
                 </Link>
               </div>
@@ -356,25 +356,27 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </svg>
               </div>
               <div className="serviceSubmenu_content">
-                <div className="serviceSubmenu_title">IT Consulting</div>
+                <Link href="/itConsulting?page=TechnologyConsulting">
+                  <a className="serviceSubmenu_title">IT Consulting</a>
+                </Link>
                 <ul className="list-inline">
                   <li>
-                    <Link href="/">
+                    <Link href="/itConsulting?page=TechnologyConsulting">
                       <a>Technology Consulting</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/itConsulting?page=ProcessOptimizationConsulting">
                       <a>Project Management Consulting</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/itConsulting?page=ProcessOptimizationConsulting">
                       <a>Delivery Management Consulting</a>
                     </Link>
                   </li>
                 </ul>
-                <Link href="/">
+                <Link href="/itConsulting?page=ProcessOptimizationConsulting">
                   <a className="serviceSubmenu_seeMore">See more</a>
                 </Link>
               </div>
@@ -476,27 +478,27 @@ const ServicesDropdown: React.FC<IProps> = ({
                 </svg>
               </div>
               <div className="serviceSubmenu_content">
-                <div className="serviceSubmenu_title">
-                  Digital Transformation
-                </div>
+                <Link href="/digitalTransformation">
+                  <a className="serviceSubmenu_title">Digital Transformation</a>
+                </Link>
                 <ul className="list-inline">
                   <li>
-                    <Link href="/cloudinfrastructure">
+                    <Link href="/digitalTransformation">
                       <a>Cloud Transformation</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/digitalTransformation">
                       <a>Agile Transformation</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/digitalTransformation">
                       <a>IT Strategy Development</a>
                     </Link>
                   </li>
                 </ul>
-                <Link href="/">
+                <Link href="/digitalTransformation">
                   <a className="serviceSubmenu_seeMore">See more</a>
                 </Link>
               </div>
