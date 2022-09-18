@@ -96,10 +96,7 @@ const SoftwareEngineering = () => {
               <div></div>
             </div>
           </div> */}
-          <ServiceSlider
-            data={EngineeringData}
-            ServiceItem={(data) => <EngineeringBlock {...data} />}
-          />
+          <ServiceSlider data={EngineeringData} />
         </ServiceSectionWrapper>
         <InnerPageContact />
       </Layout>

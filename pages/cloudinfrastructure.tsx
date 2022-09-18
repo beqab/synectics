@@ -69,10 +69,7 @@ const CloudInfrastructure = () => {
         />
         <ServiceSectionWrapper data={InfrastructureData}>
           {/* <ServiceMenu menuArray={InfrastructureData.menu} /> */}
-          <ServiceSlider
-            data={InfrastructureData}
-            ServiceItem={(data) => <Devops {...data} />}
-          />
+          <ServiceSlider data={InfrastructureData} />
         </ServiceSectionWrapper>
         <InnerPageContact />
       </Layout>

@@ -6,17 +6,14 @@ import { useRouter } from "next/router";
 interface IServiceData {
   href: string;
   title: string;
-  description: () => void;
+
   renderBlock: (data: IServiceData) => React.ReactNode;
-  weCanHelpWithList: string[];
-  technologyList: { technologyName: string; technologyImg: string }[];
 }
 interface IServiceSlider {
   data: IServiceData[];
-  ServiceItem?: (data: IServiceData) => React.ReactNode;
 }
 
-const ServiceSlider: React.FC<IServiceSlider> = ({ data, ServiceItem }) => {
+const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
   let [windowWidth, setWindowWidth] = useState<any>(1400);
   const router = useRouter();
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -44,17 +41,6 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data, ServiceItem }) => {
         }
       }
     });
-    // window.scrollTo(0, 0);
-    // if (sliderRef.current) {
-    //   if (router.query.pages === "devops") {
-    //     sliderRef.current.scrollLeft = 0;
-    //   }
-    //   if (router.query.pages === "databasemanagement") {
-    //     sliderRef.current.scrollLeft = 500;
-    //   } else {
-    //     sliderRef.current.scrollLeft = 1500;
-    //   }
-    // }
   }, [router.query]);
 
   return (
