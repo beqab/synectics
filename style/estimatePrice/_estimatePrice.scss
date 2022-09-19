@@ -1,0 +1,22 @@
+.estimatePrice {
+  background: url("../../public/imgs/Mask group.svg"),
+    linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
+  background-repeat: repeat-x;
+  //   background-position: bottom left;
+  background-position: bottom left;
+  //   background-size: 100% auto !important;s
+  padding-top: 350px;
+  h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    align-items: center;
+
+    color: #ffffff;
+    span {
+      color: #1c55e9;
+      display: block;
+    }
+  }
+}

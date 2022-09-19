@@ -76,7 +76,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"/estimatePrice"}>
                   <a className="menuBtn">
                     <span className="btn btn-primary">Price Estimation</span>
                   </a>

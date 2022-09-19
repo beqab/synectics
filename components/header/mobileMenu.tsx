@@ -71,7 +71,7 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/estimatePrice">
                 <a>Price Estimation</a>
               </Link>
             </li>

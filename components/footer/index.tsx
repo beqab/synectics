@@ -166,7 +166,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href={"/"}>
+              <Link href={"/estimatePrice"}>
                 <a className="uppercase">
                   <span>Cost Calculator</span>
                 </a>
