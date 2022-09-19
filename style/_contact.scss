@@ -26,3 +26,18 @@
     margin-top: 52px;
   }
 }
+
+input:focus + label {
+  color: #66afe9;
+  transform: translateY(-50px);
+
+  background: white;
+}
+.contactSection_from .form-control-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #050f2b;
+  transform: translateY(-33px);
+}

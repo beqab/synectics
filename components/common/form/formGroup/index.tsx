@@ -5,6 +5,7 @@ interface IFormGroup {
   Label?: string | JSX.Element;
   errorMessage?: string | Array<string>;
   className?: string;
+  htmlFor?: string;
 }
 
 export const FormGroup: React.FC<IFormGroup> = ({
@@ -12,16 +13,18 @@ export const FormGroup: React.FC<IFormGroup> = ({
   Label,
   errorMessage,
   className,
+  htmlFor,
 }) => {
   return (
     <div className={classnames("form-group", { [className]: className })}>
+      {children}
       {typeof Label === "string" ? (
-        <label className="form-control-label">{Label}</label>
+        <label htmlFor={htmlFor} className="form-control-label">
+          {Label}
+        </label>
       ) : (
         Label
       )}
-
-      {children}
       <div className="invalid-feedback">
         {typeof errorMessage === "object" ? errorMessage[0] : errorMessage}
       </div>

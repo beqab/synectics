@@ -13,6 +13,7 @@ interface IInput {
   onChange?: any;
   defaultValue?: string;
   value?: string;
+  id?: string;
 
   //   useRef?: React.RefObject<any> | undefined | any;
 }
@@ -28,6 +29,7 @@ export const Input: React.FC<IInput> = ({
   onChange,
   defaultValue,
   value,
+  id,
 }) => {
   return (
     <input
@@ -40,6 +42,7 @@ export const Input: React.FC<IInput> = ({
       className={classnames("form-control", className, {
         "is-invalid": hasError,
       })}
+      id={id}
       value={value}
       placeholder={placeholder}
       onChange={onChange}

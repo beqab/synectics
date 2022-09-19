@@ -81,8 +81,10 @@ function Contact() {
           className="marginRight"
           Label={"First Name"}
           errorMessage={errors?.name ? errors.name.message : ""}
+          htmlFor="firstName"
         >
           <Input
+            id="firstName"
             className="marginRight"
             useRef={register("name")}
             type="name"
@@ -98,6 +100,7 @@ function Contact() {
         <FormGroup
           Label={"Last Name"}
           errorMessage={errors?.last_name ? errors.last_name.message : ""}
+          htmlFor="firstName"
         >
           <Input
             useRef={register("last_name")}
