@@ -9,7 +9,7 @@ interface IProps {
 const StepsContainer: React.FC<IProps> = ({ title, description, children }) => {
   return (
     <>
-      <div className="mt-4">
+      <div className="mt-4 stepsLeftSide">
         <h1>{title}</h1>
         <p>{description}</p>
       </div>

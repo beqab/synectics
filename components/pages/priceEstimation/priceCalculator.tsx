@@ -5,6 +5,7 @@ import Choice from "./stepTypes/choice";
 import FirstStep from "./stepTypes/firstStep";
 import TextArea from "./stepTypes/textarea";
 import ContactInfo from "./stepTypes/contactInfo";
+import CompleteStep from "./stepTypes/completeStep";
 
 export const priceCalculatorObject = [
   {
@@ -70,6 +71,13 @@ export const priceCalculatorObject = [
     type: "aboutInfo",
     key: "contactInfo",
   },
+  {
+    title: "Leave us your contact Info",
+    description:
+      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+    type: "completePage",
+    key: "contactInfo",
+  },
 ];
 
 const PriceCalculator = () => {
@@ -94,6 +102,7 @@ const PriceCalculator = () => {
     case "slider":
       return (
         <Slider
+          stepKey={currentStep.key}
           title={currentStep.title}
           description={currentStep.description}
         />
@@ -103,6 +112,7 @@ const PriceCalculator = () => {
         <TextArea
           title={currentStep.title}
           description={currentStep.description}
+          stepKey={currentStep.key}
         />
       );
     case "aboutInfo":
@@ -110,8 +120,12 @@ const PriceCalculator = () => {
         <ContactInfo
           title={currentStep.title}
           description={currentStep.description}
+          stepKey={currentStep.key}
         />
       );
+
+    case "completePage":
+      return <CompleteStep />;
     default:
       return (
         <div>

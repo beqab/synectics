@@ -213,3 +213,228 @@
     }
   }
 }
+
+.stepSlider {
+  &_container {
+    background-color: #fff;
+    width: 519px;
+    height: 273px;
+    border-radius: 16px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+  }
+}
+
+.rc-slider-rail {
+  background: linear-gradient(
+    270deg,
+    rgba(28, 85, 233, 0) 3.66%,
+    rgba(28, 85, 233, 0.921875) 29.3%,
+    rgba(28, 85, 233, 0.915243) 63.16%,
+    rgba(28, 85, 233, 0) 96.53%
+  );
+}
+
+.rc-slider-handle {
+  background: url("../../public/imgs/Polygon.svg") !important;
+  width: 46px !important;
+  height: 46px !important;
+  opacity: 1 !important;
+  background-size: contain !important;
+  margin-top: -30px !important;
+  width: 80px !important;
+  height: 80px !important;
+  border: none !important;
+  z-index: 2 !important;
+  position: relative !important;
+  &-dragging {
+    box-shadow: none !important;
+  }
+}
+
+.rc-tooltip-hidden {
+  display: block !important;
+}
+
+.rc-tooltip-inner {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  z-index: 24 !important;
+  .tttt {
+    color: #050f2b;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.rc-tooltip-placement-top .rc-tooltip-arrow,
+.rc-tooltip-placement-topLeft .rc-tooltip-arrow,
+.rc-tooltip-placement-topRight .rc-tooltip-arrow {
+  bottom: -23px !important;
+  margin-left: -3px !important;
+  /* border-width: 5px 5px 0; */
+  /* border-top-color: #373737; */
+  width: 0px !important;
+  border-width: 1px !important;
+  height: 36px !important;
+  background-color: #1c55e9 !important;
+}
+
+.SliderLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: center;
+  letter-spacing: 0.004em;
+  margin-top: 40px;
+  color: #8c919e;
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -124%);
+    height: 49px;
+    width: 2px;
+    background-color: grey;
+    background: rgba(202, 210, 233, 0.5);
+    border-radius: 4px;
+  }
+}
+
+.stepTextarea {
+  background: #fcfcfd;
+  border-radius: 8px;
+  padding: 20px 16px;
+  position: relative;
+  padding-right: 60px;
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    background: #fcfcfd;
+    min-height: 150px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.stepUploadedFiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  span {
+    color: #fff;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    svg {
+      margin-left: 6px;
+      cursor: pointer;
+    }
+  }
+}
+
+.ContactInfo {
+  &_form {
+    margin-top: 40px;
+    margin-left: 8px;
+    .form-group {
+      margin-bottom: 40px;
+    }
+    .form-control {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      border-bottom: 1px solid rgba(202, 210, 233, 0.5);
+      border-radius: 0;
+    }
+    .form-control-label {
+      transform: translateY(-34px);
+      transition: 0.3s;
+      color: #fff;
+    }
+
+    input:focus {
+      box-shadow: none !important;
+    }
+    input:focus + label {
+      transform: translateY(-54px);
+      background: transparent;
+      color: rgba(202, 210, 233, 0.5);
+      font-size: 14px;
+    }
+    select:focus + label {
+      transform: translateY(-54px);
+      background: transparent;
+      color: rgba(202, 210, 233, 0.5);
+      font-size: 14px;
+    }
+    select {
+      width: 166px;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      // border-bottom: 1px solid rgba(202, 210, 233, 0.5);
+      // padding-bottom: 12px;
+      &:focus {
+        box-shadow: none !important;
+      }
+      &:focus-visible {
+        box-shadow: none !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+.selectWrapper {
+  position: relative;
+  .form-control-label {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    top: 38px;
+  }
+  select {
+    padding-top: 3px;
+    option {
+      color: #020a1c;
+    }
+  }
+  .selectLine {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(202, 210, 233, 0.5);
+    margin-top: 9px;
+  }
+}
+
+.labelTop {
+  label {
+    transform: translateY(-54px) !important;
+    background: transparent;
+    color: rgba(202, 210, 233, 0.5) !important;
+    font-size: 14px;
+  }
+}
+
+.stepsLeftSide {
+  padding-right: 40px;
+  max-width: 700px;
+}

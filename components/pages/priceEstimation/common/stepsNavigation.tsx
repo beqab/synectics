@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { PriceCalculatorContext } from "../priceContainerContext";
 
 const StepsNavigation: React.FC = ({ children }) => {
-  const { currentStepIndex, setCurrentStepIndex } = useContext(
+  const { currentStepIndex, setCurrentStepIndex, values } = useContext(
     PriceCalculatorContext
   );
   return (
@@ -45,6 +45,17 @@ const StepsNavigation: React.FC = ({ children }) => {
               className="btn btn-primary btn-primary-fill stepNextBtn"
             >
               Next
+            </button>
+          ) : null}
+          {currentStepIndex === 5 ? (
+            <button
+              onClick={() => {
+                console.log(values, "valuesvalues");
+                setCurrentStepIndex(currentStepIndex + 1);
+              }}
+              className="btn btn-primary btn-primary-fill stepNextBtn"
+            >
+              Submit
             </button>
           ) : null}
         </div>
