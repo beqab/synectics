@@ -1,11 +1,13 @@
-.estimatePrice {
+.estimatePricePage {
   background: url("../../public/imgs/Mask group.svg"),
     linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
   background-repeat: repeat-x;
   //   background-position: bottom left;
   background-position: bottom left;
   //   background-size: 100% auto !important;s
-  padding-top: 350px;
+  padding-top: 250px;
+  min-height: 80vh;
+  padding-bottom: 100px;
   h1 {
     font-weight: 700;
     font-size: 48px;
@@ -17,6 +19,197 @@
     span {
       color: #1c55e9;
       display: block;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fcfcfd;
+    margin-top: 30px;
+  }
+  .btn-light {
+    background: #ffffff;
+    /* Text & Icons/White */
+
+    border: 2px solid #ffffff;
+    border-radius: 32px;
+    width: 222px;
+    height: 56px;
+    margin-top: 50px;
+  }
+}
+
+.stepBlank {
+  &_container {
+    max-width: 562px;
+    min-width: 492px;
+  }
+}
+.stepNextBtn {
+  width: 103px;
+  height: 46px;
+  left: 1225px;
+  top: 713px;
+
+  /* Text & Icons/Primary */
+  border: 0 !important;
+  background: #1c55e9;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.01em;
+}
+
+.stepPrevBtn {
+  width: 121px;
+  height: 46px;
+  left: 809px;
+  top: 713px;
+  background: rgba(91, 94, 123, 0.3);
+  border-radius: 24px;
+  color: #fff;
+  svg {
+    margin-right: 5px;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+//////////////@at-root
+///
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 22px;
+  border-radius: 8px;
+  padding-left: 54px;
+  margin: 8px;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  background: rgba(91, 94, 123, 0.1);
+  border: 1.5px solid #22272f69;
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkmark {
+  background-color: #1c56e920;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: #2196f336;
+  border-color: #1c55e9;
+}
+
+.checkboxContainer input:checked ~ .label {
+  color: #1c55e9;
+  font-weight: 600;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #1c55e9;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.stepPrevBtn {
+}
+.stepsIndicator {
+  color: #fcfcfd;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.addExtraOptions {
+  &_container {
+    background: #fcfcfd;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 116px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 11px 15px;
+    span {
+      background: rgba(28, 85, 233, 0.15);
+      border-radius: 32px;
+      height: 31px;
+      padding-left: 16px;
+      padding-right: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #1c55e9;
+    }
+    input {
+      height: 31px;
+      margin-top: 5px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
