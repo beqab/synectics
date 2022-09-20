@@ -159,9 +159,8 @@
       padding-left: 36px;
     }
   }
-  h2{
+  h2 {
     margin-bottom: 30px;
-
   }
   h3 {
     font-weight: 700;
@@ -208,6 +207,7 @@
         // width: 0 !important;
         min-width: calc((100vw - 1190px) / 4) !important;
         margin-left: calc((100vw - 1190px) / 8);
+        height: 1px;
       }
       min-width: 1190px;
       margin-left: calc((100vw - 1190px) / 8);
