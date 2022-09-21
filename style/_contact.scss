@@ -33,6 +33,28 @@ input:focus + label {
 
   background: white;
 }
+.contactSection_from {
+  .form-control-label {
+    transition: 0.3s;
+  }
+  input {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  input:focus + label {
+    transform: translateY(-54px);
+    background: transparent;
+    color: rgba(202, 210, 233, 0.5);
+    font-size: 14px;
+  }
+  select:focus + label {
+    transform: translateY(-54px);
+    background: transparent;
+    color: rgba(202, 210, 233, 0.5);
+    font-size: 14px;
+  }
+}
 .contactSection_from .form-control-label {
   font-style: normal;
   font-weight: 400;

@@ -543,9 +543,15 @@
   .selectWrapper {
     select {
       border: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
     }
     margin-right: 36px;
-    height: 54px;
+    height: 35px;
+    margin-bottom: 29px;
+    width: 200px;
     border-bottom: 1px solid rgba(202, 210, 233, 0.5) !important;
   }
   .phoneForm {

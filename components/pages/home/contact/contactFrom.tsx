@@ -1,21 +1,24 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { FormGroup, Button, Input } from "../../../common/form";
 import classnames from "classnames";
 // import { ProfileService } from "../../../services/profile/profile.http";
 import { ToastContainer, toast } from "react-toastify";
-import useTranslation from "next-translate/useTranslation";
 
 interface IContactForm {
   name: string;
   last_name: string;
   text: string;
   email: string;
+  phoneNumber: string;
+  countryCode: string;
 }
 
 interface IErrorMsg {
   email?: string | Array<string>;
+  phoneNumber?: string | Array<string>;
+  countryCode?: string | Array<string>;
   name?: string | Array<string>;
   text?: string | Array<string>;
   last_name?: string | Array<string>;
@@ -30,10 +33,11 @@ function Contact() {
     watch,
     reset,
     getValues,
+
     formState: { errors },
   } = useForm<IContactForm>();
 
-  let { t } = useTranslation("common");
+  // const;
 
   const submit = handleSubmit((data) => {
     // console.log(errors);
@@ -73,12 +77,18 @@ function Contact() {
     //   });
     console.log(data);
   });
+  // console.log(watch("name"), "getValues");
+
+  const selectRef = useRef(null);
   return (
     <form onSubmit={submit} className="contactSection_from">
       <ToastContainer />
+
       <div className="d-flex twoLineFrom">
         <FormGroup
-          className="marginRight"
+          className={classnames("marginRight", {
+            labelTop: !!watch("name"),
+          })}
           Label={"First Name"}
           errorMessage={errors?.name ? errors.name.message : ""}
           htmlFor="firstName"
@@ -91,7 +101,7 @@ function Contact() {
             hasError={!!errors?.name}
             // placeholder={t("name")}
             {...register("name", {
-              required: t("nameError"),
+              required: "nameError",
             })}
             //   autocomplete="off"
           />
@@ -101,30 +111,39 @@ function Contact() {
           Label={"Last Name"}
           errorMessage={errors?.last_name ? errors.last_name.message : ""}
           htmlFor="firstName"
+          className={classnames("marginRight", {
+            labelTop: !!watch("last_name"),
+          })}
         >
           <Input
             useRef={register("last_name")}
             //   autocomplete="off"
+            id="firstName"
             type="last_name"
             hasError={!!errors?.last_name}
             // placeholder={t("surname")}
             {...register("last_name", {
-              required: t("surnameError"),
+              required: "is require",
             })}
           />
         </FormGroup>
       </div>
       <FormGroup
+        htmlFor="Email"
         Label={"Email"}
         errorMessage={
           errors?.email?.message
             ? errors?.email?.message
             : errors?.email?.type === "pattern"
-            ? t("mailError2")
+            ? "mailError2"
             : ""
         }
+        className={classnames({
+          labelTop: !!watch("email"),
+        })}
       >
         <Input
+          id="Email"
           type="text"
           name={"email"}
           //   autocomplete="off"
@@ -136,7 +155,7 @@ function Contact() {
           }}
           useRef={register("email")}
           {...register("email", {
-            required: t("mailError"),
+            required: "mailError",
             pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
           })}
         />
@@ -144,23 +163,54 @@ function Contact() {
 
       <div className="d-flex align-items-center phoneForm">
         <div className="selectWrapper">
-          <select>
-            <option>Country Code</option>
-            <option>Geo +995</option>
-          </select>
+          <FormGroup
+            // Label={"Country Code"}
+            className={classnames({
+              labelTop: !!watch("countryCode"),
+            })}
+            htmlFor="countryCode"
+          >
+            <select
+              id="countryCode"
+              {...register("countryCode", {
+                required: "surnameError",
+              })}
+              ref={selectRef}
+              // useRef={register("countryCode")}
+            >
+              <option className="d-none" value={""}></option>
+
+              <option value={995}>Geo +995</option>
+              <option value={993}>Geo +993</option>
+            </select>
+            <label
+              onClick={() => {
+                selectRef.current.focus();
+              }}
+              className="form-control-label"
+            >
+              Country Code
+            </label>
+            <div className="selectLineBorder"></div>
+          </FormGroup>
         </div>
         <FormGroup
           Label={"Phone Number"}
+          htmlFor="phoneNumber"
           errorMessage={errors?.text ? errors.text.message : ""}
+          className={classnames({
+            labelTop: !!watch("phoneNumber"),
+          })}
         >
           <Input
-            useRef={register("last_name")}
+            useRef={register("phoneNumber")}
             //   autocomplete="off"
-            type="last_name"
-            hasError={!!errors?.last_name}
+            id="phoneNumber"
+            type="phoneNumber"
+            hasError={!!errors?.phoneNumber}
             // placeholder={t("surname")}
-            {...register("last_name", {
-              required: t("surnameError"),
+            {...register("phoneNumber", {
+              required: "surnameError",
             })}
           />
         </FormGroup>
