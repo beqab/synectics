@@ -62,7 +62,8 @@ const Collaboration = () => {
           </div>
         </div>
         <div className="col-md-5 d-none d-md-block">
-          <CollaboratorImg />
+          {/* <CollaboratorImg /> */}
+          <img className="mt-md-5" src="/imgs/ttt.png" />
         </div>
       </div>
     </div>

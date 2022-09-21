@@ -226,6 +226,7 @@
     // justify-content: center;
     margin-bottom: 12px;
     align-items: center;
+    max-width: 630px;
     h4 {
       max-width: 40%;
       font-weight: 700;
@@ -233,6 +234,7 @@
       line-height: 24px;
       margin-bottom: 0;
       width: 100%;
+      padding-right: 30px;
     }
     p {
       margin-bottom: 0;
@@ -378,7 +380,7 @@
   border-radius: 4px;
   width: 167px;
   text-align: center;
-  transform: translate(-50%, -300px);
+  transform: translate(-50%, -250%);
   transition: 0.3s;
 }
 

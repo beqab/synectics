@@ -161,12 +161,7 @@ const IndexPage = () => {
         <section className="ourGlobal">
           <OutGlobal />
         </section>
-        <Link href={"/?t=dsf"} scroll={false}>
-          <a>fdsf</a>
-        </Link>
-        <Link href={"/?t=dsfds"} scroll={false}>
-          <a>fdsfdsadsad</a>
-        </Link>
+
         <section className="estimatePrice">
           <EstimatePrice />
         </section>
