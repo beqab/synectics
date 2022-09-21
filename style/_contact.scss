@@ -63,3 +63,26 @@ input:focus + label {
   color: #050f2b;
   transform: translateY(-33px);
 }
+
+.textAreaWithFile {
+  &_container {
+    position: relative;
+    padding-right: 40px;
+    textarea {
+      width: 100%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .btn {
+      min-width: 40px;
+      min-height: 40px;
+      max-height: 40px;
+      padding: 0 !important;
+      position: absolute;
+      right: 00px;
+      top: -5px;
+    }
+  }
+}

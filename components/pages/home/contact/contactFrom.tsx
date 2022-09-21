@@ -13,6 +13,7 @@ interface IContactForm {
   email: string;
   phoneNumber: string;
   countryCode: string;
+  about: string;
 }
 
 interface IErrorMsg {
@@ -22,6 +23,7 @@ interface IErrorMsg {
   name?: string | Array<string>;
   text?: string | Array<string>;
   last_name?: string | Array<string>;
+  about?: string | Array<string>;
 }
 
 function Contact() {
@@ -40,6 +42,7 @@ function Contact() {
   // const;
 
   const submit = handleSubmit((data) => {
+    console.log(data, " dddddd");
     // console.log(errors);
     // ProfileService.contactForm({
     //   firstname: data.name,
@@ -168,7 +171,6 @@ function Contact() {
             className={classnames({
               labelTop: !!watch("countryCode"),
             })}
-            htmlFor="countryCode"
           >
             <select
               id="countryCode"
@@ -216,8 +218,21 @@ function Contact() {
         </FormGroup>
       </div>
       <div className="fileUpload">
-        <div>
-          <span>Tell us about your Project </span>
+        <div className="textAreaWithFile_container">
+          {/* <span>Tell us about your Project </span> */}
+          <FormGroup
+            errorMessage={errors?.text ? errors.text.message : ""}
+            className={classnames("w-100 mb-0", {
+              labelTop: !!watch("phoneNumber"),
+            })}
+          >
+            <textarea
+              {...register("about", {
+                required: "about",
+              })}
+              placeholder="Tell us about your Project"
+            ></textarea>
+          </FormGroup>
           <div className="btn">
             <svg
               width="25"
@@ -233,7 +248,7 @@ function Contact() {
                 fill="#1C55E9"
               />
             </svg>
-            Upload Files
+            {/* Upload Files */}
           </div>
         </div>
       </div>
