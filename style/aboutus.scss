@@ -26,9 +26,9 @@
 .whyUsSection {
   padding-top: 80px;
   padding-bottom: 140px;
-  background: url("../public/imgs/tt.svg");
+  background: url("../public/imgs/tt.svg"), url("../public/imgs/whyus.svg");
   //   background-size: contain;
-  background-position: left 400px;
+  background-position: left 400px, center right;
   background-repeat: no-repeat;
   &_card {
     background: #ffffff;
@@ -61,6 +61,10 @@
 .ourMissionSection {
   padding-top: 100px;
   padding-bottom: 140px;
+  background: url("../public/imgs/mission.svg"),
+    url("../public/imgs/mission2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left, center right;
   h2 {
     margin-bottom: 32px;
   }
@@ -93,6 +97,9 @@
 }
 .innerPageContactSection {
   padding-top: 130px;
+  background: url("../public/imgs/innerConactBG.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
   .btn_wrapper {
     margin-top: 50px !important;
   }

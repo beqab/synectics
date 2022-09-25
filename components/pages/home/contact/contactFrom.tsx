@@ -28,6 +28,7 @@ interface IErrorMsg {
 
 function Contact() {
   const [load, setLoad] = useState(false);
+  const [filesArray, setFilesArray] = useState([]);
   const {
     register,
     handleSubmit,
@@ -35,14 +36,14 @@ function Contact() {
     watch,
     reset,
     getValues,
-
+    setValue,
     formState: { errors },
   } = useForm<IContactForm>();
 
   // const;
 
   const submit = handleSubmit((data) => {
-    console.log(data, " dddddd");
+    console.log({ ...data, files: filesArray }, " dddddd");
     // console.log(errors);
     // ProfileService.contactForm({
     //   firstname: data.name,
@@ -83,6 +84,8 @@ function Contact() {
   // console.log(watch("name"), "getValues");
 
   const selectRef = useRef(null);
+
+  const fileInputRef = useRef(null);
   return (
     <form onSubmit={submit} className="contactSection_from">
       <ToastContainer />
@@ -178,6 +181,9 @@ function Contact() {
                 required: "surnameError",
               })}
               ref={selectRef}
+              onChange={(e) => {
+                setValue("countryCode", e.target.value, { shouldTouch: true });
+              }}
               // useRef={register("countryCode")}
             >
               <option className="d-none" value={""}></option>
@@ -233,7 +239,12 @@ function Contact() {
               placeholder="Tell us about your Project"
             ></textarea>
           </FormGroup>
-          <div className="btn">
+          <div
+            onClick={() => {
+              fileInputRef.current.click();
+            }}
+            className="btn"
+          >
             <svg
               width="25"
               height="24"
@@ -248,9 +259,78 @@ function Contact() {
                 fill="#1C55E9"
               />
             </svg>
+            <input
+              ref={fileInputRef}
+              onChange={(e) => {
+                console.log(e.target.files, "e.target.files");
+                // setImage(URL.createObjectURL(e.target.files[0]));
+
+                const toBase64 = (file) =>
+                  new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = (error) => reject(error);
+                  });
+
+                async function Main() {
+                  const file = e.target.files[0];
+                  let fileString = await toBase64(file);
+                  setFilesArray([
+                    ...filesArray,
+                    { name: e.target.files[0].name, fileString },
+                  ]);
+                  // ProfileService.uploadImage({
+                  //   base64: fileString,
+                  // })
+                  //   .then((res) => {
+                  //     let newUSer = {
+                  //       ...user,
+                  //       profile_image: res.data.profileImage,
+                  //     };
+                  //     dispatch(setCurrentUser({ user: newUSer }));
+                  //   })
+                  //   .catch((err) => {
+                  //     console.log(err);
+                  //   });
+                }
+
+                Main();
+              }}
+              className="d-none"
+              type={"file"}
+            />
             {/* Upload Files */}
           </div>
         </div>
+      </div>
+      <div className="stepUploadedFiles">
+        {filesArray.map((el) => {
+          return (
+            <span className="coloBlack">
+              {el.name}
+              <svg
+                onClick={() => {
+                  setFilesArray(
+                    filesArray.filter((item) => item.name !== el.name)
+                  );
+                }}
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.0019 0.917016L9.83806 0.917004C7.8233 0.916784 6.63083 0.916653 5.63884 1.22943C3.53848 1.89167 1.89325 3.53689 1.23101 5.63725C0.91824 6.62924 0.91837 7.82171 0.918591 9.83647L0.918602 10.0003L0.918591 10.1642C0.91837 12.179 0.91824 13.3715 1.23101 14.3634C1.89325 16.4638 3.53848 18.109 5.63884 18.7713C6.63083 19.084 7.82329 19.0839 9.83804 19.0837L10.0019 19.0837L10.1658 19.0837C12.1806 19.0839 13.373 19.084 14.365 18.7713C16.4654 18.109 18.1106 16.4638 18.7729 14.3634C19.0856 13.3715 19.0855 12.179 19.0853 10.1642L19.0853 10.0003L19.0853 9.83646C19.0855 7.8217 19.0856 6.62924 18.7729 5.63725C18.1106 3.53689 16.4654 1.89167 14.365 1.22943C13.373 0.916653 12.1806 0.916784 10.1658 0.917004L10.0019 0.917016ZM6.0899 2.66C6.8328 2.42577 7.77404 2.41702 10.0019 2.41702C12.2298 2.41702 13.1711 2.42577 13.914 2.66C15.5476 3.17508 16.8272 4.4547 17.3423 6.08831C17.5765 6.83121 17.5853 7.77246 17.5853 10.0003C17.5853 12.2282 17.5765 13.1695 17.3423 13.9124C16.8272 15.546 15.5476 16.8256 13.914 17.3407C13.1711 17.5749 12.2298 17.5837 10.0019 17.5837C7.77404 17.5837 6.8328 17.5749 6.0899 17.3407C4.45629 16.8256 3.17666 15.546 2.66159 13.9124C2.42735 13.1695 2.4186 12.2282 2.4186 10.0003C2.4186 7.77246 2.42735 6.83121 2.66159 6.08831C3.17666 4.4547 4.45629 3.17508 6.0899 2.66ZM7.19893 6.13668C6.90604 5.84379 6.43117 5.84379 6.13827 6.13668C5.84538 6.42958 5.84538 6.90445 6.13827 7.19734L8.94128 10.0003L6.13827 12.8034C5.84538 13.0962 5.84538 13.5711 6.13827 13.864C6.43117 14.1569 6.90604 14.1569 7.19893 13.864L10.0019 11.061L12.8049 13.864C13.0978 14.1569 13.5727 14.1569 13.8656 13.864C14.1585 13.5711 14.1585 13.0962 13.8656 12.8034L11.0626 10.0003L13.8656 7.19734C14.1585 6.90445 14.1585 6.42958 13.8656 6.13668C13.5727 5.84379 13.0978 5.84379 12.8049 6.13668L10.0019 8.93969L7.19893 6.13668Z"
+                  fill="#F02E51"
+                />
+              </svg>
+            </span>
+          );
+        })}
       </div>
       <div className="btn_wrapper">
         <Button

@@ -86,3 +86,50 @@ input:focus + label {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .img-wrapper {
+    max-width: 100%;
+    text-align: center;
+    img {
+      max-width: 70vw;
+      min-width: 200px;
+    }
+  }
+  .form-group.marginRight {
+    margin-right: 26px;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+  .contactSection_from .form-control-label {
+    font-size: 14px;
+  }
+  .contactSection_from input:focus + label {
+    font-size: 12px;
+  }
+  .contactSection_from select:focus + label {
+    font-size: 12px;
+  }
+  .contactSection_from .fileUpload {
+    padding-bottom: 0px;
+  }
+  .textAreaWithFile_container textarea {
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+  .labelTop label {
+    font-size: 14px !important;
+  }
+  .stepUploadedFiles span {
+    font-size: 14px !important;
+  }
+  .contactSection_from .btn {
+    height: 48px;
+  }
+  .contactSection_from .form-group {
+    margin-bottom: 14px;
+  }
+}

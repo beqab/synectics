@@ -1,0 +1,38 @@
+<svg
+  width="672"
+  height="694"
+  viewBox="0 0 672 694"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<g opacity="0.05" filter="url(#filter0_f_353_1492)">
+<rect
+      x="742"
+      y="146"
+      width="402"
+      height="596"
+      transform="rotate(90 742 146)"
+      fill="#1C55E9"
+    />
+</g>
+<defs>
+<filter
+      id="filter0_f_353_1492"
+      x="0"
+      y="0"
+      width="888"
+      height="694"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="BackgroundImageFix"
+        result="shape"
+      />
+<feGaussianBlur stdDeviation="73" result="effect1_foregroundBlur_353_1492" />
+</filter>
+</defs>
+</svg>

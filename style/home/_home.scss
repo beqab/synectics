@@ -116,7 +116,12 @@
 .technology {
   background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
   padding-top: 150px;
-  padding-bottom: 150px;
+  background: url("../../public/imgs/Mask\ group.svg"),
+    linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  padding-bottom: 250px;
+
   .servicePrev {
     position: absolute;
     top: -100px;
@@ -993,4 +998,7 @@
     color: $brandColor;
     font-weight: 600;
   }
+}
+
+.technology {
 }
