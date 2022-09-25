@@ -104,3 +104,120 @@
     margin-top: 50px !important;
   }
 }
+
+.pageTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.16em;
+  color: #626262;
+}
+
+@media only screen and (max-width: 768px) {
+  .about_mainSection {
+    img {
+      max-width: 100%;
+    }
+  }
+  .innerPageContactSection {
+    img {
+      max-width: 100%;
+    }
+  }
+  .about_mainSection_content {
+    margin-top: 0px;
+  }
+  .about_mainSection {
+    .row {
+      flex-direction: column-reverse;
+      .col-md-6 {
+        &:last-child {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  .about_mainSection {
+    padding-top: 54px;
+  }
+  .about_mainSection h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.005em;
+  }
+  .pageTitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+  }
+
+  .about_mainSection p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+  .whyUsSection h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .whyUsSection_card {
+    padding: 32px 16px;
+    margin-bottom: 14px;
+    height: auto;
+    img {
+      max-height: 80px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .ourMissionSection {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+    p {
+      padding-right: 0px;
+    }
+  }
+  .about_serviceSection {
+    padding-bottom: 76px;
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  .innerPageContactSection {
+    padding-top: 48px;
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #8c919e;
+      margin-bottom: 40px;
+    }
+  }
+}

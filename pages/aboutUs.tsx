@@ -11,6 +11,7 @@ const aboutUs = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 about_mainSection_content">
+              <div className="pageTitle">ABOUT US</div>
               <h1>
                 Work with one of the fastest-growing digital consultancies in EU
               </h1>
