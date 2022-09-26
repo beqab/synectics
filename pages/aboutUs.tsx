@@ -87,6 +87,19 @@ const aboutUs = () => {
                 from repetition, injected humour, or non-characteristic words
                 etc.
               </p>
+              <div className="d-block d-md-none ourMissionSection_mobileImgs ">
+                <div>
+                  <div className="">
+                    <img src="/imgs/Rectangle 108.png" />
+                  </div>
+                  <div className="">
+                    <img src="/imgs/Rectangle 107.png" />
+                  </div>
+                  <div className="">
+                    <img src="/imgs/Rectangle 109.png" />
+                  </div>
+                </div>
+              </div>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
@@ -96,7 +109,7 @@ const aboutUs = () => {
                 hidden in the middle of text.
               </p>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 d-md-block d-none">
               <div className="text-right">
                 <img src="/imgs/Rectangle 107.png" />
               </div>
