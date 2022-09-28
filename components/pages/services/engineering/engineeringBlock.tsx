@@ -9,7 +9,7 @@ const EngineeringBlock = ({
 }) => {
   return (
     <ServiceBlockContainer subTitle="Services" className="engineeringBlock">
-      <div className="d-flex  ">
+      <div className="d-flex engineeringBlock_content  ">
         <div className="engineeringBlock_description">
           <h2>{title}</h2>
           <p>

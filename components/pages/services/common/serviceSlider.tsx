@@ -44,16 +44,25 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
   }, [router.query]);
 
   return (
-    <div ref={sliderRef} className="serviceSliderWrapper">
-      <div className="sliderContainer">
-        <div></div>
+    <>
+      <div className="d-block d-md-none">
         {data.map((el, i) => {
-          return el.renderBlock(el);
+          if (router.asPath.includes(el.href)) {
+            return el.renderBlock(el);
+          }
         })}
-
-        <div></div>
       </div>
-    </div>
+      <div ref={sliderRef} className="serviceSliderWrapper d-none d-md-flex">
+        <div className="sliderContainer">
+          <div></div>
+          {data.map((el, i) => {
+            return el.renderBlock(el);
+          })}
+
+          <div></div>
+        </div>
+      </div>
+    </>
   );
 };
 

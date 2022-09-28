@@ -602,3 +602,138 @@
     }
   }
 }
+
+.dropdownComponent {
+  position: relative;
+  &.isOpen {
+    .dropdownComponent_heading {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .dropdownComponent_list {
+      max-height: 1000px;
+      border: 1px solid rgba(202, 210, 233, 0.5);
+      border-top: 0;
+    }
+  }
+  &_list {
+    transition: 0.3s;
+    background-color: #fff;
+    border: 0px solid transparent;
+    max-height: 0px;
+    overflow: hidden;
+    // border: 0px;
+    li {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    a {
+      color: $brandTextColor;
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.119);
+      &.active {
+        background: #1c55e9;
+        color: #fff;
+      }
+    }
+  }
+  &_heading {
+    transition: 0.3s;
+    background: #ffffff;
+    border: 1px solid rgba(202, 210, 233, 0.5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    align-items: center;
+    height: 48px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serviceHeading {
+    svg {
+      max-height: 70px;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      margin-top: 26px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0 30px;
+    }
+  }
+  .engineeringBlock_content {
+    flex-wrap: wrap;
+  }
+  .engineeringBlock_description {
+    min-width: 100%;
+  }
+  .ServiceBlockContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+  }
+  .engineeringBlock_description {
+    padding-right: 0;
+    border-right: 0;
+  }
+  .ServiceBlockContainer_subTitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+  }
+  .engineeringBlock {
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 16px;
+      margin-top: 5px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .engineeringBlock_technologyList_wrapper {
+    padding-left: 0;
+  }
+  .engineeringBlock_technologyList {
+    // justify-content: space-between;
+    flex-flow: row wrap;
+    // justify-content: space-between;
+    // &::after {
+    //   content: "";
+    //   flex: auto;
+    // }
+    > div {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

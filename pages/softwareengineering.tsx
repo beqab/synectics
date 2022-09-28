@@ -86,7 +86,10 @@ const SoftwareEngineering = () => {
           predefined chunks as necessary, making this the first true generator
           on the Internet."
         />
-        <ServiceSectionWrapper data={EngineeringData}>
+        <ServiceSectionWrapper
+          pageTitle="Software Engineering"
+          data={EngineeringData}
+        >
           {/* <div ref={sliderRef} className="serviceSliderWrapper">
             <div className="sliderContainer">
               <div></div>
