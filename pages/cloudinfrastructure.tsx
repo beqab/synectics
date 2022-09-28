@@ -67,7 +67,10 @@ const CloudInfrastructure = () => {
           title="Cloud & Infrastructure"
           text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
         />
-        <ServiceSectionWrapper data={InfrastructureData}>
+        <ServiceSectionWrapper
+          pageTitle="Cloud & Infrastructure"
+          data={InfrastructureData}
+        >
           {/* <ServiceMenu menuArray={InfrastructureData.menu} /> */}
           <ServiceSlider data={InfrastructureData} />
         </ServiceSectionWrapper>

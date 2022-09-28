@@ -10,7 +10,7 @@ const Devops = (d: any) => {
           <div className="col-md-6">
             <div className="devops_card">
               <div>
-                <img src="/imgs/WEB_development_optimization.svg" />
+                <img src="/imgs/stock_market_x2C__monitor_x2C__chart.svg" />
               </div>
               <div className="devops_card_content">
                 <h3>DevOps Assessment</h3>
@@ -26,7 +26,7 @@ const Devops = (d: any) => {
           <div className="col-md-6">
             <div className="devops_card">
               <div>
-                <img src="/imgs/WEB_development_optimization.svg" />
+                <img src="/imgs/site_map_website.svg" />
               </div>
               <div className="devops_card_content">
                 <h3>Configuration Management</h3>
@@ -42,7 +42,7 @@ const Devops = (d: any) => {
           <div className="col-md-6">
             <div className="devops_card">
               <div>
-                <img src="/imgs/WEB_development_optimization.svg" />
+                <img src="/imgs/site_map_website.svg" />
               </div>
               <div className="devops_card_content">
                 <h3>Continuous Integration & Delivery</h3>
@@ -50,7 +50,9 @@ const Devops = (d: any) => {
                   FortySeven have got own in-house team of professionals that
                   constantly works in establishing an effective delivery
                   mechanism focusing on effective deployment of software right
-                  from the QA to production in an automated manner.
+                  from the QA to production in an automated manner. Besides, our
+                  experts ensure that every change in code proves effective in
+                  the deployment of the tool at the defined time.
                 </p>
               </div>
             </div>
@@ -58,15 +60,18 @@ const Devops = (d: any) => {
           <div className="col-md-6">
             <div className="devops_card">
               <div>
-                <img src="/imgs/WEB_development_optimization.svg" />
+                <img src="/imgs/portfolio_x2C__briefcase_x2C__business_case.svg" />
               </div>
               <div className="devops_card_content">
                 <h3>Release Management</h3>
                 <p>
-                  FortySeven have got own in-house team of professionals that
-                  constantly works in establishing an effective delivery
-                  mechanism focusing on effective deployment of software right
-                  from the QA to production in an automated manner.
+                  Our DevOps developers have got a good record of the
+                  development of release management processes, which further
+                  proved useful in maintaining contacts among every individual
+                  of a team involved in offering efficient cooperation channels.
+                  Some of the successful development of processes is the
+                  introduction of VCS, Release and Delivery Planning Systems,
+                  and Project Management systems.
                 </p>
               </div>
             </div>
@@ -74,15 +79,16 @@ const Devops = (d: any) => {
           <div className="col-md-6">
             <div className="devops_card">
               <div>
-                <img src="/imgs/WEB_development_optimization.svg" />
+                <img src="/imgs/code_coding_laptop.svg" />
               </div>
               <div className="devops_card_content">
                 <h3>Infrastructure As A Code</h3>
                 <p>
-                  FortySeven have got own in-house team of professionals that
-                  constantly works in establishing an effective delivery
-                  mechanism focusing on effective deployment of software right
-                  from the QA to production in an automated manner.
+                  We are one of the few reputed names in this industry to follow
+                  methodologies like Infrastructure as a Code (IaaC), which
+                  further allowed us to have Automated Infrastructures. The best
+                  aspect of such methodology is that it provides an automatic
+                  provision and coding for successful management.
                 </p>
               </div>
             </div>
@@ -95,10 +101,13 @@ const Devops = (d: any) => {
               <div className="devops_card_content">
                 <h3>Continuous Optimization</h3>
                 <p>
-                  FortySeven have got own in-house team of professionals that
-                  constantly works in establishing an effective delivery
-                  mechanism focusing on effective deployment of software right
-                  from the QA to production in an automated manner.
+                  Our DevOps developers have got a good record of the
+                  development of release management processes, which further
+                  proved useful in maintaining contacts among every individual
+                  of a team involved in offering efficient cooperation channels.
+                  Some of the successful development of processes is the
+                  introduction of VCS, Release and Delivery Planning Systems,
+                  and Project Management systems.
                 </p>
               </div>
             </div>
