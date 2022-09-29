@@ -897,4 +897,132 @@
       max-width: 60px;
     }
   }
+
+  .itOutsourcing {
+    padding-top: 0;
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left !important;
+    }
+  }
+  .cooperation_card {
+    min-height: auto;
+    padding: 32px 20px 10px 20px;
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    svg {
+      max-height: 60px;
+    }
+  }
+
+  .listItems_list {
+    margin-bottom: 20px;
+  }
+  .listItems_wrapper {
+    flex-direction: column;
+
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .listItem {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      width: 50%;
+      display: inline-block;
+
+      div {
+        display: flex;
+        padding-right: 10px;
+        svg {
+          margin-right: 16px;
+          margin-top: 3px;
+          min-width: 11px;
+        }
+      }
+    }
+  }
+  .methodologySection .row {
+    flex-direction: column-reverse;
+    svg {
+      min-width: 70%;
+      margin: auto;
+      padding: 30px;
+      max-height: 100% !important;
+    }
+  }
+
+  .cooperation_flow {
+    flex-direction: column;
+    &_content {
+      margin-top: 16px;
+      width: 100%;
+    }
+    .step1 {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 34px;
+
+      .stepTitle {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        justify-content: flex-end;
+        .cooperation_flow_title {
+          width: calc(100% - 87px);
+        }
+        .cooperation_flow_step {
+          &_bottom::before {
+            content: "";
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            background-color: rgba(202, 210, 233, 0.4980392157);
+            top: 50%;
+            right: -36px;
+          }
+          margin: 0;
+          margin-right: 27px;
+        }
+      }
+    }
+    .step2 {
+      margin-top: 24px;
+      .stepTitle {
+        display: flex;
+        .cooperation_flow_step {
+          margin: 0;
+          margin-right: 27px;
+          &_top::before {
+            content: "";
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            background-color: rgba(202, 210, 233, 0.4980392157);
+            top: 50%;
+            right: -36px;
+          }
+        }
+      }
+      .cooperation_flow_title {
+        width: calc(100% - 87px);
+      }
+    }
+    > div {
+      width: 100%;
+    }
+  }
+  .cooperation_flow_step {
+    width: 60px;
+    height: 60px;
+    border: 10px solid;
+    font-size: 24px;
+  }
 }
