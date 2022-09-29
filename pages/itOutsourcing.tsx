@@ -443,7 +443,7 @@ const ItOutsourcing = () => {
             <div className="methodologySection">
               <div className="container">
                 <div className="row">
-                  <div className="col-md-5">
+                  <div className="col-md-5 text-center">
                     <svg
                       width="390"
                       height="318"
