@@ -74,7 +74,11 @@ const ItConsulting = () => {
           title="IT Consulting"
           text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
         />
-        <ServiceSectionWrapper menuCenter data={ItConsultingData}>
+        <ServiceSectionWrapper
+          pageTitle="IT Consulting"
+          menuCenter
+          data={ItConsultingData}
+        >
           {/* <div ref={sliderRef} className="serviceSliderWrapper">
             <div className="sliderContainer">
               <div></div>
