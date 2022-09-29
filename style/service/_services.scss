@@ -844,4 +844,57 @@
     bottom: -20px;
     left: 50%;
   }
+  .cooperation {
+    padding-top: 50px;
+    svg {
+      max-height: 70px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #050f2b;
+    }
+  }
+  .faqSection {
+    padding-top: 40px;
+    div {
+      flex-direction: column;
+      h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .cooperation_card-digital {
+    width: 100%;
+    min-height: auto;
+    padding: 20px 20px 0 20px;
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    svg {
+      max-height: 60px;
+      max-width: 60px;
+    }
+  }
 }
