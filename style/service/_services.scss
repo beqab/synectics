@@ -763,4 +763,45 @@
       margin-top: 14px;
     }
   }
+
+  .ServiceBlockContainer {
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 10px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .InfrastructureManagement_card {
+    width: 100%;
+    margin-bottom: 16px;
+    height: auto;
+    padding: 28px 20px;
+    p {
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 20px;
+    }
+  }
+  .InfrastructureManagement_scalingContainer {
+    flex-direction: column;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    > div {
+      display: flex;
+      margin-left: 2px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 20px;
+    }
+  }
 }
