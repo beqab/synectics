@@ -90,12 +90,10 @@
       font-size: 15px;
       line-height: 20px;
       margin-bottom: 10px;
-      /* or 125% */
-
-      /* Text & Icons/Gray */
 
       color: #8c919e;
-      height: 96px;
+      height: 100px;
+      margin-top: 15px;
     }
     .btn {
       border-width: 1px !important;
@@ -240,6 +238,7 @@
       margin-bottom: 0;
       width: 100%;
       padding-right: 30px;
+      min-width: 190px;
     }
     p {
       margin-bottom: 0;
@@ -286,8 +285,8 @@
     p {
       font-weight: 400;
       font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 16px;
       /* or 125% */
 
       /* Text & Icons/Gray */
