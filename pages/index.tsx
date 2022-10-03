@@ -126,12 +126,13 @@ const IndexPage = () => {
                     We accept Crypto!
                   </div>
                   <h1>
-                    Software Development Company for Your Digital{" "}
-                    <span> Transformation</span>
+                    Software and DevOps Solutions provider for Your Project's
+                    Digital <span> Transformation</span>
                   </h1>
                   <p>
-                    We deliver, scale and implement custom Software for Startups
-                    and Enterprises to grow Your Business
+                    Synectics works in collaboration with it's customers to
+                    deliver next-gen solutions that turn complex business
+                    challenges into real business outcomes.
                   </p>
                   <Link href="/contact">
                     <a className="btn btn-primary  btn-primary-fill">

@@ -9,26 +9,33 @@ const Collaboration = () => {
         <div className="col-md-7">
           <h2>Collaboration Models</h2>
           <p className="mb-5 mt-4">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
+            With years of experience, we understand the different outsourcing
+            engagement models and how to best use them to suit your needs and
+            requirements
           </p>
           <div className="collaboration_card">
             <h4>Team Augmentation</h4>
-            <p>Augment your software team with proven IT Experts.</p>
+            <p>
+              In-house team augmentation, We will provide you with a
+              pre-discussed amount of software engineers and IT specialists
+              required to realize your project of any size.
+            </p>
           </div>
           <div className="collaboration_card greenBorder">
             <h4>Outsourced IT Service</h4>
             <p>
-              Focus on what really matters for your business bu entrusting
-              outsourced IT services to Synetics.
+              We provide IT outsourcing solutions to cater to the requirements
+              of the clients. Here, we only work with complete transparency and
+              take full responsibility for the results we deliver.
             </p>
           </div>
           <div className="collaboration_card blueBorder">
             <h4>Product Development</h4>
             <p>
-              Turn your Idea into lief with an expert level product development
-              Team.
+              The involvement of the customer is limited. During the development
+              process, the requirements can’t be changed, any changes will lead
+              to additional fees and make the price of the project not fixed
+              anymore
             </p>
           </div>
           <div className="d-flex align-items-center collaboration_more ">

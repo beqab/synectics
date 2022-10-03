@@ -35,11 +35,10 @@ const Services = () => {
   return (
     <>
       <div className="container">
-        <h2>Services</h2>
+        <h2>Services We Provide</h2>
         <p>
-          Software design and development provided by carefully selected and
-          talented people who see the bigger picture - your daily business
-          challenges and your customers’ needs.
+          We offer a wide range of Software Development, DevOps, and consulting
+          services with the necessary tools and expertise at a scale.
         </p>
         <div className="serviceMobile d-block d-md-none">
           <div>
@@ -55,8 +54,8 @@ const Services = () => {
                   Engineering
                 </h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Get access to our industry-specific knowledge to design,
+                  build, and scale your new enterprise software solution.
                 </p>
                 <Link href={"/softwareengineering"}>
                   <a className="btn btn-primary">
@@ -75,8 +74,8 @@ const Services = () => {
                   Infrastructure
                 </h3>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a
+                  Full-Cycle DevOps Solutions. Architect and implement software
+                  delivery and management best practices at scale.
                 </p>
                 <Link href={"/cloudinfrastructure"}>
                   <a className="btn btn-primary">
@@ -94,8 +93,9 @@ const Services = () => {
                   Transformation
                 </h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Leverage our expertise in using digital technologies to create
+                  new or modify existing business processes to meet changing
+                  market requirements.
                 </p>
                 <Link href={"/digitalTransformation"}>
                   <a className="btn btn-primary">
@@ -161,8 +161,8 @@ const Services = () => {
                 Engineering
               </h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Get access to our industry-specific knowledge to design, build,
+                and scale your new enterprise software solution.
               </p>
               <Link href={"/softwareengineering"}>
                 <a className="btn btn-primary">
@@ -178,8 +178,8 @@ const Services = () => {
                 Infrastructure
               </h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a
+                Full-Cycle DevOps Solutions. Architect and implement software
+                delivery and management best practices at scale.
               </p>
               <Link href={"/cloudinfrastructure"}>
                 <a className="btn btn-primary">
@@ -195,8 +195,9 @@ const Services = () => {
                 Transformation
               </h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Leverage our expertise in using digital technologies to create
+                new or modify existing business processes to meet changing
+                market requirements.
               </p>
               <Link href={"/digitalTransformation"}>
                 <a className="btn btn-primary">
@@ -229,10 +230,7 @@ const Services = () => {
                 alt="Mirror Edge"
               />
               <h3>IT Outsourcing</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
+              <p>Keep the focus on your product, we deliver IT for you!</p>
               <Link href={"/itOutsourcing"}>
                 <a className="btn btn-primary">
                   MORE

@@ -13,9 +13,10 @@ const EstimatePrice = () => {
               <span>We Can Help.</span>
             </h2>
             <p>
-              All the Lorem Ipsum generators on the Internet tend to repeat
-              predefined chunks as necessary, making this the first true
-              generator on the Internet.
+              An estimated price is a forecast that is related to the price of
+              project. The primary reason of price estimation is to give
+              businesses some numbers which can be used to determine future
+              costs or expenses of their projects.
             </p>
             <Link href="/">
               <a className="btn btn-light d-none d-md-flex">Estimate Price</a>

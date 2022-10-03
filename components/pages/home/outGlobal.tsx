@@ -8,9 +8,10 @@ const OutGlobal = () => {
       <div className="container">
         <h2>Our Global Presence</h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
+          Our expanding market presence brings us closer to our local and
+          regional customers and gives us greater capability to serve these
+          customers through a global workforce that is dedicated to establishing
+          and maintaining true partnerships.
         </p>
         <div className="sutGlobal_count">
           <div>

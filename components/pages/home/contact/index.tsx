@@ -12,10 +12,8 @@ const Contact = () => {
           <div className="col-md-6">
             <h2>Let’s Discuss your Project</h2>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable.
+              Get your project estimations for well-informed business decisions
+              and top-notch digital outcomes.
             </p>
             <div className="img-wrapper">
               <img src="/imgs/email 1.svg" />

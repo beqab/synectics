@@ -288,11 +288,7 @@ const Technologies = () => {
     <>
       <div className="container">
         <h2>Technologies</h2>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-        </p>
+        <p>Get an expert for extensive range of technologies</p>
 
         <ul className="categoryMenu list-inline d-flex ">
           {categories.map((el, i) => {
