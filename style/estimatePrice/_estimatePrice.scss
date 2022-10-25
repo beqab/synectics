@@ -379,6 +379,10 @@
       background: transparent;
       color: rgba(202, 210, 233, 0.5);
       font-size: 14px;
+      transform: translateY(-50px) translateY(15px);
+
+      background: white;
+      background: #fff;
     }
     select:focus + label {
       transform: translateY(-54px);
@@ -422,15 +426,6 @@
     width: 100%;
     background-color: rgba(202, 210, 233, 0.5);
     margin-top: 9px;
-  }
-}
-
-.labelTop {
-  label {
-    transform: translateY(-54px) !important;
-    background: transparent;
-    color: rgba(202, 210, 233, 0.5) !important;
-    font-size: 14px !important;
   }
 }
 

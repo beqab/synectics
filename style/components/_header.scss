@@ -10,22 +10,32 @@
     height: 80px;
     display: flex;
     align-items: center;
-    padding-left: 22px;
-    padding-right: 22px;
-    border-bottom: 4px solid transparent;
+    padding-left: 16px;
+    padding-right: 16px;
+    // border-bottom: 4px solid transparent;
     border-top: 4px solid transparent;
+    svg {
+      margin-left: 6px;
+    }
 
     &:hover {
-      border-bottom: 4px solid $brandColor;
+      // border-bottom: 4px solid $brandColor;
       // font-weight: 700;
       color: $brandColor;
+      svg {
+        path {
+          stroke: $brandColor;
+        }
+      }
       &.menuBtn {
-        border-bottom: 4px solid transparent;
+        // border-bottom: 4px solid transparent;
       }
       .btn-primary {
-        background-color: $brandColor !important;
+        // background-color: $brandColor !important;
 
-        color: #fff !important;
+        &:hover {
+          background-color: #1066d9 !important;
+        }
       }
     }
     .btn-primary {
@@ -148,7 +158,7 @@ header {
   position: relative;
   // padding-top: 18px;
   // padding-bottom: 18px;
-  border-bottom: 1px solid rgba(163, 166, 191, 0.11);
+  box-shadow: 0px 4px 16px 4px rgba(47, 128, 237, 0.04);
 
   position: fixed;
   z-index: 32;

@@ -2,10 +2,13 @@
   &_mainSection {
     padding-top: 80px;
     min-height: 100vh;
+    .container {
+      padding-top: 130px;
+    }
     h1 {
-      font-weight: 700;
-      font-size: 55px;
-      line-height: 72px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 64px;
       display: flex;
       align-items: center;
       letter-spacing: -0.005em;
@@ -14,11 +17,13 @@
     p {
       font-weight: 400;
       font-size: 16px;
-      line-height: 20px;
-      color: #050f2b;
+      line-height: 24px;
+      color: rgba(24, 41, 57, 0.7);
+      margin-bottom: 20px;
+      margin-top: 14px;
     }
     &_content {
-      margin-top: 190px;
+      margin-top: 53px;
     }
   }
 }
@@ -26,35 +31,40 @@
 .whyUsSection {
   padding-top: 80px;
   padding-bottom: 140px;
-  background: url("../public/imgs/tt.svg"), url("../public/imgs/whyus.svg");
-  //   background-size: contain;
-  background-position: left 400px, center right;
-  background-repeat: no-repeat;
+  background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
   &_card {
-    background: #ffffff;
     box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
     border-radius: 16px;
     height: 420px;
-    padding: 45px 35px;
+    padding: 32px;
     text-align: center;
+    background: #1b2847;
+    border-radius: 12px;
   }
   img {
     margin-bottom: 30px;
   }
   h3 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 36px;
+    color: #fff;
   }
   h2 {
-    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 60px;
+    margin-top: 100px;
   }
   p {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -65,14 +75,26 @@
     url("../public/imgs/mission2.svg");
   background-repeat: no-repeat;
   background-position: bottom left, center right;
+  .pl-3 {
+    padding-left: 40px;
+  }
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
   h2 {
-    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+
+    color: #182939;
   }
   p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
-    padding-right: 40px;
+    line-height: 24px;
+    color: rgba(24, 41, 57, 0.7);
+    opacity: 0.7;
   }
   &_content {
     display: flex;
@@ -81,20 +103,6 @@
   }
 }
 
-.about_serviceSection {
-  background: #f8f9fc;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  .container {
-    max-width: 1000px;
-  }
-  h2 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    margin-bottom: 50px;
-  }
-}
 .innerPageContactSection {
   padding-top: 130px;
   background: url("../public/imgs/innerConactBG.svg");
@@ -106,11 +114,12 @@
 }
 
 .pageTitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.16em;
-  color: #626262;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.14em;
+  color: #2f80ed;
+  margin-bottom: 10px;
 }
 
 .ourMissionSection_mobileImgs {
@@ -180,9 +189,10 @@
   }
   .whyUsSection h2 {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 56px;
     text-align: center;
+    color: #ffffff;
   }
   .whyUsSection_card {
     padding: 32px 16px;

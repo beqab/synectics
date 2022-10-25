@@ -1,13 +1,17 @@
 footer {
-  background-color: #020a1c;
+  background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
   padding: 110px 0 140px 0;
   span {
-    color: rgba(255, 255, 255, 0.764);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
     display: inline-block;
     margin-bottom: 16px;
+  }
+  .coyright {
+    font-size: 12px;
+    margin-top: 20px;
   }
   .mx-4 {
     margin-left: 20px !important;
@@ -17,7 +21,7 @@ footer {
 
 .footer {
   a {
-    color: rgba(255, 255, 255, 0.764);
+    color: rgba(255, 255, 255, 0.7);
     &:hover {
       color: #fff;
       span {
@@ -26,16 +30,27 @@ footer {
     }
   }
   &_logo {
-    margin-bottom: 37px;
+    margin-bottom: 12px;
   }
   &_menuTitle {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
     color: #fff;
     margin-bottom: 30px;
-    margin-top: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
   }
+}
+.socials {
+  a {
+    display: inline-block;
+    margin-right: 12px;
+  }
+}
+.buybtn {
+  margin-top: 16px;
 }
 
 .mobileSocial {

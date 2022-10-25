@@ -7,22 +7,26 @@ import ArrowRight from "../components/svgs/arrowRight";
 const aboutUs = () => {
   return (
     <Layout title="about synectics">
-      <section className="about_mainSection">
+      <section className="about_mainSection roundBottom roundBottom-wight ">
         <div className="container">
           <div className="row">
             <div className="col-md-6 about_mainSection_content">
               <div className="pageTitle">ABOUT US</div>
-              <h1>
-                Work with one of the fastest-growing digital consultancies in EU
-              </h1>
+              <h1>Do what you do best, we’ll take care of the rest!</h1>
               <p>
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true
-                generator on the Internet.
+                We offer a wide range of Software Development, DevOps, and
+                consulting services with the necessary tools and expertise to
+                help grow your business.
+              </p>
+              <p>
+                Starting from building the digital establishment for your
+                business to incorporating the best engineering productivity
+                tools and practices into your software platform - we do it all
+                with the utmost efficiency
               </p>
             </div>
-            <div className="col-md-6">
-              <img src="/imgs/Group 1108.svg" />
+            <div className="col-md-6 d-flex align-items-center">
+              <img src="/imgs/Group 1000001884.svg" />
             </div>
           </div>
         </div>
@@ -34,242 +38,85 @@ const aboutUs = () => {
             <div className="col-md-4">
               <div className="whyUsSection_card">
                 <img src="/imgs/goals 3.svg" />
-                <h3>Advanced Technology Expertise</h3>
+                <h3>Technology Expertise</h3>
                 <p>
-                  We at Synectics, have a very well-coordinated and dynamic
-                  delivery team who can perfectly harmonize the advanced,
-                  scalable solutions to make your business stand apart from.
+                  We are experienced professionals, continuously educating,
+                  creating a collaborative environment within a company and
+                  prepare ourselves for new era challenges.
                 </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="whyUsSection_card">
                 <img src="/imgs/business 1.svg" />
-                <h3>Flexible Collaboration Models</h3>
+                <h3>Flexible Collaboration</h3>
                 <p>
-                  We at Synectics, have a very well-coordinated and dynamic
-                  delivery team who can perfectly harmonize the advanced,
-                  scalable solutions to make your business stand apart from.
+                  With years of experience, we understand the different
+                  outsourcing engagement models and how to best use them to suit
+                  your needs and requirements
                 </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="whyUsSection_card">
                 <img src="/imgs/ideas 1.svg" />
-                <h3>Predictable Pricing</h3>
+                <h3>Globality</h3>
                 <p>
-                  We at Synectics, have a very well-coordinated and dynamic
-                  delivery team who can perfectly harmonize the advanced,
-                  scalable solutions to make your business stand apart from.
+                  In the digital era, there are no boundaries anymore. We
+                  leverage the power of digitalization, delivering an
+                  exceptional and highly secured services to you wherever your
+                  business is located
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="ourMissionSection">
+      <section className="ourMissionSection roundBottom roundBottom-top roundBottom-wight">
         <div className="container">
           <div className="row">
-            <div className="col-md-7 ourMissionSection_content">
+            <div className="col-md-5 ourMissionSection_content">
+              <h2>Our Vision</h2>
+              <p>
+                We work proactively with you, relying on years of experience in
+                digital consulting and software services as well as mature
+                experts with technological and business backgrounds who focus on
+                delivering tangible results.
+              </p>
+            </div>
+            <div className="col-md-7 d-md-block d-none pl-3">
               <h2>Our Mission</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of
-                model sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc.
+                Our main goal is your successful result. We strive not only to
+                meet your objectives but also to optimize and reduce your IT
+                costs. We help you push the boundaries of opportunity and scale
+                your business. We give companies unlimited growth potential.
               </p>
-              <div className="d-block d-md-none ourMissionSection_mobileImgs ">
-                <div>
-                  <div className="">
-                    <img src="/imgs/Rectangle 108.png" />
-                  </div>
-                  <div className="">
-                    <img src="/imgs/Rectangle 107.png" />
-                  </div>
-                  <div className="">
-                    <img src="/imgs/Rectangle 109.png" />
-                  </div>
-                </div>
-              </div>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text.
-              </p>
-            </div>
-            <div className="col-md-5 d-md-block d-none">
-              <div className="text-right">
-                <img src="/imgs/Rectangle 107.png" />
-              </div>
-              <div className="my-3">
-                <img src="/imgs/Rectangle 108.png" />
-              </div>
-              <div className="text-right">
-                <img src="/imgs/Rectangle 109.png" />
-              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="about_serviceSection">
-        <div className="container">
-          <h2 className="text-center">IT Services we provide</h2>
-          <div className="row">
-            <div className="col-md-4">
-              {" "}
-              <div className="servicesSection_item">
-                <img src="/imgs/Layer 2 (1).svg" alt="The Last of us" />
-                <h3>
-                  Software <br />
-                  Engineering
-                </h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
+          <div className="row mt-5">
+            <div className="col-md-5 ourMissionSection_content ">
+              <img src="/imgs/unsplash_ocnsb17U6FE.png" />
             </div>
-            <div className="col-md-4">
-              {" "}
-              <div className="servicesSection_item">
-                <img src="/imgs/Layer 2.svg" alt="GTA V" />
-                <h3>
-                  Cloud And <br />
-                  Infrastructure
-                </h3>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
-                <h3>
-                  Digital <br />
-                  Transformation
-                </h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
-                <h3>
-                  Software <br />
-                  Engineering
-                </h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
-                <h3>IT Consulting</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="servicesSection_item">
-                <img
-                  src="/imgs/negotiation, interview, conversation, communication.svg"
-                  alt="Mirror Edge"
-                />
-                <h3>
-                  Cooperation <br />
-                  Models
-                </h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <Link href={"/"}>
-                  <a className="btn btn-primary">
-                    MORE
-                    <ArrowRight />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="innerPageContactSection">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <h2>Let’s Discuss your Project</h2>
+            <div className="col-md-7 d-md-block d-none pl-3">
+              <h2>Who are we?</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+                Synectics is a global technology partner enabling change and
+                transformation across industries, and generating long-lasting
+                value for businesses, people, and the wider world.
               </p>
-              <Contact />
-            </div>
-            <div className="col-md-6 pt-3">
-              <img src="/imgs/contactGuy.svg" />
+              <p>
+                Our people-centric approach and passion for clients’ success
+                unite engineers, creators, and innovators around the globe who
+                breathe life into great ideas with the power of digital
+                technology.
+              </p>
+              <p>
+                With over 8 years of market experience, we help our partners
+                thrive in a digital-first world by combining engineering
+                craftsmanship and industry insights to solve challenges of any
+                nature, scale, and complexity.
+              </p>
             </div>
           </div>
         </div>

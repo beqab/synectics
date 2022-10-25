@@ -90,50 +90,49 @@ function Contact() {
     <form onSubmit={submit} className="contactSection_from">
       <ToastContainer />
 
-      <div className="d-flex twoLineFrom">
-        <FormGroup
-          className={classnames("marginRight", {
-            labelTop: !!watch("name"),
+      <FormGroup
+        className={classnames("", {
+          labelTop: !!watch("name"),
+        })}
+        Label={"First Name"}
+        errorMessage={errors?.name ? errors.name.message : ""}
+        htmlFor="firstName"
+      >
+        <Input
+          id="firstName"
+          className="marginRight"
+          useRef={register("name")}
+          type="name"
+          hasError={!!errors?.name}
+          // placeholder={t("name")}
+          {...register("name", {
+            required: "nameError",
           })}
-          Label={"First Name"}
-          errorMessage={errors?.name ? errors.name.message : ""}
-          htmlFor="firstName"
-        >
-          <Input
-            id="firstName"
-            className="marginRight"
-            useRef={register("name")}
-            type="name"
-            hasError={!!errors?.name}
-            // placeholder={t("name")}
-            {...register("name", {
-              required: "nameError",
-            })}
-            //   autocomplete="off"
-          />
-        </FormGroup>
+          //   autocomplete="off"
+        />
+      </FormGroup>
 
-        <FormGroup
-          Label={"Last Name"}
-          errorMessage={errors?.last_name ? errors.last_name.message : ""}
-          htmlFor="firstName"
-          className={classnames("marginRight", {
-            labelTop: !!watch("last_name"),
+      <FormGroup
+        Label={"Last Name"}
+        errorMessage={errors?.last_name ? errors.last_name.message : ""}
+        htmlFor="firstName"
+        className={classnames("", {
+          labelTop: !!watch("last_name"),
+        })}
+      >
+        <Input
+          useRef={register("last_name")}
+          //   autocomplete="off"
+          id="firstName"
+          type="last_name"
+          hasError={!!errors?.last_name}
+          // placeholder={t("surname")}
+          {...register("last_name", {
+            required: "is require",
           })}
-        >
-          <Input
-            useRef={register("last_name")}
-            //   autocomplete="off"
-            id="firstName"
-            type="last_name"
-            hasError={!!errors?.last_name}
-            // placeholder={t("surname")}
-            {...register("last_name", {
-              required: "is require",
-            })}
-          />
-        </FormGroup>
-      </div>
+        />
+      </FormGroup>
+
       <FormGroup
         htmlFor="Email"
         Label={"Email"}
@@ -168,7 +167,7 @@ function Contact() {
       </FormGroup>
 
       <div className="d-flex align-items-center phoneForm">
-        <div className="selectWrapper">
+        {/* <div className="selectWrapper">
           <FormGroup
             // Label={"Country Code"}
             className={classnames({
@@ -201,27 +200,99 @@ function Contact() {
             </label>
             <div className="selectLineBorder"></div>
           </FormGroup>
-        </div>
-        <FormGroup
-          Label={"Phone Number"}
-          htmlFor="phoneNumber"
-          errorMessage={errors?.text ? errors.text.message : ""}
-          className={classnames({
-            labelTop: !!watch("phoneNumber"),
-          })}
-        >
-          <Input
-            useRef={register("phoneNumber")}
-            //   autocomplete="off"
-            id="phoneNumber"
-            type="phoneNumber"
-            hasError={!!errors?.phoneNumber}
-            // placeholder={t("surname")}
-            {...register("phoneNumber", {
-              required: "surnameError",
+        </div> */}
+        <div className="PhoneNumberContainer">
+          <div className="phoneCodeSelect">
+            <div className="PhoneNumberContainer_selected d-flex align-items-center">
+              <svg
+                width="22"
+                height="18"
+                viewBox="0 0 22 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_384_5916)">
+                  <path
+                    d="M20 0H2C0.89543 0 0 0.89543 0 2V16C0 17.1046 0.89543 18 2 18H20C21.1046 18 22 17.1046 22 16V2C22 0.89543 21.1046 0 20 0Z"
+                    fill="white"
+                  />
+                  <path d="M12.5 18L12.5 0L9.5 0V18H12.5Z" fill="#FC5B70" />
+                  <path d="M22 7.5H0V10.5H22V7.5Z" fill="#FC5B70" />
+                  <path
+                    d="M6.30078 4.30005V3.30005H3.30078V4.30005H6.30078Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M5.30078 2.30005H4.30078V5.30005H5.30078V2.30005Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M18.6992 4.30005V3.30005H15.6992V4.30005H18.6992Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M17.6992 2.30005H16.6992V5.30005H17.6992V2.30005Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M6.30078 14.7V13.7H3.30078V14.7H6.30078Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M5.30078 12.7H4.30078V15.7H5.30078V12.7Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M18.6992 14.7V13.7H15.6992V14.7H18.6992Z"
+                    fill="#FC5B70"
+                  />
+                  <path
+                    d="M17.6992 12.7H16.6992V15.7H17.6992V12.7Z"
+                    fill="#FC5B70"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_384_5916">
+                    <rect width="22" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>+995</span>
+              <svg
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.41 0.589966L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L0 1.99997L1.41 0.589966Z"
+                  fill="#525F6A"
+                />
+              </svg>
+            </div>
+          </div>
+          <FormGroup
+            Label={"Phone Number"}
+            htmlFor="phoneNumber"
+            errorMessage={errors?.text ? errors.text.message : ""}
+            className={classnames({
+              labelTop: !!watch("phoneNumber"),
             })}
-          />
-        </FormGroup>
+          >
+            <Input
+              useRef={register("phoneNumber")}
+              //   autocomplete="off"
+              id="phoneNumber"
+              type="phoneNumber"
+              hasError={!!errors?.phoneNumber}
+              // placeholder={t("surname")}
+              {...register("phoneNumber", {
+                required: "surnameError",
+              })}
+            />
+          </FormGroup>
+        </div>
       </div>
       <div className="fileUpload">
         <div className="textAreaWithFile_container">
@@ -236,108 +307,111 @@ function Contact() {
               {...register("about", {
                 required: "about",
               })}
-              placeholder="Tell us about your Project"
+              placeholder="Tell us about your project"
             ></textarea>
           </FormGroup>
-          <div
-            onClick={() => {
-              fileInputRef.current.click();
-            }}
-            className="btn"
-          >
-            <svg
-              width="25"
-              height="24"
-              viewBox="0 0 25 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M13.252 2.77247C12.9128 2.75145 12.4675 2.75001 11.7801 2.75001H11.502C10.3268 2.75001 9.48306 2.75042 8.81723 2.79585C8.15813 2.84082 7.72836 2.92739 7.37555 3.07352C6.33418 3.50487 5.50681 4.33224 5.07547 5.37361C4.92933 5.72642 4.84276 6.15619 4.79779 6.81529C4.75236 7.48112 4.75195 8.3249 4.75195 9.50001V10C4.75195 10.4142 4.41617 10.75 4.00195 10.75C3.58774 10.75 3.25195 10.4142 3.25195 10V9.50001V9.47217C3.25195 8.33088 3.25195 7.43605 3.30127 6.71318C3.35145 5.97771 3.45518 5.36563 3.68965 4.79958C4.27324 3.39067 5.39261 2.2713 6.80152 1.68771C7.36757 1.45324 7.97965 1.34951 8.71512 1.29933C9.43799 1.25001 10.3328 1.25001 11.4741 1.25001H11.502H11.7801L11.8718 1.25001C12.9167 1.24989 13.5599 1.24983 14.1756 1.38635C14.8303 1.53152 15.4546 1.79011 16.0202 2.15042C16.5521 2.48926 17.0069 2.94412 17.7456 3.68301L17.8105 3.74786L18.1891 4.12654L18.2592 4.19655L18.2592 4.19657C19.0572 4.99441 19.5486 5.48565 19.9046 6.06671C20.2199 6.58118 20.4522 7.14206 20.5931 7.72877C20.7522 8.39143 20.7521 9.08624 20.752 10.2147L20.752 10.3137V14V14.0336V14.0336C20.752 15.4053 20.752 16.4807 20.6813 17.3451C20.6094 18.2252 20.4606 18.9523 20.1252 19.6105C19.574 20.6924 18.6943 21.572 17.6124 22.1233C16.9543 22.4586 16.2272 22.6075 15.347 22.6794C14.4827 22.75 13.4073 22.75 12.0356 22.75H12.0355H12.002H11.502H11.4741C10.3328 22.75 9.43799 22.75 8.71512 22.7007C7.97965 22.6505 7.36757 22.5468 6.80152 22.3123C5.39261 21.7287 4.27324 20.6094 3.68965 19.2004C3.45518 18.6344 3.35145 18.0223 3.30127 17.2868C3.25195 16.564 3.25195 15.6691 3.25195 14.5279V14.5V14C3.25195 13.5858 3.58774 13.25 4.00195 13.25C4.41617 13.25 4.75195 13.5858 4.75195 14V14.5C4.75195 15.6751 4.75236 16.5189 4.79779 17.1847C4.84276 17.8438 4.92933 18.2736 5.07547 18.6264C5.50681 19.6678 6.33418 20.4952 7.37555 20.9265C7.72836 21.0726 8.15813 21.1592 8.81723 21.2042C9.48306 21.2496 10.3268 21.25 11.502 21.25H12.002C13.4145 21.25 14.4287 21.2494 15.2249 21.1844C16.0122 21.1201 16.52 20.9964 16.9314 20.7868C17.7311 20.3793 18.3813 19.7292 18.7887 18.9295C18.9984 18.518 19.122 18.0103 19.1863 17.2229C19.2514 16.4268 19.252 15.4125 19.252 14V10.3137C19.252 9.05507 19.2471 8.54798 19.1345 8.07894C19.0304 7.64528 18.8587 7.23072 18.6257 6.85046C18.3736 6.43917 18.0185 6.0772 17.1285 5.1872L16.7498 4.80852C15.9258 3.98455 15.5908 3.65537 15.2143 3.41553C15.0654 3.32066 14.9109 3.23533 14.752 3.15993V6.00004C14.752 6.6904 15.3116 7.25004 16.002 7.25004H17.002C17.4162 7.25004 17.752 7.58583 17.752 8.00004C17.752 8.41426 17.4162 8.75004 17.002 8.75004H16.002C14.4832 8.75004 13.252 7.51883 13.252 6.00004V2.77247ZM11.4716 10.4698C11.7645 10.1769 12.2394 10.1769 12.5323 10.4698L15.0323 12.9698C15.3252 13.2627 15.3252 13.7376 15.0323 14.0305C14.7394 14.3234 14.2645 14.3234 13.9716 14.0305L12.752 12.8108V17.0001C12.752 17.4143 12.4162 17.7501 12.002 17.7501C11.5877 17.7501 11.252 17.4143 11.252 17.0001V12.8108L10.0323 14.0305C9.73939 14.3234 9.26452 14.3234 8.97162 14.0305C8.67873 13.7376 8.67873 13.2627 8.97162 12.9698L11.4716 10.4698Z"
-                fill="#1C55E9"
-              />
-            </svg>
-            <input
-              ref={fileInputRef}
-              onChange={(e) => {
-                console.log(e.target.files, "e.target.files");
-                // setImage(URL.createObjectURL(e.target.files[0]));
-
-                const toBase64 = (file) =>
-                  new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.readAsDataURL(file);
-                    reader.onload = () => resolve(reader.result);
-                    reader.onerror = (error) => reject(error);
-                  });
-
-                async function Main() {
-                  const file = e.target.files[0];
-                  let fileString = await toBase64(file);
-                  setFilesArray([
-                    ...filesArray,
-                    { name: e.target.files[0].name, fileString },
-                  ]);
-                  // ProfileService.uploadImage({
-                  //   base64: fileString,
-                  // })
-                  //   .then((res) => {
-                  //     let newUSer = {
-                  //       ...user,
-                  //       profile_image: res.data.profileImage,
-                  //     };
-                  //     dispatch(setCurrentUser({ user: newUSer }));
-                  //   })
-                  //   .catch((err) => {
-                  //     console.log(err);
-                  //   });
-                }
-
-                Main();
-              }}
-              className="d-none"
-              type={"file"}
-            />
-            {/* Upload Files */}
-          </div>
         </div>
       </div>
-      <div className="stepUploadedFiles">
-        {filesArray.map((el) => {
-          return (
-            <span className="coloBlack">
-              {el.name}
-              <svg
-                onClick={() => {
-                  setFilesArray(
-                    filesArray.filter((item) => item.name !== el.name)
-                  );
-                }}
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.0019 0.917016L9.83806 0.917004C7.8233 0.916784 6.63083 0.916653 5.63884 1.22943C3.53848 1.89167 1.89325 3.53689 1.23101 5.63725C0.91824 6.62924 0.91837 7.82171 0.918591 9.83647L0.918602 10.0003L0.918591 10.1642C0.91837 12.179 0.91824 13.3715 1.23101 14.3634C1.89325 16.4638 3.53848 18.109 5.63884 18.7713C6.63083 19.084 7.82329 19.0839 9.83804 19.0837L10.0019 19.0837L10.1658 19.0837C12.1806 19.0839 13.373 19.084 14.365 18.7713C16.4654 18.109 18.1106 16.4638 18.7729 14.3634C19.0856 13.3715 19.0855 12.179 19.0853 10.1642L19.0853 10.0003L19.0853 9.83646C19.0855 7.8217 19.0856 6.62924 18.7729 5.63725C18.1106 3.53689 16.4654 1.89167 14.365 1.22943C13.373 0.916653 12.1806 0.916784 10.1658 0.917004L10.0019 0.917016ZM6.0899 2.66C6.8328 2.42577 7.77404 2.41702 10.0019 2.41702C12.2298 2.41702 13.1711 2.42577 13.914 2.66C15.5476 3.17508 16.8272 4.4547 17.3423 6.08831C17.5765 6.83121 17.5853 7.77246 17.5853 10.0003C17.5853 12.2282 17.5765 13.1695 17.3423 13.9124C16.8272 15.546 15.5476 16.8256 13.914 17.3407C13.1711 17.5749 12.2298 17.5837 10.0019 17.5837C7.77404 17.5837 6.8328 17.5749 6.0899 17.3407C4.45629 16.8256 3.17666 15.546 2.66159 13.9124C2.42735 13.1695 2.4186 12.2282 2.4186 10.0003C2.4186 7.77246 2.42735 6.83121 2.66159 6.08831C3.17666 4.4547 4.45629 3.17508 6.0899 2.66ZM7.19893 6.13668C6.90604 5.84379 6.43117 5.84379 6.13827 6.13668C5.84538 6.42958 5.84538 6.90445 6.13827 7.19734L8.94128 10.0003L6.13827 12.8034C5.84538 13.0962 5.84538 13.5711 6.13827 13.864C6.43117 14.1569 6.90604 14.1569 7.19893 13.864L10.0019 11.061L12.8049 13.864C13.0978 14.1569 13.5727 14.1569 13.8656 13.864C14.1585 13.5711 14.1585 13.0962 13.8656 12.8034L11.0626 10.0003L13.8656 7.19734C14.1585 6.90445 14.1585 6.42958 13.8656 6.13668C13.5727 5.84379 13.0978 5.84379 12.8049 6.13668L10.0019 8.93969L7.19893 6.13668Z"
-                  fill="#F02E51"
-                />
-              </svg>
-            </span>
-          );
-        })}
+      <div>
+        <div
+          onClick={() => {
+            fileInputRef.current.click();
+          }}
+          className="btn w-100 uploadBtn"
+        >
+          <svg
+            width="15"
+            height="18"
+            viewBox="0 0 15 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.09232 8.40829C8.01306 8.33243 7.91961 8.27295 7.81732 8.23329C7.61443 8.14994 7.38687 8.14994 7.18398 8.23329C7.08169 8.27295 6.98824 8.33243 6.90898 8.40829L5.24232 10.075C5.0854 10.2319 4.99724 10.4447 4.99724 10.6666C4.99724 10.8885 5.0854 11.1014 5.24232 11.2583C5.39924 11.4152 5.61207 11.5034 5.83398 11.5034C6.0559 11.5034 6.26873 11.4152 6.42565 11.2583L6.66732 11.0083V13.1666C6.66732 13.3876 6.75512 13.5996 6.9114 13.7559C7.06768 13.9122 7.27964 14 7.50065 14C7.72166 14 7.93363 13.9122 8.08991 13.7559C8.24619 13.5996 8.33398 13.3876 8.33398 13.1666V11.0083L8.57565 11.2583C8.65312 11.3364 8.74529 11.3984 8.84684 11.4407C8.94839 11.483 9.05731 11.5048 9.16732 11.5048C9.27733 11.5048 9.38625 11.483 9.4878 11.4407C9.58935 11.3984 9.68151 11.3364 9.75898 11.2583C9.83709 11.1808 9.89909 11.0887 9.94139 10.9871C9.9837 10.8856 10.0055 10.7766 10.0055 10.6666C10.0055 10.5566 9.9837 10.4477 9.94139 10.3461C9.89909 10.2446 9.83709 10.1524 9.75898 10.075L8.09232 8.40829ZM14.1673 6.44996C14.1586 6.3734 14.1419 6.29799 14.1173 6.22496V6.14996C14.0773 6.06428 14.0238 5.98551 13.959 5.91663L8.95898 0.916626C8.8901 0.851806 8.81133 0.79836 8.72565 0.758293H8.64232C8.56129 0.714962 8.4742 0.684061 8.38398 0.666626H3.33398C2.67094 0.666626 2.03506 0.930018 1.56622 1.39886C1.09738 1.8677 0.833984 2.50358 0.833984 3.16663V14.8333C0.833984 15.4963 1.09738 16.1322 1.56622 16.6011C2.03506 17.0699 2.67094 17.3333 3.33398 17.3333H11.6673C12.3304 17.3333 12.9662 17.0699 13.4351 16.6011C13.9039 16.1322 14.1673 15.4963 14.1673 14.8333V6.49996C14.1673 6.49996 14.1673 6.49996 14.1673 6.44996ZM9.16732 3.50829L11.3257 5.66663H10.0007C9.77964 5.66663 9.56768 5.57883 9.4114 5.42255C9.25512 5.26627 9.16732 5.05431 9.16732 4.83329V3.50829ZM12.5007 14.8333C12.5007 15.0543 12.4129 15.2663 12.2566 15.4225C12.1003 15.5788 11.8883 15.6666 11.6673 15.6666H3.33398C3.11297 15.6666 2.90101 15.5788 2.74473 15.4225C2.58845 15.2663 2.50065 15.0543 2.50065 14.8333V3.16663C2.50065 2.94561 2.58845 2.73365 2.74473 2.57737C2.90101 2.42109 3.11297 2.33329 3.33398 2.33329H7.50065V4.83329C7.50065 5.49633 7.76404 6.13222 8.23288 6.60106C8.70172 7.0699 9.33761 7.33329 10.0007 7.33329H12.5007V14.8333Z"
+              fill="#2F80ED"
+            />
+          </svg>
+          Upload Files
+          <input
+            ref={fileInputRef}
+            onChange={(e) => {
+              console.log(e.target.files, "e.target.files");
+              // setImage(URL.createObjectURL(e.target.files[0]));
+
+              const toBase64 = (file) =>
+                new Promise((resolve, reject) => {
+                  const reader = new FileReader();
+                  reader.readAsDataURL(file);
+                  reader.onload = () => resolve(reader.result);
+                  reader.onerror = (error) => reject(error);
+                });
+
+              async function Main() {
+                const file = e.target.files[0];
+                let fileString = await toBase64(file);
+                setFilesArray([
+                  ...filesArray,
+                  { name: e.target.files[0].name, fileString },
+                ]);
+                // ProfileService.uploadImage({
+                //   base64: fileString,
+                // })
+                //   .then((res) => {
+                //     let newUSer = {
+                //       ...user,
+                //       profile_image: res.data.profileImage,
+                //     };
+                //     dispatch(setCurrentUser({ user: newUSer }));
+                //   })
+                //   .catch((err) => {
+                //     console.log(err);
+                //   });
+              }
+
+              Main();
+            }}
+            className="d-none"
+            type={"file"}
+          />
+          {/* Upload Files */}
+        </div>
       </div>
-      <div className="btn_wrapper">
+      {filesArray.length ? (
+        <div className="stepUploadedFiles">
+          {filesArray.map((el) => {
+            return (
+              <span className="coloBlack">
+                {el.name}
+                <svg
+                  onClick={() => {
+                    setFilesArray(
+                      filesArray.filter((item) => item.name !== el.name)
+                    );
+                  }}
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.0019 0.917016L9.83806 0.917004C7.8233 0.916784 6.63083 0.916653 5.63884 1.22943C3.53848 1.89167 1.89325 3.53689 1.23101 5.63725C0.91824 6.62924 0.91837 7.82171 0.918591 9.83647L0.918602 10.0003L0.918591 10.1642C0.91837 12.179 0.91824 13.3715 1.23101 14.3634C1.89325 16.4638 3.53848 18.109 5.63884 18.7713C6.63083 19.084 7.82329 19.0839 9.83804 19.0837L10.0019 19.0837L10.1658 19.0837C12.1806 19.0839 13.373 19.084 14.365 18.7713C16.4654 18.109 18.1106 16.4638 18.7729 14.3634C19.0856 13.3715 19.0855 12.179 19.0853 10.1642L19.0853 10.0003L19.0853 9.83646C19.0855 7.8217 19.0856 6.62924 18.7729 5.63725C18.1106 3.53689 16.4654 1.89167 14.365 1.22943C13.373 0.916653 12.1806 0.916784 10.1658 0.917004L10.0019 0.917016ZM6.0899 2.66C6.8328 2.42577 7.77404 2.41702 10.0019 2.41702C12.2298 2.41702 13.1711 2.42577 13.914 2.66C15.5476 3.17508 16.8272 4.4547 17.3423 6.08831C17.5765 6.83121 17.5853 7.77246 17.5853 10.0003C17.5853 12.2282 17.5765 13.1695 17.3423 13.9124C16.8272 15.546 15.5476 16.8256 13.914 17.3407C13.1711 17.5749 12.2298 17.5837 10.0019 17.5837C7.77404 17.5837 6.8328 17.5749 6.0899 17.3407C4.45629 16.8256 3.17666 15.546 2.66159 13.9124C2.42735 13.1695 2.4186 12.2282 2.4186 10.0003C2.4186 7.77246 2.42735 6.83121 2.66159 6.08831C3.17666 4.4547 4.45629 3.17508 6.0899 2.66ZM7.19893 6.13668C6.90604 5.84379 6.43117 5.84379 6.13827 6.13668C5.84538 6.42958 5.84538 6.90445 6.13827 7.19734L8.94128 10.0003L6.13827 12.8034C5.84538 13.0962 5.84538 13.5711 6.13827 13.864C6.43117 14.1569 6.90604 14.1569 7.19893 13.864L10.0019 11.061L12.8049 13.864C13.0978 14.1569 13.5727 14.1569 13.8656 13.864C14.1585 13.5711 14.1585 13.0962 13.8656 12.8034L11.0626 10.0003L13.8656 7.19734C14.1585 6.90445 14.1585 6.42958 13.8656 6.13668C13.5727 5.84379 13.0978 5.84379 12.8049 6.13668L10.0019 8.93969L7.19893 6.13668Z"
+                    fill="#F02E51"
+                  />
+                </svg>
+              </span>
+            );
+          })}
+        </div>
+      ) : null}
+      <div className="contact_btn_wrapper">
         <Button
           loading={load}
           className="btn btn-primary btn-primary-fill w-100 mt-3 py-2"
         >
-          Message US
+          Send
         </Button>
       </div>
     </form>

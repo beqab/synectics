@@ -381,6 +381,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
+        flex-wrap: wrap;
       }
     }
   }
@@ -1024,5 +1025,25 @@
     height: 60px;
     border: 10px solid;
     font-size: 24px;
+  }
+  .cooperation_benefits_card {
+    margin-bottom: 8px;
+    max-width: 170px;
+    padding: 28px 15px;
+    height: 168px;
+  }
+  .cooperation_benefits_card_wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 360px;
+    margin: auto;
+    margin-top: 30px;
+    svg {
+      max-height: 50px;
+    }
+    div {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }

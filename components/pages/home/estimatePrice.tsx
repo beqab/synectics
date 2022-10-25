@@ -7,22 +7,23 @@ const EstimatePrice = () => {
     <div className="estimatePrice_wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <h2>
-              Estimate the Price.
-              <span>We Can Help.</span>
-            </h2>
+          <div className="col-md-12">
+            <h2 className="text-center">Estimate the Price.</h2>
             <p>
               An estimated price is a forecast that is related to the price of
               project. The primary reason of price estimation is to give
               businesses some numbers which can be used to determine future
-              costs or expenses of their projects.
+              costs.
             </p>
-            <Link href="/">
-              <a className="btn btn-light d-none d-md-flex">Estimate Price</a>
-            </Link>
+            <div className="text-center w-100">
+              <Link href="/">
+                <a className="btn btn-primary d-none d-md-flex">
+                  Estimate Price
+                </a>
+              </Link>
+            </div>
           </div>
-          <div className="col-md-6 text-center">
+          {/* <div className="col-md-6 text-center">
             <Estimate />
             <div className="text-center">
               <Link href="/estimatePrice">
@@ -31,7 +32,7 @@ const EstimatePrice = () => {
                 </a>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

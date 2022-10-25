@@ -7,6 +7,43 @@ import OwlCarousel from "react-owl-carousel2";
 
 const TechnologiesObject = [
   {
+    categoryName: "Cloud and Infrastructure",
+    TechnologiesList: [
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+      {
+        img: "php.png",
+        title: "php",
+      },
+    ],
+  },
+  {
     categoryName: "Web Development",
     TechnologiesList: [
       {
@@ -269,15 +306,17 @@ const options = {
   autoplay: true,
   loop: true,
   Infinity: true,
+
   // navigator:
 };
 
 const categories = [
+  "Cloud and Infrastructure",
   "Web Development",
   "Mobile Development",
-  "ERP Solutions",
-  "CRM SOlutions",
   "BigData and Data Analytics",
+  "ERP Solutions",
+  "CRM Solutions",
   "Blockchain",
 ];
 

@@ -18,7 +18,7 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between">
           <Link href={"/"}>
             <a>
-              <img className="headerLogo" src="/imgs/Group 53.svg" />
+              <img className="headerLogo" src="/imgs/Group 53 (1).svg" />
             </a>
           </Link>
           <div
@@ -47,13 +47,43 @@ const Header = () => {
           </div>
           <div className="nav d-none d-md-block ">
             <ul className="list-inline mb-0 headerMenu">
-              <li className="withSubmenu">
+              {/* <li className="withSubmenu">
                 <Link href={"/"}>
                   <a>
                     <span>Services</span>
                   </a>
                 </Link>
                 <ServicesDropdown />
+              </li> */}
+              <li>
+                <Link href={"/"}>
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li className="withSubmenu">
+                <Link href={"/"}>
+                  <a>
+                    <span>
+                      Services
+                      <svg
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.666 0.666504L6.0239 5.30862L1.38179 0.666504"
+                          stroke="#182939"
+                          stroke-width="1.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </Link>
+                {/* <ServicesDropdown /> */}
               </li>
               <li>
                 <Link href={"/#technologies"}>

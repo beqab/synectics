@@ -265,44 +265,52 @@ const CooperationModel = () => {
 
             <h2 className="text-center mt-5 pt-5">Cooperation Flow</h2>
             <div className="cooperation_flow mt-5 pt-4">
-              <div>
+              <div className="step1">
                 <div className="cooperation_flow_content cooperation_flow_content_top">
                   Get in touch with us to share your ideas. Don't forget we have
                   all the needed tools to bring positive changes in your
                   project.
                 </div>
-                <div className="cooperation_flow_title">YOU ASK</div>
-                <div className=" cooperation_flow_step cooperation_flow_step_bottom">
-                  <div>1</div>
+                <div className="stepTitle">
+                  <div className="cooperation_flow_title">YOU ASK</div>
+                  <div className=" cooperation_flow_step cooperation_flow_step_bottom">
+                    <div>1</div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div className="cooperation_flow_step cooperation_flow_step_top">
-                  <div>2</div>
+              <div className="step2">
+                <div className="stepTitle">
+                  <div className="cooperation_flow_step cooperation_flow_step_top">
+                    <div>2</div>
+                  </div>
+                  <div className="cooperation_flow_title">WE ANALYZE</div>
                 </div>
-                <div className="cooperation_flow_title">WE ANALYZE</div>
                 <div className="cooperation_flow_content cooperation_flow_content_bottom">
                   Get in touch with us to share your ideas. Don't forget we have
                   all the needed tools to bring positive changes in your
                   project.
                 </div>
               </div>
-              <div>
+              <div className="step1">
                 <div className="cooperation_flow_content cooperation_flow_content_top">
                   Get in touch with us to share your ideas. Don't forget we have
                   all the needed tools to bring positive changes in your
                   project.
                 </div>
-                <div className="cooperation_flow_title">WE PROCEED</div>
-                <div className="cooperation_flow_step cooperation_flow_step_bottom">
-                  <div>3</div>
+                <div className="stepTitle">
+                  <div className="cooperation_flow_title">WE PROCEED</div>
+                  <div className="cooperation_flow_step cooperation_flow_step_bottom">
+                    <div>3</div>
+                  </div>
                 </div>
               </div>
-              <div>
-                <div className="cooperation_flow_step cooperation_flow_step_top">
-                  <div>4</div>
+              <div className="step2">
+                <div className="stepTitle">
+                  <div className="cooperation_flow_step cooperation_flow_step_top">
+                    <div>4</div>
+                  </div>
+                  <div className="cooperation_flow_title">YOU GET</div>
                 </div>
-                <div className="cooperation_flow_title">YOU GET</div>
                 <div className="cooperation_flow_content cooperation_flow_content_bottom">
                   <ul>
                     <li> Full control over Intellectual Property Rights</li>
@@ -387,7 +395,7 @@ const CooperationModel = () => {
                       fill="#1C55E9"
                     />
                   </svg>
-                  <div>Personalization</div>
+                  <div>Effectiveness</div>
                 </div>
                 <div className="cooperation_benefits_card">
                   <svg
@@ -687,7 +695,6 @@ const CooperationModel = () => {
               </div>
             </div>
           </div>
-          1
         </div>
         <InnerPageContact />
       </Layout>
