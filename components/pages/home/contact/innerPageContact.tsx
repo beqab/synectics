@@ -1,10 +1,12 @@
 import React from "react";
 import Contact from "./contactFrom";
+import ContactSection from "../../../pages/home/contact";
 
 const InnerPageContact = () => {
   return (
     <section className="innerPageContactSection">
-      <div className="container">
+      <ContactSection />
+      {/* <div className="container">
         <div className="row">
           <div className="col-md-6">
             <h2>Let’s Discuss your Project</h2>
@@ -20,7 +22,7 @@ const InnerPageContact = () => {
             <img src="/imgs/contactGuy.svg" />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -15,7 +15,7 @@ const ServiceSectionWrapper: React.FC<IProps> = ({
   pageTitle,
 }) => {
   return (
-    <section className="serviceSection">
+    <section className="serviceSection roundBottom roundBottom-top">
       <div className="container">
         <ServiceMenu
           pageTitle={pageTitle}

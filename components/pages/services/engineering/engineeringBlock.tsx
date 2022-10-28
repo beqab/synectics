@@ -9,61 +9,41 @@ const EngineeringBlock = ({
 }) => {
   return (
     <ServiceBlockContainer subTitle="Services" className="engineeringBlock">
+      <h2>{title}</h2>
       <div className="d-flex engineeringBlock_content  ">
         <div className="engineeringBlock_description">
-          <h2>{title}</h2>
-          <p>
-            We at Synectics, have a very well-coordinated and dynamic delivery
-            team who can perfectly harmonize the advanced, scalable solutions to
-            make your business stand apart from the crowd. Starting from
-            building the digital establishment for your business to
-            incorporating the best engineering productivity tools and practices
-            into your software platform - we do it all with the utmost
-            efficiency.
-          </p>
+          {description()}
           <h3>We can help you with</h3>
-          <ul>
-            <li>Analysis and Consulting</li>
-            <li>UI/UX</li>
-            <li>Custom Web Solution Development</li>
-            <li>MVP Development</li>
-            <li>SaaS Application Development</li>
-            <li>Cloud Native Applications Development</li>
+          <ul className="list-unstyle">
+            {weCanHelpWithList.map((el, i) => {
+              return (
+                <li key={i}>
+                  <svg
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="4" cy="4" r="4" fill="#2F80ED" />
+                  </svg>
+
+                  <span>{el}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="engineeringBlock_technologyList_wrapper">
           <h4>Technologies</h4>
           <div className="engineeringBlock_technologyList">
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
-            <div>
-              <img src="/imgs/php.svg" />
-            </div>
+            {technologyList.map((el, i) => {
+              return (
+                <div key={i}>
+                  <img src={"/imgs" + el.technologyImg} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

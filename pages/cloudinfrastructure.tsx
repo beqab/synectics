@@ -65,7 +65,7 @@ const CloudInfrastructure = () => {
             </svg>
           }
           title="Cloud & Infrastructure"
-          text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+          text="We help transform your software delivery process to achieve higher efficiency, accelerate product release cycle time, and improve quality of software builds with early identification of emerging issues. "
         />
         <ServiceSectionWrapper
           pageTitle="Cloud & Infrastructure"

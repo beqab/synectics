@@ -12,7 +12,10 @@ const aboutUs = () => {
           <div className="row">
             <div className="col-md-6 about_mainSection_content">
               <div className="pageTitle">ABOUT US</div>
-              <h1>Do what you do best, we’ll take care of the rest!</h1>
+              <h1>
+                Do what you do best, we’ll take care <br />
+                of the rest!
+              </h1>
               <p>
                 We offer a wide range of Software Development, DevOps, and
                 consulting services with the necessary tools and expertise to

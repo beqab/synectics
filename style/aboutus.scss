@@ -1,7 +1,8 @@
 .about {
   &_mainSection {
     padding-top: 80px;
-    min-height: 100vh;
+    // min-height: 100vh;
+    padding-bottom: 80px;
     .container {
       padding-top: 130px;
     }
@@ -24,6 +25,7 @@
     }
     &_content {
       margin-top: 53px;
+      padding-right: 45px;
     }
   }
 }
@@ -104,9 +106,10 @@
 }
 
 .innerPageContactSection {
-  padding-top: 130px;
+  // padding-top: 130px;
   background: url("../public/imgs/innerConactBG.svg");
   background-repeat: no-repeat;
+  padding-bottom: 100px;
   background-position: bottom left;
   .btn_wrapper {
     margin-top: 50px !important;

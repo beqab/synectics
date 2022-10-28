@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ServicesDropdown from "./servicesDropdown";
 import X from "../svgs/x";
 import MobileMenu from "./mobileMenu";
@@ -10,6 +10,16 @@ const Header = () => {
   const toggleMenu = (flag?: boolean) => {
     setOpenMenu(flag);
   };
+
+  useEffect(() => {
+    const closeMenu = () => {
+      setOpenMenu(false);
+    };
+
+    window.addEventListener("click", closeMenu);
+
+    return () => window.removeEventListener("click", closeMenu);
+  }, []);
 
   return (
     <header>
@@ -62,7 +72,13 @@ const Header = () => {
               </li>
               <li className="withSubmenu">
                 <Link href={"/"}>
-                  <a>
+                  <a
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setOpenMenu(true);
+                    }}
+                  >
                     <span>
                       Services
                       <svg
@@ -116,6 +132,16 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {openMenu ? (
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className="dropDownMenu"
+        >
+          <ServicesDropdown />
+        </div>
+      ) : null}
     </header>
   );
 };

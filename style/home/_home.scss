@@ -362,6 +362,38 @@
   }
   &_card {
     width: 260px;
+
+    &:hover {
+      // transform: scale(2);
+      svg {
+        .red {
+          fill: #fb5759;
+        }
+
+        // circle {
+        //   box-shadow: 0px 0px 10px 10px rgba(251, 87, 89, 0.2);
+        // }
+        .wight {
+          fill: #f8f1e7;
+          opacity: 1;
+        }
+        .yellow {
+          fill: #ff9d27;
+        }
+
+        .purple {
+          fill: #722fdf;
+        }
+
+        .blue {
+          fill: #2f80ed;
+        }
+        .green {
+          fill: #33b071;
+        }
+      }
+    }
+
     h3 {
       font-weight: 600;
       font-size: 20px;

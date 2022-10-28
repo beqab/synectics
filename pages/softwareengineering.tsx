@@ -82,9 +82,7 @@ const SoftwareEngineering = () => {
             </svg>
           }
           title="Software Engineering"
-          text="All the Lorem Ipsum generators on the Internet tend to repeat
-          predefined chunks as necessary, making this the first true generator
-          on the Internet."
+          text="Leverage our  expertise in enterprise software development, API integration, modernising legacy systems, and consolidating app portfolios"
         />
         <ServiceSectionWrapper
           pageTitle="Software Engineering"
