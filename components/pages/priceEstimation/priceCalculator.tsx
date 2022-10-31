@@ -8,12 +8,12 @@ import ContactInfo from "./stepTypes/contactInfo";
 import CompleteStep from "./stepTypes/completeStep";
 
 export const priceCalculatorObject = [
-  {
-    title: "What can we help you with?",
-    description: "Please select at least one option.",
-    type: "fistStep",
-    key: null,
-  },
+  // {
+  //   title: "What can we help you with?",
+  //   description: "Please select at least one option.",
+  //   type: "fistStep",
+  //   key: null,
+  // },
   {
     title: "What can we help you with?",
     description: "Please select at least one option.",

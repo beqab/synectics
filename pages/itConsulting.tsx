@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import ServiceSlider from "../components/pages/services/common/serviceSlider";
 import TechnologyImplementation from "../components/pages/services/itConsulting/technologyImplementation";
 import ProcessOptimization from "../components/pages/services/itConsulting/ProcessOptimization";
+import Link from "next/link";
 
 const ItConsulting = () => {
   return (
@@ -72,25 +73,165 @@ const ItConsulting = () => {
             </svg>
           }
           title="IT Consulting"
-          text="All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+          text="Synectics technology consulting services help business to advance in the modern digital transformation environment"
         />
-        <ServiceSectionWrapper
-          pageTitle="IT Consulting"
-          menuCenter
-          data={ItConsultingData}
-        >
-          {/* <div ref={sliderRef} className="serviceSliderWrapper">
-            <div className="sliderContainer">
-              <div></div>
-              {ItConsultingData.menu.map((el, i) => {
-                return <EngineeringBlock />;
-              })}
-              <div></div>
+        <div className="roundBottom roundBottom-top pt-5">
+          <div className="roundBottom roundBottom-top">
+            <div className="container serviceContent cooperation pt-5 ">
+              <div className="row pt-0">
+                <div className="col-md-9">
+                  <div className=" pr-90">
+                    <h2 className="serviceContent_title">
+                      Technology Consulting
+                    </h2>
+                    <p>
+                      We’ll look under the hood of your existing solution or
+                      system and advise you on how to put the assessment
+                      discoveries into practical steps that will improve your
+                      system. We’ll examine if architecture decisions truly
+                      support the quality requirements, conform to industry
+                      standards and best practices, and are in tune with tech
+                      trends. This way you will acquire a substantive working
+                      plan of where and how we can enhance product
+                      functionality, efficiency and operational costs.
+                    </p>
+                    <p>
+                      Our technology consulting services help business to
+                      advance in the modern digital transformation environment.
+                      Evaluate your opportunities and apply the right technology
+                      with outcomes in mind. We can shape your company into a
+                      strategy-powered business delivering innovation and
+                      digital excellence.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <img src="/imgs/Group 1000001946.svg" />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-3 ">
+                  <img src="/imgs/Delivery Management.svg" />
+                </div>
+                <div className="col-md-9">
+                  <div className="pl-90">
+                    <h2>Project Management Consulting</h2>
+                    <p>
+                      Completing projects on time and on budget while ensuring
+                      quality and compliance with design and statutory rules,
+                      using the help of specialized consulting and management
+                      professionals allow your company executives to focus on
+                      central issues and grow their business.
+                      <br />
+                      Our consulting and project management services enable you
+                      to ensure sustainable success by providing a clear
+                      result-oriented focus. We provide complete advisory aiming
+                      to optimize all project phases, placing emphasis on
+                      efficiency throughout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-9">
+                  <div className="pr-90">
+                    <h2>Delivery Management Consulting</h2>
+                    <p>
+                      Defining the project delivery model prior to the selection
+                      of primary consultants is critical to the success of any
+                      project. We have been recognized for our work in the
+                      development of project delivery models, from small local
+                      projects to highly complicated multimillion-dollar
+                      national projects with multiple stakeholders. Each project
+                      has its own unique requirements and funding sources. We
+                      investigate alternative delivery models for each project
+                      and recommend a delivery system that correctly fits and
+                      guarantees a highly successful project.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <img src="/imgs/Group 1000001948.svg" />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-3 ">
+                  <img src="/imgs/Group 1000001943.svg" />
+                </div>
+                <div className="col-md-9">
+                  <div className="pl-90">
+                    <h2>IT Process Optimization Consulting</h2>
+                    <p>
+                      We start with a current-state analysis of your
+                      organizational structures, information architecture, data
+                      structures, business processes, and technologies to
+                      identify your competitively differentiating requirements
+                      and a baseline for change. Then, we will benchmark your
+                      existing position against your peers and industry best
+                      practices to build a persuasive business case for change
+                      and ROI.
+                    </p>
+                    <p>
+                      IT Process Management (ITPM) is a systematic approach to
+                      capture, design, execute, document, measure, monitor and
+                      control both automated and non-automated processes in
+                      order to sustainably achieve the goals aligned with the
+                      corporate strategy. Thus, a higher process quality, faster
+                      process times and a higher data consistency should be
+                      achieved.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-9">
+                  <div className="pr-90">
+                    <h2>Documentation Service</h2>
+                    <p>
+                      According to statistics, documenting problems decrease the
+                      productivity of an organization by 21.3%. An average
+                      employee spends 50% of his time just looking for the
+                      information stored physically or electronically.
+                      <br />
+                      We offer a complete technical document development and
+                      maintenance service that helps accomplish the content
+                      goals for your processes, products, and services.
+                      <br />
+                      Document Services provides a broad range of services
+                      related to document management, creation, maintenance, and
+                      conversion, and integrating with third parties such as
+                      Confluence, Microsoft SharePoint or SAP
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <img src="/imgs/Group 1000001942.svg" />
+                </div>
+              </div>
             </div>
-          </div> */}
-          <ServiceSlider data={ItConsultingData} />
-        </ServiceSectionWrapper>
-        <InnerPageContact />
+          </div>
+          <div className="priceEstiamateSection">
+            <div className="container">
+              <div className="row">
+                <h3>Estimate the Price </h3>
+                <p>
+                  An estimated price is a forecast that is related to the price
+                  of project. The primary reason of price estimation is to give
+                  businesses some numbers which can be used to determine future
+                  costs.
+                </p>
+                <div className="text-center">
+                  <Link href="">
+                    <a className="btn btn-primary">Price Estimation</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="roundBottom roundBottom-top  pt-5">
+            <InnerPageContact />
+          </div>
+        </div>
       </Layout>
     </div>
   );

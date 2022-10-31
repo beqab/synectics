@@ -263,44 +263,120 @@
 }
 
 .serviceContent {
+  .row {
+    padding-top: 100px;
+  }
+  .pr-90 {
+    padding-right: 90px;
+  }
+  .pl-90 {
+    padding-left: 90px;
+  }
   h2 {
     font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.7;
+  }
+}
+
+.whySynectics {
+  padding-top: 200px;
+  padding-bottom: 240px;
+  background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
+  // border-radius: 48px;
+  // margin-bottom: 100px;
+  &_card {
+    background: #1b2847;
+    border-radius: 12px;
+    width: 280px;
+    height: 278px;
+    padding-top: 64px;
+    text-align: center;
+    margin: 15px;
+
+    h3 {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 16px;
+      color: #ffffff;
+    }
+    &-outsourcing {
+      width: 384px;
+      height: 468px;
+      padding-top: 38px;
+      padding: 38px;
+      text-align: left;
+      p {
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 24px !important;
+        /* or 171% */
+
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-align: left !important;
+        margin-top: 12px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 24px !important;
+        line-height: 36px;
+      }
+    }
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  p {
+    max-width: 850px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.priceEstiamateSection {
+  background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
+  padding-top: 140px;
+  padding-bottom: 120px;
+  text-align: center;
+  h3 {
+    font-weight: 600;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 64px;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 29px;
+  }
+  .btn {
+    max-width: 170px;
+    margin: auto;
   }
 }
 
 .cooperation {
   padding-top: 120px;
-  p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #8c919e;
-    max-width: 636px;
-    margin: auto;
-    width: 100%;
-  }
-
-  &_card {
-    background: #ffffff;
-    box-shadow: 0px 27px 80px rgba(109, 115, 136, 0.11);
-    border-radius: 16px;
-    padding: 36px;
-    margin-bottom: 20px;
-    min-height: 430px;
-    p {
-      color: #050f2b;
-      margin-bottom: 20px;
-    }
-    h3 {
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 38px;
-      margin-top: 24px;
-      margin-bottom: 16px;
-    }
-  }
 }
 
 .cooperation_flow {
@@ -936,15 +1012,6 @@
     }
   }
 
-  .itOutsourcing {
-    padding-top: 0;
-    h2 {
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 38px;
-      text-align: left !important;
-    }
-  }
   .cooperation_card {
     min-height: auto;
     padding: 32px 20px 10px 20px;

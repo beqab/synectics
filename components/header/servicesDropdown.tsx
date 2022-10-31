@@ -78,23 +78,23 @@ const menuObject = [
     items: [
       {
         title: "Technology Consulting",
-        href: "/",
+        href: "/itConsulting",
       },
       {
         title: "Project Management Consulting",
-        href: "/",
+        href: "/itConsulting",
       },
       {
         title: "Delivery Management Consulting",
-        href: "/",
+        href: "/itConsulting",
       },
       {
         title: "IT Process Optimization Consulting",
-        href: "/",
+        href: "/itConsulting",
       },
       {
         title: "Documentation Service",
-        href: "/",
+        href: "/itConsulting",
       },
     ],
   },
@@ -103,21 +103,21 @@ const menuObject = [
     items: [
       {
         title: "Cloud Transformation",
-        href: "/",
+        href: "/digitalTransformation",
       },
       {
         title: "Agile Transformation",
-        href: "/",
+        href: "/digitalTransformation",
       },
       {
         title: "IT Strategy Development",
-        href: "/",
+        href: "/digitalTransformation",
       },
     ],
   },
   {
     title: "IT outsourcing",
-    href: "/",
+    href: "/itOutsourcing",
     items: [],
   },
 ];
