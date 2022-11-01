@@ -3,6 +3,7 @@ import { FormGroup, Input } from "../../../common/form";
 import StepsContainer from "../common/stepsContainer";
 import { PriceCalculatorContext } from "../priceContainerContext";
 import classNames from "classnames";
+import Contact from "../../home/contact";
 
 function ContactInfo({
   title,
@@ -20,9 +21,9 @@ function ContactInfo({
     : { firstName: "", lastName: "", Email: "" };
 
   return (
-    <StepsContainer title={title} description={description}>
-      <div className="">
-        <div className="ContactInfo_form">
+    <div className="">
+      <Contact formPriceContainer />
+      {/* <div className="ContactInfo_form">
           <div className="d-flex justify-content-between">
             <FormGroup
               htmlFor="firstName"
@@ -144,9 +145,8 @@ function ContactInfo({
               id="CompanyName"
             />
           </FormGroup>
-        </div>
-      </div>
-    </StepsContainer>
+        </div> */}
+    </div>
   );
 }
 

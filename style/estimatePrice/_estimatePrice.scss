@@ -5,13 +5,16 @@
   //   background-position: bottom left;
   background-position: bottom left;
   //   background-size: 100% auto !important;s
-  padding-top: 250px;
+  padding-top: 290px;
   min-height: 80vh;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  * {
+    color: $brandTextColor;
+  }
   h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 64px;
 
     align-items: center;
 
@@ -23,9 +26,9 @@
   }
   p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(24, 41, 57, 0.7);
     // color: #fcfcfd;
     margin-top: 30px;
   }
@@ -81,27 +84,38 @@
   }
 }
 
+.stepsController {
+}
+
 //////////////@at-root
 ///
 .checkboxContainer {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  // padding-left: 35px;
+  // margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   background: #fff;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 18px 22px;
-  border-radius: 8px;
-  padding-left: 54px;
-  margin: 8px;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 20px;
+  // padding: 0px 22px 0px 10px;
+
+  .label {
+    height: 36px;
+    border-radius: 8px;
+    padding-left: 44px;
+    line-height: 36px;
+    margin: 6px;
+    border: 1px solid #b4bdce;
+    border-radius: 24px;
+    padding: 0px 16px 0px 16px;
+    display: inline-block;
+  }
 }
 
 /* Hide the browser's default checkbox */
@@ -117,13 +131,14 @@
 .checkmark {
   position: absolute;
   top: 50%;
-  left: 22px;
+  left: 16px;
   transform: translateY(-50%);
   height: 20px;
   width: 20px;
   background: rgba(91, 94, 123, 0.1);
   border: 1.5px solid #22272f69;
   border-radius: 6px;
+  display: none;
 }
 
 /* On mouse-over, add a grey background color */
@@ -138,8 +153,10 @@
 }
 
 .checkboxContainer input:checked ~ .label {
-  color: #1c55e9;
-  font-weight: 600;
+  // color: #1c55e9;
+  // font-weight: 600;
+  background: #eaf2fd;
+  border: 1px solid rgba(47, 128, 237, 0.7);
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -169,25 +186,30 @@
 .stepPrevBtn {
 }
 .stepsIndicator {
-  color: #fcfcfd;
   margin-left: 8px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 24px;
   margin-bottom: 12px;
+  span {
+    color: #2f80ed;
+  }
 }
 
 .addExtraOptions {
   &_container {
-    background: #fcfcfd;
-    border-radius: 8px;
+    // background: #fcfcfd;
+    border-radius: 12px;
     width: 100%;
-    min-height: 116px;
+    min-height: 36px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: start;
-    padding: 11px 15px;
+    padding: 6px 8px;
+    border: 1px solid #b4bdce;
+    margin-left: 6px;
+    margin-top: 26px;
     span {
       background: rgba(28, 85, 233, 0.15);
       border-radius: 32px;
@@ -198,15 +220,23 @@
       align-items: center;
       justify-content: center;
       margin: 5px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      color: #1c55e9;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 24px;
+
+      color: #687a9e;
+      border-radius: 4px;
+      padding-right: 9px;
+      svg {
+        margin-left: 10px;
+      }
     }
     input {
       height: 31px;
       margin-top: 5px;
+      margin-bottom: 5px;
       border: none;
+      padding-left: 9px;
       &:focus {
         outline: none;
       }
@@ -218,7 +248,7 @@
   &_container {
     background-color: #fff;
     width: 519px;
-    height: 273px;
+    height: 180px;
     border-radius: 16px;
     padding: 20px;
     padding-left: 40px;
@@ -227,6 +257,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 24px;
+    border: 1px solid #d2d7e2;
+    border-radius: 16px;
   }
 }
 
@@ -241,14 +273,14 @@
 }
 
 .rc-slider-handle {
-  background: url("../../public/imgs/Polygon.svg") !important;
+  background: url("../../public/imgs/Path 284-2.svg") !important;
   width: 46px !important;
   height: 46px !important;
   opacity: 1 !important;
   background-size: contain !important;
-  margin-top: -30px !important;
-  width: 80px !important;
-  height: 80px !important;
+  margin-top: -21px !important;
+  width: 46px !important;
+  height: 46px !important;
   border: none !important;
   z-index: 2 !important;
   position: relative !important;
@@ -265,6 +297,7 @@
   background-color: transparent !important;
   box-shadow: none !important;
   z-index: 24 !important;
+  transform: translateY(20px);
   .tttt {
     color: #050f2b;
     font-weight: 700;
@@ -272,62 +305,79 @@
     line-height: 20px;
   }
 }
+.rc-slider-dot {
+  position: absolute;
+  bottom: -4px;
+  width: 2px;
+  height: 11px;
+  vertical-align: middle;
+  border: 1px solid #00000054;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .rc-tooltip-placement-top .rc-tooltip-arrow,
 .rc-tooltip-placement-topLeft .rc-tooltip-arrow,
 .rc-tooltip-placement-topRight .rc-tooltip-arrow {
-  bottom: -23px !important;
+  bottom: 23px !important;
   margin-left: -3px !important;
   /* border-width: 5px 5px 0; */
   /* border-top-color: #373737; */
   width: 0px !important;
   border-width: 1px !important;
   height: 36px !important;
-  background-color: #1c55e9 !important;
+  // background-color: #1c55e9 !important;
 }
 
 .SliderLabel {
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
+
+  color: rgba(24, 41, 57, 0.7);
 
   text-align: center;
   letter-spacing: 0.004em;
-  margin-top: 40px;
+  margin-top: 12px;
   color: #8c919e;
   display: block;
   white-space: nowrap;
   position: relative;
   z-index: -1;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -124%);
-    height: 49px;
-    width: 2px;
-    background-color: grey;
-    background: rgba(202, 210, 233, 0.5);
-    border-radius: 4px;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translate(-50%, -124%);
+  //   height: 49px;
+  //   width: 2px;
+  //   background-color: grey;
+  //   background: rgba(202, 210, 233, 0.5);
+  //   border-radius: 4px;
+  // }
 }
 
 .stepTextarea {
-  background: #fcfcfd;
+  border: 1px solid #8b949c;
   border-radius: 8px;
-  padding: 20px 16px;
+  padding: 10px 16px;
   position: relative;
-  padding-right: 60px;
+  margin-top: 30px;
   svg {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: -56px;
   }
   textarea {
     width: 100%;
     border: none;
-    background: #fcfcfd;
+    // background: #fcfcfd;
     min-height: 150px;
+    color: #8b949c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
     &:focus {
       outline: none;
     }

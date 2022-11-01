@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { PriceCalculatorContext } from "../priceContainerContext";
 import StepsNavigation from "./stepsNavigation";
 
 interface IProps {
@@ -7,6 +8,9 @@ interface IProps {
 }
 
 const StepsContainer: React.FC<IProps> = ({ title, description, children }) => {
+  const { currentStepIndex, setCurrentStepIndex, values } = useContext(
+    PriceCalculatorContext
+  );
   return (
     <>
       <div className="mt-4 stepsLeftSide">

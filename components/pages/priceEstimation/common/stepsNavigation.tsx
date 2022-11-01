@@ -7,11 +7,13 @@ const StepsNavigation: React.FC = ({ children }) => {
   );
   return (
     <div>
-      <div className="stepsIndicator">step {currentStepIndex} out 5</div>
+      <div className="stepsIndicator">
+        Step <span>{currentStepIndex + 1}</span>/5
+      </div>
       {children}
-      <div className="d-flex w-100 justify-content-between mt-5">
+      <div className="d-flex  justify-content-between mt-5 stepsController ">
         <div>
-          {currentStepIndex > 1 ? (
+          {currentStepIndex > 0 ? (
             <button
               onClick={() => {
                 setCurrentStepIndex(currentStepIndex - 1);

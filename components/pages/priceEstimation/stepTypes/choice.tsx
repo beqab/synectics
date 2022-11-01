@@ -80,17 +80,36 @@ function Choice({ title, description, options, stepKey, withOtherBlock }) {
               .filter((el) => !options.includes(el))
               .map((el) => {
                 return (
-                  <span
-                    className="pointer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setValues({
-                        ...values,
-                        [stepKey]: value.filter((item) => item !== el),
-                      });
-                    }}
-                  >
-                    #{el}
+                  <span>
+                    {el}
+
+                    <svg
+                      className="pointer"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setValues({
+                          ...values,
+                          [stepKey]: value.filter((item) => item !== el),
+                        });
+                      }}
+                      width="16"
+                      height="16"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_518_3515)">
+                        <path
+                          d="M11.0827 3.739L10.2602 2.9165L6.99935 6.17734L3.73852 2.9165L2.91602 3.739L6.17685 6.99984L2.91602 10.2607L3.73852 11.0832L6.99935 7.82234L10.2602 11.0832L11.0827 10.2607L7.82185 6.99984L11.0827 3.739Z"
+                          fill="#687A9E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_518_3515">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </span>
                 );
               })}
@@ -103,6 +122,7 @@ function Choice({ title, description, options, stepKey, withOtherBlock }) {
                   setExtraValue("");
                 }
               }}
+              placeholder="..."
               value={extraValue}
               type={"text"}
               onChange={(e) => {
