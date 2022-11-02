@@ -20,7 +20,7 @@ const Collaboration = () => {
       <div className="row">
         <div className="col-md-7">
           <h2>Collaboration Models</h2>
-          <p className="mb-5 mt-4">
+          <p className="mb-md-5 mb-4 mt-md-4">
             With years of experience, we understand the different outsourcing
             engagement models and how to best use them to suit your needs and
             requirements
@@ -198,15 +198,24 @@ const Collaboration = () => {
             </svg>
           </div>
 
-          <div className="d-flex align-items-center collaboration_more ">
+          <div className="d-none d-md-flex align-items-center collaboration_more ">
             <Link href={"/"}>
               <a className="btn btn-primary d-flex">Explore More</a>
             </Link>
           </div>
         </div>
-        <div className="col-md-5 d-none d-md-block">
+        <div className="col-md-5 d-md-block ">
           {/* <CollaboratorImg /> */}
-          <img className="mt-md-5" src="/imgs/Group 1000001917.svg" />
+          <img
+            className="mt-md-5 collaboration_img "
+            src="/imgs/Group 1000001917.svg"
+          />
+
+          <div className="d-flex d-md-none align-items-center collaboration_more ">
+            <Link href={"/"}>
+              <a className="btn btn-primary w-100 d-flex">Explore More</a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

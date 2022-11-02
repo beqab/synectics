@@ -307,6 +307,23 @@ const options = {
   loop: true,
   Infinity: true,
 
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 2,
+      nav: true,
+    },
+    600: {
+      items: 2,
+      nav: false,
+    },
+    1000: {
+      items: 6,
+      nav: true,
+      loop: false,
+    },
+  },
+
   // navigator:
 };
 
@@ -370,7 +387,7 @@ const Technologies = () => {
             )}
           </div>
         </div>
-        <div className="d-none d-md-block">
+        <div className=" d-md-none d-md-block">
           <OwlCarousel options={options}>
             {TechnologiesObject[activeCategory].TechnologiesList.map(
               (el, i) => {
