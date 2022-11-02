@@ -120,6 +120,10 @@
     padding: 32px 24px;
     margin-right: 32px;
     margin-bottom: 32px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+    }
     h2 {
       font-weight: 600;
       font-size: 18px;
@@ -341,8 +345,8 @@
 }
 
 .ourApproach {
-  padding-top: 110px;
-  padding-bottom: 130px;
+  padding-top: 190px;
+  padding-bottom: 190px;
   background: linear-gradient(214.77deg, #2660ee -212.1%, #020a1c 79.51%);
   h2 {
     font-weight: 600;

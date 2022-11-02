@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const FirstStep = ({
@@ -17,12 +18,14 @@ const FirstStep = ({
           predefined chunks as necessary, making this the first true generator
           on the Internet.
         </p>
-        <button
-          onClick={() => setCurrentStepIndex(1)}
-          className="btn btn-light"
-        >
-          Estimate Price
-        </button>
+        <Link href={"/estimatePrice"}>
+          <a
+            // onClick={() => setCurrentStepIndex(1)}
+            className="btn btn-light"
+          >
+            Estimate Priceee
+          </a>
+        </Link>
       </div>
       <div>
         <svg

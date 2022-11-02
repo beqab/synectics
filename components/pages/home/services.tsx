@@ -12,7 +12,7 @@ const Services = () => {
           <div className="row">
             <div className="col-md-7">
               <div className="servicesSection_cardsContainer">
-                <Link href={"/"}>
+                <Link href={"/cloudinfrastructure"}>
                   <a className="servicesSection_card">
                     <svg
                       width="56"
@@ -147,7 +147,7 @@ const Services = () => {
                     </p>
                   </a>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/softwareengineering"}>
                   <a className="servicesSection_card">
                     <svg
                       width="56"
@@ -212,7 +212,7 @@ const Services = () => {
                     </p>
                   </a>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/digitalTransformation"}>
                   <a className="servicesSection_card">
                     <svg
                       width="56"

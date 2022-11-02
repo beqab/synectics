@@ -16,7 +16,7 @@ const EstimatePrice = () => {
               costs.
             </p>
             <div className="text-center w-100">
-              <Link href="/">
+              <Link href="/estimatePrice">
                 <a className="btn btn-primary d-none d-md-flex">
                   Estimate Price
                 </a>
