@@ -36,7 +36,9 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
       if (el.href === router.query.page) {
         if (sliderRef.current) {
           sliderRef.current.scrollLeft =
-            i * (windowWidth - (windowWidth - 1190 - (windowWidth - 1190) / 4));
+            i *
+            (window.innerWidth -
+              (window.innerWidth - 1190 - (window.innerWidth - 1190) / 4));
           return i;
         }
       }

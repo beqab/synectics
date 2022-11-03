@@ -87,7 +87,7 @@ export const InfrastructureData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
+            technologyImg: "/technologies/do13 (2).svg",
           },
           {
             technologyName: "php",
@@ -99,7 +99,7 @@ export const InfrastructureData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
+            technologyImg: "/technologies/do16 (2).svg",
           },
           {
             technologyName: "php",
@@ -111,134 +111,17 @@ export const InfrastructureData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
+            technologyImg: "/technologies/do19 (2).svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
+            technologyImg: "/technologies/do21.svg",
           },
         ]}
       />
     ),
   },
-  {
-    title: "Database Management",
-    href: "databasemanagement",
-    renderBlock: (data) => (
-      <EngineeringBlock
-        title="Database Management"
-        description={() => {
-          return (
-            <>
-              <p>
-                We help transform your software delivery process to achieve
-                higher efficiency, accelerate product release cycle time, and
-                improve quality of software builds with early identification of
-                emerging issues. We automate and standardize the processes for
-                infrastructure and application deployment where enterprises get
-                faster innovation, better operational efficiency, improved
-                deployment quality, and tangible returns on investment. Faster
-                deployment, increased availability, reduced MTTR and reduced
-                human errors is a result of our DevOps solutions we provide.
-              </p>
-            </>
-          );
-        }}
-        weCanHelpWithList={[
-          "Continuous Integration & Delivery",
-          "Infrastructure as a Code",
-          "Configuration Management",
-          "Continuous Monitoring",
-          "DevOps Assessment",
-          "Continuous Optimization",
-          "Costs Monitoring and Review",
-          "Documentation",
-        ]}
-        technologyList={[
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
-          },
-        ]}
-      />
-    ),
-  },
+
   {
     title: "Infrastructure Management",
     href: "infrastructuremanagement",
@@ -258,6 +141,177 @@ export const InfrastructureData = [
                 solution covers horizontal level 1 application and
                 infrastructure support along with poly cloud provisioning and
                 managed services.
+              </p>
+            </>
+          );
+        }}
+        weCanHelpWithList={[
+          "Design and Implementation",
+          "Configuration, Administration and Automation",
+          "Capacity Management",
+          "24/7 Infrastructure Monitoring",
+          "Event and Incident Management",
+          "Continuous Performance Optimization",
+          "Security Monitoring and Audit",
+          "Infrastructure Updating and Hardening",
+          "Backup Management",
+          "Disaster Recovery",
+        ]}
+        technologyList={[
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im1.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im2.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im3.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im4.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im5.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im6.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im7.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im8.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im9.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im10.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im11.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im12 (2).svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/im13.svg",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Virtualization",
+    href: "virtualization",
+    renderBlock: (data) => (
+      <EngineeringBlock
+        title="Virtualization"
+        description={() => {
+          return (
+            <>
+              <p>
+                hink of server virtualization as the dividing and conquering of
+                one master server. By moving all operations from one, large
+                server to a number of smaller ones, a company becomes more
+                agile. Each of these virtual servers can run its own operating
+                system, so there is no need to base all of a company’s software
+                on the pre-existing operating system of an existing, central
+                server. Additionally, server virtualization reduces overhead
+                costs and downtime of servers by making more efficient use of
+                space and cooling down more quickly and easily.
+              </p>
+            </>
+          );
+        }}
+        weCanHelpWithList={[
+          "Design and Implementation",
+          "Configuration and Administration",
+          "Capacity Management",
+          "24/7 Infrastructure Monitoring",
+          "Event and Incident Management",
+          "Backup Management",
+          "Disaster Recovery",
+          "Desktop Virtualization",
+        ]}
+        technologyList={[
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr1.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr2.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr3.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr4.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr5.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr6.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr7.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr8.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr9.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/vr10.svg",
+          },
+        ]}
+      />
+    ),
+  },
+
+  {
+    title: "Database Management",
+    href: "databasemanagement",
+    renderBlock: (data) => (
+      <EngineeringBlock
+        title="Database Management"
+        description={() => {
+          return (
+            <>
+              <p>
+                We help transform your software delivery process to achieve
+                higher efficiency, accelerate product release cycle time, and
+                improve quality of software builds with early identification of
+                emerging issues. We automate and standardize the processes for
+                infrastructure and application deployment where enterprises get
+                faster innovation, better operational efficiency, improved
+                deployment quality, and tangible returns on investment. Faster
+                deployment, increased availability, reduced MTTR and reduced
+                human errors is a result of our DevOps solutions we provide.
               </p>
             </>
           );
@@ -360,129 +414,11 @@ export const InfrastructureData = [
     ),
   },
   {
-    title: "Virtualization",
-    href: "virtualization",
-    renderBlock: (data) => (
-      <EngineeringBlock
-        title="Virtualization"
-        description={() => {
-          return (
-            <>
-              <p>
-                hink of server virtualization as the dividing and conquering of
-                one master server. By moving all operations from one, large
-                server to a number of smaller ones, a company becomes more
-                agile. Each of these virtual servers can run its own operating
-                system, so there is no need to base all of a company’s software
-                on the pre-existing operating system of an existing, central
-                server. Additionally, server virtualization reduces overhead
-                costs and downtime of servers by making more efficient use of
-                space and cooling down more quickly and easily.
-              </p>
-            </>
-          );
-        }}
-        weCanHelpWithList={[
-          "Design and Implementation",
-          "Configuration and Administration",
-          "Capacity Management",
-          "24/7 Infrastructure Monitoring",
-          "Event and Incident Management",
-          "Backup Management",
-          "Disaster Recovery",
-          "Desktop Virtualization",
-        ]}
-        technologyList={[
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
-          },
-        ]}
-      />
-    ),
-  },
-  {
     title: "Storage",
     href: "storage",
     renderBlock: (data) => (
       <EngineeringBlock
-        title="storage"
+        title="Storage"
         description={() => {
           return (
             <>

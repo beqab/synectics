@@ -96,7 +96,7 @@ export const EngineeringData = [
     href: "mobiledevelopment",
     renderBlock: (data) => (
       <EngineeringBlock
-        title="Web Development"
+        title="Mobile Development"
         description={() => {
           return (
             <>
@@ -515,43 +515,55 @@ export const EngineeringData = [
         technologyList={[
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web1.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web2.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web3.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web4.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web5.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web6.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web7.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web8.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web9.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "php.svg",
+            technologyImg: "/technologies/web10.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/web11.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/web12.svg",
+          },
+          {
+            technologyName: "php",
+            technologyImg: "/technologies/web13.svg",
           },
         ]}
       />

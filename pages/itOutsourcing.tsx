@@ -557,7 +557,7 @@ const ItOutsourcing = () => {
         <div className="roundBottom roundBottom-top  pt-5">
           <InnerPageContact />
         </div>
-        <InnerPageContact />
+        {/* <InnerPageContact /> */}
       </Layout>
     </div>
   );

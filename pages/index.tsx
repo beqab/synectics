@@ -63,7 +63,7 @@ const IndexPage = () => {
               <div className="col-md-5 d-block  d-md-flex align-items-center flex-column justify-content-center">
                 <img
                   className="mainSectionImg"
-                  src="/imgs/Group 1000001860.svg"
+                  src="/imgs/Group 1000001867.png"
                 />
               </div>
             </div>
