@@ -148,6 +148,8 @@ const ServicesDropdown: React.FC<IProps> = ({
                       router.push(el.href);
                       return;
                     }
+                  }}
+                  onMouseOver={() => {
                     setActiveSubMenu(i);
                   }}
                   className={classNames(

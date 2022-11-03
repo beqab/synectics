@@ -73,7 +73,7 @@ const Header = () => {
               <li className="withSubmenu">
                 <Link href={"/"}>
                   <a
-                    onClick={(e) => {
+                    onMouseOver={(e) => {
                       e.preventDefault();
                       e.stopPropagation();
                       setOpenMenu(true);
