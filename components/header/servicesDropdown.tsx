@@ -57,7 +57,7 @@ const menuObject = [
       },
       {
         title: "CRM Solutions",
-        href: "/softwareengineering?page=CRMsolutions",
+        href: "/softwareengineering?page=CRMSolutions",
       },
       {
         title: "BigData and Data Analytics",

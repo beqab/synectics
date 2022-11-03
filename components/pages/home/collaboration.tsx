@@ -199,7 +199,7 @@ const Collaboration = () => {
           </div>
 
           <div className="d-none d-md-flex align-items-center collaboration_more ">
-            <Link href={"/"}>
+            <Link href={"/itOutsourcing"}>
               <a className="btn btn-primary d-flex">Explore More</a>
             </Link>
           </div>
@@ -212,7 +212,7 @@ const Collaboration = () => {
           />
 
           <div className="d-flex d-md-none align-items-center collaboration_more ">
-            <Link href={"/"}>
+            <Link href={"/itOutsourcing"}>
               <a className="btn btn-primary w-100 d-flex">Explore More</a>
             </Link>
           </div>

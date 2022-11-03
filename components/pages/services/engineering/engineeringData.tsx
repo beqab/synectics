@@ -402,11 +402,11 @@ export const EngineeringData = [
     ),
   },
   {
-    title: "blockchain",
+    title: "Blockchain ",
     href: "blockchain",
     renderBlock: (data) => (
       <EngineeringBlock
-        title="blockchain"
+        title="Blockchain "
         description={() => {
           return (
             <>
