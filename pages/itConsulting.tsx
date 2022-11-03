@@ -14,6 +14,32 @@ import ProcessOptimization from "../components/pages/services/itConsulting/Proce
 import Link from "next/link";
 
 const ItConsulting = () => {
+  const TechnologyConsulting = useRef(null);
+  const DeliveryManagementConsulting = useRef(null);
+  const ProjectManagementConsulting = useRef(null);
+  const ITProcessOptimizationConsulting = useRef(null);
+  const DocumentationService = useRef(null);
+
+  const router = useRouter();
+
+  const executeScroll = () => {
+    if (router.query.page === "TechnologyConsulting") {
+      TechnologyConsulting.current.scrollIntoView();
+    } else if (router.query.page === "DeliveryManagementConsulting") {
+      DeliveryManagementConsulting.current.scrollIntoView();
+    } else if (router.query.page === "ProjectManagementConsulting") {
+      ProjectManagementConsulting.current.scrollIntoView();
+    } else if (router.query.page === "ITProcessOptimizationConsulting") {
+      ITProcessOptimizationConsulting.current.scrollIntoView();
+    } else if (router.query.page === "DocumentationService") {
+      DocumentationService.current.scrollIntoView();
+    }
+  };
+
+  useEffect(() => {
+    executeScroll();
+  }, [router.query]);
+
   return (
     <div>
       <Layout>
@@ -78,7 +104,11 @@ const ItConsulting = () => {
         <div className="roundBottom roundBottom-top pt-5">
           <div className="roundBottom roundBottom-top">
             <div className="container serviceContent cooperation pt-5 ">
-              <div className="row pt-0">
+              <div
+                ref={TechnologyConsulting}
+                style={{ position: "relative", top: "-100px" }}
+              />
+              <div id="ttt" className="row pt-0">
                 <div className="col-md-9">
                   <div className=" pr-90">
                     <h2 className="serviceContent_title">
@@ -109,6 +139,10 @@ const ItConsulting = () => {
                   <img src="/imgs/Group 1000001946.svg" />
                 </div>
               </div>
+              <div
+                ref={ProjectManagementConsulting}
+                style={{ position: "relative", top: "-70px" }}
+              />
               <div className="row">
                 <div className="col-md-3 ">
                   <img src="/imgs/Delivery Management.svg" />
@@ -132,6 +166,10 @@ const ItConsulting = () => {
                   </div>
                 </div>
               </div>
+              <div
+                ref={DeliveryManagementConsulting}
+                style={{ position: "relative", top: "-70px" }}
+              />
               <div className="row">
                 <div className="col-md-9">
                   <div className="pr-90">
@@ -154,6 +192,10 @@ const ItConsulting = () => {
                   <img src="/imgs/Group 1000001948.svg" />
                 </div>
               </div>
+              <div
+                ref={ITProcessOptimizationConsulting}
+                style={{ position: "relative", top: "-70px" }}
+              />
               <div className="row">
                 <div className="col-md-3 ">
                   <img src="/imgs/Group 1000001943.svg" />
@@ -183,6 +225,10 @@ const ItConsulting = () => {
                   </div>
                 </div>
               </div>
+              <div
+                ref={DocumentationService}
+                style={{ position: "relative", top: "-70px" }}
+              />
               <div className="row">
                 <div className="col-md-9">
                   <div className="pr-90">

@@ -78,23 +78,23 @@ const menuObject = [
     items: [
       {
         title: "Technology Consulting",
-        href: "/itConsulting",
+        href: "/itConsulting?page=TechnologyConsulting",
       },
       {
         title: "Project Management Consulting",
-        href: "/itConsulting",
+        href: "/itConsulting?page=ProjectManagementConsulting",
       },
       {
         title: "Delivery Management Consulting",
-        href: "/itConsulting",
+        href: "/itConsulting?page=DeliveryManagementConsulting",
       },
       {
         title: "IT Process Optimization Consulting",
-        href: "/itConsulting",
+        href: "/itConsulting?page=ITProcessOptimizationConsulting",
       },
       {
         title: "Documentation Service",
-        href: "/itConsulting",
+        href: "/itConsulting?page=DocumentationService",
       },
     ],
   },
@@ -103,15 +103,15 @@ const menuObject = [
     items: [
       {
         title: "Cloud Transformation",
-        href: "/digitalTransformation",
+        href: "/digitalTransformation?page=CloudTransformation",
       },
       {
         title: "Agile Transformation",
-        href: "/digitalTransformation",
+        href: "/digitalTransformation?page=AgileTransformation",
       },
       {
         title: "IT Strategy Development",
-        href: "/digitalTransformation",
+        href: "/digitalTransformation?page=ITStrategyDevelopment",
       },
     ],
   },
@@ -188,7 +188,11 @@ const ServicesDropdown: React.FC<IProps> = ({
           <ul className="list-inline">
             {menuObject[activeSubMenu].items.map((el) => {
               return (
-                <li>
+                <li
+                  onClick={() => {
+                    closeMenu();
+                  }}
+                >
                   <Link href={el.href}>
                     <a>{el.title}</a>
                   </Link>

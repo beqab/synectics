@@ -218,6 +218,7 @@
   padding-bottom: 40px;
 
   .sliderContainer {
+    padding-top: 31px;
     margin-right: calc((100vw - 1190px) / 4);
     display: flex;
     // width: 4000px;
@@ -760,6 +761,20 @@
     align-items: center;
     height: 48px;
     cursor: pointer;
+  }
+}
+
+.AgileList {
+  li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: rgba(24, 41, 57, 0.7);
+    svg {
+      margin-right: 7px;
+    }
   }
 }
 

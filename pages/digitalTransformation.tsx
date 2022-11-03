@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Layout from "../components/Layout";
 import ServiceHeading from "../components/pages/services/serviceHeading";
 import InnerPageContact from "../components/pages/home/contact/innerPageContact";
+import { useRouter } from "next/router";
 
 const ItOutsourcing = () => {
+  const CloudTransformation = useRef(null);
+  const AgileTransformation = useRef(null);
+  const ITStrategyDevelopment = useRef(null);
+
+  const router = useRouter();
+
+  const executeScroll = () => {
+    if (router.query.page === "CloudTransformation") {
+      CloudTransformation.current.scrollIntoView();
+    } else if (router.query.page === "AgileTransformation") {
+      AgileTransformation.current.scrollIntoView();
+    } else if (router.query.page === "ITStrategyDevelopment") {
+      ITStrategyDevelopment.current.scrollIntoView();
+    }
+  };
+
+  useEffect(() => {
+    executeScroll();
+  }, [router.query]);
+
   return (
     <div>
       <Layout>
@@ -99,6 +120,10 @@ const ItOutsourcing = () => {
         ></ServiceHeading>
         <div className="roundBottom roundBottom-top">
           <div className="container serviceContent cooperation ">
+            <div
+              ref={CloudTransformation}
+              style={{ position: "relative", top: "-70px" }}
+            />
             <div className="row pt-0">
               <div className="col-md-9">
                 <div className=" pr-90">
@@ -126,6 +151,10 @@ const ItOutsourcing = () => {
                 <img src="/imgs/Group 1000001938.svg" />
               </div>
             </div>
+            <div
+              ref={AgileTransformation}
+              style={{ position: "relative", top: "-70px" }}
+            />
             <div className="row">
               <div className="col-md-3 ">
                 <img src="/imgs/Group 1000001923.svg" />
@@ -138,11 +167,58 @@ const ItOutsourcing = () => {
                     deliver tangible results, such as faster growth and higher
                     profits, quickly. It helps to
                   </p>
-                  <ul className="list-unstyled">
-                    <li>Reduce time to market new products and services</li>
-                    <li>Respond to changes quickly</li>
-                    <li>Improve customer satisfaction</li>
-                    <li>Reduce risks, substantially.</li>
+                  <ul className="list-unstyled AgileList">
+                    <li>
+                      <svg
+                        width="8"
+                        height="9"
+                        viewBox="0 0 8 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="4" cy="4.00195" r="4" fill="#2F80ED" />
+                      </svg>
+
+                      <span>
+                        Reduce time to market new products and services
+                      </span>
+                    </li>
+                    <li>
+                      <svg
+                        width="8"
+                        height="9"
+                        viewBox="0 0 8 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="4" cy="4.00195" r="4" fill="#2F80ED" />
+                      </svg>
+                      Respond to changes quickly
+                    </li>
+                    <li>
+                      <svg
+                        width="8"
+                        height="9"
+                        viewBox="0 0 8 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="4" cy="4.00195" r="4" fill="#2F80ED" />
+                      </svg>
+                      Improve customer satisfaction
+                    </li>
+                    <li>
+                      <svg
+                        width="8"
+                        height="9"
+                        viewBox="0 0 8 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="4" cy="4.00195" r="4" fill="#2F80ED" />
+                      </svg>
+                      Reduce risks, substantially.
+                    </li>
                   </ul>
                   <p>
                     Agile companies have been found to create 37% higher ROE and
@@ -152,26 +228,26 @@ const ItOutsourcing = () => {
                 </div>
               </div>
             </div>
+            <div
+              ref={ITStrategyDevelopment}
+              style={{ position: "relative", top: "-70px" }}
+            />
             <div className="row">
               <div className="col-md-9">
                 <div className="pr-90">
-                  <h2>Cloud Transformation</h2>
+                  <h2>IT Strategy Development</h2>
                   <p>
-                    Deciding to transition to the cloud isn’t a decision to be
-                    taken lightly, but it can provide a wealth of benefits for
-                    companies who take the plunge. However, a company’s
-                    readiness plays an important role in determining whether
-                    their cloud migration will be successful. Often, the
-                    confidence that comes with expert migration support can be
-                    the deciding factor that empowers a business to begin the
-                    cloud transformation process.
+                    IT has become an essential part of every organization that
+                    is integrated across departments and across industries, yet,
+                    many businesses are lacking a comprehensive strategy that
+                    integrates IT systems, processes and strategy into the
+                    overall business strategy.
                   </p>
                   <p>
-                    If you are considering making the transition to the cloud,
-                    Synectics is here to help you in many ways. We can
-                    accelerate cloud implementation, reduce the risk of
-                    disruption, optimize cloud costs, and simplify the
-                    governance of cloud data.
+                    Leveraging the latest technology trends and identifying the
+                    ideal solutions that will fit with your business needs helps
+                    us bring you through your ideal state of technology and rise
+                    above the competition.
                   </p>
                 </div>
               </div>

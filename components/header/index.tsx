@@ -139,7 +139,11 @@ const Header = () => {
           }}
           className="dropDownMenu"
         >
-          <ServicesDropdown />
+          <ServicesDropdown
+            closeMenu={() => {
+              setOpenMenu(false);
+            }}
+          />
         </div>
       ) : null}
     </header>
