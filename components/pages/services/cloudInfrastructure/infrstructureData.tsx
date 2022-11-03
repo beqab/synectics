@@ -331,83 +331,39 @@ export const InfrastructureData = [
         technologyList={[
           {
             technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
+            technologyImg: "/technologies/dm1.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
+            technologyImg: "/technologies/dm2.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
+            technologyImg: "/technologies/dm3.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
+            technologyImg: "/technologies/dm4.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
+            technologyImg: "/technologies/dm5.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
+            technologyImg: "/technologies/dm6.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
+            technologyImg: "/technologies/dm7.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
+            technologyImg: "/technologies/dm8.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
+            technologyImg: "/technologies/dm9.svg",
           },
         ]}
       />
@@ -448,83 +404,51 @@ export const InfrastructureData = [
         technologyList={[
           {
             technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
+            technologyImg: "/technologies/st1.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
+            technologyImg: "/technologies/st2.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
+            technologyImg: "/technologies/st3.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
+            technologyImg: "/technologies/st4.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
+            technologyImg: "/technologies/st5.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
+            technologyImg: "/technologies/st6.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
+            technologyImg: "/technologies/st7.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
+            technologyImg: "/technologies/st8.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
+            technologyImg: "/technologies/st9.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
+            technologyImg: "/technologies/st10.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
+            technologyImg: "/technologies/st11.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
+            technologyImg: "/technologies/st12.svg",
           },
         ]}
       />
@@ -570,83 +494,55 @@ export const InfrastructureData = [
         technologyList={[
           {
             technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
+            technologyImg: "/technologies/sec1.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
+            technologyImg: "/technologies/sec2.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
+            technologyImg: "/technologies/sec3.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
+            technologyImg: "/technologies/sec4.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
+            technologyImg: "/technologies/sec5.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
+            technologyImg: "/technologies/sec6.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
+            technologyImg: "/technologies/sec7.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
+            technologyImg: "/technologies/sec8.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
+            technologyImg: "/technologies/sec9.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
+            technologyImg: "/technologies/sec10.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
+            technologyImg: "/technologies/sec11.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
+            technologyImg: "/technologies/sec12.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
+            technologyImg: "/technologies/sec13.svg",
           },
         ]}
       />
@@ -691,83 +587,47 @@ export const InfrastructureData = [
         technologyList={[
           {
             technologyName: "php",
-            technologyImg: "/technologies/do1.svg",
+            technologyImg: "/technologies/rhd1.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
+            technologyImg: "/technologies/rhd2.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do3.svg",
+            technologyImg: "/technologies/rhd3.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do4.svg",
+            technologyImg: "/technologies/rhd4.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do5.svg",
+            technologyImg: "/technologies/rhd5.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do6.svg",
+            technologyImg: "/technologies/rhd6.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do7.svg",
+            technologyImg: "/technologies/rhd7.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do8.svg",
+            technologyImg: "/technologies/rhd8.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do9.svg",
+            technologyImg: "/technologies/rhd9.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do10.svg",
+            technologyImg: "/technologies/rhd10.svg",
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do11.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do12.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do13.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do14.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do15.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do16.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do17.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do18.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do19.svg",
-          },
-          {
-            technologyName: "php",
-            technologyImg: "/technologies/do20.svg",
+            technologyImg: "/technologies/rhd11.svg",
           },
         ]}
       />
