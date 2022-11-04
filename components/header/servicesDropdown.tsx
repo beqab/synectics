@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import X from "../svgs/x";
 import classNames from "classnames";
 import { useRouter } from "next/router";
@@ -130,6 +130,14 @@ const ServicesDropdown: React.FC<IProps> = ({
   const [activeSubMenu, setActiveSubMenu] = useState(0);
 
   const router = useRouter();
+
+  useEffect(() => {
+    let closeM = () => closeMenu();
+
+    window.addEventListener("scroll", closeM);
+
+    return () => window.removeEventListener("scroll", closeM);
+  }, []);
 
   return (
     <div

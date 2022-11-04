@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Synectics</title>
+        <title>Synectics Development</title>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <link rel="icon" href="/imgs/logggo.svg" />
 

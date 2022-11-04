@@ -268,270 +268,341 @@ const ItOutsourcing = () => {
               </p>
 
               <div className="col-12">
-                <div className="d-flex justify-content-between">
-                  <div className="whySynectics_card">
-                    <svg
-                      width="80"
-                      height="80"
-                      viewBox="0 0 80 80"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.8335 12.6429H53.524V8L61.262 15.7381L53.524 23.4762V18.8333H25.6668"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M58.1665 40.5002H68.9999V35.8574L76.738 43.5955L68.9999 51.3336V46.6907H59.7141"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M50.4284 62.1668H58.1665V57.5239L65.9046 65.262L58.1665 73.0001V68.3572H27.2141"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M4 59.0713H22.5714"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M36.5 48.2383C39.0642 48.2383 41.1429 46.1596 41.1429 43.5955C41.1429 41.0313 39.0642 38.9526 36.5 38.9526C33.9359 38.9526 31.8572 41.0313 31.8572 43.5955C31.8572 46.1596 33.9359 48.2383 36.5 48.2383Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M54.7621 39.4168L52.7502 34.3097L48.1073 35.8573C47.1787 34.4644 46.0954 33.3811 44.8573 32.4525L46.5597 27.6549L41.6073 25.4882L39.2859 29.9763C37.7383 29.6668 36.1906 29.6668 34.643 29.8216L32.4764 25.3335L27.3692 27.3454L28.7621 32.143C27.3692 33.0716 26.2859 34.1549 25.3573 35.393L20.5597 33.6906L18.393 38.643L22.8811 40.9644C22.5716 42.512 22.5716 44.0597 22.7264 45.6073L18.2383 47.774L20.2502 52.8811L25.0478 51.4882C25.9764 52.8811 27.0597 53.9644 28.2978 54.893L26.5954 59.6906L31.5478 61.8573L33.8692 57.3692C35.4168 57.6787 36.9644 57.6787 38.5121 57.524L40.6787 62.012L45.7859 60.0001L44.2383 55.2025C45.6311 54.274 46.7145 53.1906 47.643 51.9525L52.4406 53.6549L54.6073 48.7025L50.1192 46.3811C50.4287 44.8335 50.4287 43.2859 50.274 41.7382L54.7621 39.4168Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M22.5714 26.5713H8.64282"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                    <h3>
-                      Refined Digital <br />
-                      Transformation Strategy
-                    </h3>
+                <div className=" d-flex justify-content-between">
+                  <div className="flip-card" tabIndex={0}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div className="whySynectics_card">
+                          <svg
+                            width="80"
+                            height="80"
+                            viewBox="0 0 80 80"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.8335 12.6429H53.524V8L61.262 15.7381L53.524 23.4762V18.8333H25.6668"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M58.1665 40.5002H68.9999V35.8574L76.738 43.5955L68.9999 51.3336V46.6907H59.7141"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M50.4284 62.1668H58.1665V57.5239L65.9046 65.262L58.1665 73.0001V68.3572H27.2141"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M4 59.0713H22.5714"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M36.5 48.2383C39.0642 48.2383 41.1429 46.1596 41.1429 43.5955C41.1429 41.0313 39.0642 38.9526 36.5 38.9526C33.9359 38.9526 31.8572 41.0313 31.8572 43.5955C31.8572 46.1596 33.9359 48.2383 36.5 48.2383Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M54.7621 39.4168L52.7502 34.3097L48.1073 35.8573C47.1787 34.4644 46.0954 33.3811 44.8573 32.4525L46.5597 27.6549L41.6073 25.4882L39.2859 29.9763C37.7383 29.6668 36.1906 29.6668 34.643 29.8216L32.4764 25.3335L27.3692 27.3454L28.7621 32.143C27.3692 33.0716 26.2859 34.1549 25.3573 35.393L20.5597 33.6906L18.393 38.643L22.8811 40.9644C22.5716 42.512 22.5716 44.0597 22.7264 45.6073L18.2383 47.774L20.2502 52.8811L25.0478 51.4882C25.9764 52.8811 27.0597 53.9644 28.2978 54.893L26.5954 59.6906L31.5478 61.8573L33.8692 57.3692C35.4168 57.6787 36.9644 57.6787 38.5121 57.524L40.6787 62.012L45.7859 60.0001L44.2383 55.2025C45.6311 54.274 46.7145 53.1906 47.643 51.9525L52.4406 53.6549L54.6073 48.7025L50.1192 46.3811C50.4287 44.8335 50.4287 43.2859 50.274 41.7382L54.7621 39.4168Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M22.5714 26.5713H8.64282"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <h3>
+                            Refined Digital <br />
+                            Transformation Strategy
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="flip-card-back">
+                        <div className="whySynectics_card whySynectics_card-back">
+                          <p>
+                            By implementing cost-effective, customer-focused
+                            digital transformation strategies, we help
+                            businesses acquire, retain, and assist customers
+                            most innovatively, using new technologies that
+                            ongoingly create capabilities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="whySynectics_card">
-                    <svg
-                      width="80"
-                      height="80"
-                      viewBox="0 0 80 80"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M69.0652 56.1953L49.5652 42.0649V66.0866C49.5652 66.7931 50.2717 67.0758 50.8369 66.5105L56.3478 61.2823L61.5761 70.6084C62 71.3149 63.1304 71.4562 63.8369 70.891L66.0978 69.4779C66.9456 68.9127 67.2282 67.9236 66.8043 67.2171L61.7174 58.4562H68.3587C69.2065 58.4562 69.6304 56.6192 69.0652 56.1953Z"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M49.5652 35.8476V31.6084"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M43.9132 41.5H39.6741"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M59.4566 41.5H55.2175"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M45.3261 37.2607L42.5 34.4346"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M45.3261 45.7388L42.5 48.5649"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M53.8044 37.2607L56.6305 34.4346"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M28.3696 34.4348V35.8478C28.3696 37.4022 29.6413 38.6739 31.1957 38.6739H34.0217C35.5761 38.6739 36.8478 37.4022 36.8478 35.8478V35C36.8478 33.7282 36.1413 32.7391 34.8696 32.3152L30.2065 30.7608C29.0761 30.3369 28.2283 29.3478 28.2283 28.0761V27.3695C28.2283 25.8152 29.5 24.5435 31.0544 24.5435H33.8804C35.4348 24.5435 36.7065 25.8152 36.7065 27.3695V28.7826"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M32.6086 24.5434V20.3042"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M32.6086 38.6738V42.9129"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M41.087 52.5217C38.5435 53.5109 35.5761 54.2174 32.6087 54.2174C20.1739 54.2174 10 44.0435 10 31.6087C10 19.1739 20.1739 9 32.6087 9C44.6196 9 54.5109 18.3261 55.2174 30.1957"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                    </svg>
 
-                    <h3>
-                      Reduced R&D <br />
-                      Costs
-                    </h3>
+                  <div className="flip-card" tabIndex={0}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div className="whySynectics_card">
+                          <svg
+                            width="80"
+                            height="80"
+                            viewBox="0 0 80 80"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M69.0652 56.1953L49.5652 42.0649V66.0866C49.5652 66.7931 50.2717 67.0758 50.8369 66.5105L56.3478 61.2823L61.5761 70.6084C62 71.3149 63.1304 71.4562 63.8369 70.891L66.0978 69.4779C66.9456 68.9127 67.2282 67.9236 66.8043 67.2171L61.7174 58.4562H68.3587C69.2065 58.4562 69.6304 56.6192 69.0652 56.1953Z"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M49.5652 35.8476V31.6084"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M43.9132 41.5H39.6741"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M59.4566 41.5H55.2175"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M45.3261 37.2607L42.5 34.4346"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M45.3261 45.7388L42.5 48.5649"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M53.8044 37.2607L56.6305 34.4346"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M28.3696 34.4348V35.8478C28.3696 37.4022 29.6413 38.6739 31.1957 38.6739H34.0217C35.5761 38.6739 36.8478 37.4022 36.8478 35.8478V35C36.8478 33.7282 36.1413 32.7391 34.8696 32.3152L30.2065 30.7608C29.0761 30.3369 28.2283 29.3478 28.2283 28.0761V27.3695C28.2283 25.8152 29.5 24.5435 31.0544 24.5435H33.8804C35.4348 24.5435 36.7065 25.8152 36.7065 27.3695V28.7826"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M32.6086 24.5434V20.3042"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M32.6086 38.6738V42.9129"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M41.087 52.5217C38.5435 53.5109 35.5761 54.2174 32.6087 54.2174C20.1739 54.2174 10 44.0435 10 31.6087C10 19.1739 20.1739 9 32.6087 9C44.6196 9 54.5109 18.3261 55.2174 30.1957"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                          </svg>
+
+                          <h3>
+                            Reduced R&D <br />
+                            Costs
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="flip-card-back">
+                        <div className="whySynectics_card whySynectics_card-back">
+                          <p>
+                            IT leaders around the globe move beyond cost
+                            efficiency to help power their growth and improve
+                            value. We help clients to consider digital business
+                            transformation as an efficient process that helps
+                            organizations execute their end-to-end
+                            transformation at speed and scale.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="whySynectics_card">
-                    <svg
-                      width="80"
-                      height="80"
-                      viewBox="0 0 80 80"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M53.0051 53.1021V67.6939"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M53.0051 70.3467V72.9998"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M29.3728 42.4839V59.2912"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M34.154 49.4387L39.2252 50.7427V42.484L32.7051 35.9639C32.7051 35.9639 32.7051 21.6197 32.7051 19.5912C32.7051 17.5628 30.8215 11.0427 26.185 8C21.5485 11.0427 19.5201 17.4179 19.5201 19.4464V35.819L13 42.484V50.7427L18.0712 49.4387"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M26.1848 19.4463V22.7788"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M22.1284 66.9705V53.061"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M41.022 37.3247L53.0054 23.9185L67.0666 41.1634L65.6074 42.7553H59.24V64.643"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M47.052 50.8911V63.9554"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                    </svg>
 
-                    <h3>
-                      Refined Digital <br />
-                      Transformation Strategy
-                    </h3>
+                  <div className="flip-card" tabIndex={0}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div className="whySynectics_card">
+                          <svg
+                            width="80"
+                            height="80"
+                            viewBox="0 0 80 80"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M53.0051 53.1021V67.6939"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M53.0051 70.3467V72.9998"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M29.3728 42.4839V59.2912"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M34.154 49.4387L39.2252 50.7427V42.484L32.7051 35.9639C32.7051 35.9639 32.7051 21.6197 32.7051 19.5912C32.7051 17.5628 30.8215 11.0427 26.185 8C21.5485 11.0427 19.5201 17.4179 19.5201 19.4464V35.819L13 42.484V50.7427L18.0712 49.4387"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M26.1848 19.4463V22.7788"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M22.1284 66.9705V53.061"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M41.022 37.3247L53.0054 23.9185L67.0666 41.1634L65.6074 42.7553H59.24V64.643"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M47.052 50.8911V63.9554"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                          </svg>
+
+                          <h3>
+                            Refined Digital <br />
+                            Transformation Strategy
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="flip-card-back">
+                        <div className="whySynectics_card whySynectics_card-back">
+                          <p>
+                            As digital technology progresses, organizations
+                            start generating ideas for using business technology
+                            in new ways. With evolved technologies and new ways
+                            of implementing them — the idea of digital
+                            transformation is taking a new shape.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="whySynectics_card">
-                    <svg
-                      width="80"
-                      height="80"
-                      viewBox="0 0 80 80"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M13.3523 30.1589C16.3068 22.9203 21.9205 17.3066 29.1591 14.3521"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M39.5 72.9998C41.9476 72.9998 43.9318 71.0156 43.9318 68.568C43.9318 66.1203 41.9476 64.1362 39.5 64.1362C37.0523 64.1362 35.0681 66.1203 35.0681 68.568C35.0681 71.0156 37.0523 72.9998 39.5 72.9998Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M39.5 16.8636C41.9476 16.8636 43.9318 14.8794 43.9318 12.4318C43.9318 9.98419 41.9476 8 39.5 8C37.0523 8 35.0681 9.98419 35.0681 12.4318C35.0681 14.8794 37.0523 16.8636 39.5 16.8636Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M67.5683 44.9321C70.0159 44.9321 72.0001 42.9479 72.0001 40.5003C72.0001 38.0526 70.0159 36.0684 67.5683 36.0684C65.1206 36.0684 63.1365 38.0526 63.1365 40.5003C63.1365 42.9479 65.1206 44.9321 67.5683 44.9321Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M11.4318 44.9321C13.8794 44.9321 15.8636 42.9479 15.8636 40.5003C15.8636 38.0526 13.8794 36.0684 11.4318 36.0684C8.98419 36.0684 7 38.0526 7 40.5003C7 42.9479 8.98419 44.9321 11.4318 44.9321Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M21.7725 12.7271L29.1589 14.3521L27.5339 21.8862"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M66.091 51.1362C63.2842 58.3748 57.5228 63.9884 50.2842 66.943"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M57.8183 68.5679L50.2842 66.943L51.9092 59.5566"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M29.1591 67.091C22.0682 64.1365 16.3068 58.3751 13.5 51.2842"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M11.875 58.6705L13.5 51.2842L20.8864 52.9092"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M50.2842 14.3521C57.3751 17.1589 63.1365 22.9203 66.091 30.1589"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M67.5682 22.625L66.091 30.1591L58.5569 28.5341"
-                        stroke="white"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M43.9318 40.5003C43.9318 43.0116 41.8636 44.9321 39.5 44.9321C36.9886 44.9321 35.0681 42.8639 35.0681 40.5003C35.0681 37.9889 37.1363 36.0684 39.5 36.0684C42.0113 36.0684 43.9318 37.9889 43.9318 40.5003Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                      <path
-                        d="M49.8409 40.5C49.8409 39.6137 49.6932 38.875 49.5455 38.1364L52.5 36.5114L49.5455 31.341L46.5909 32.966C45.4091 31.7841 43.9318 31.0455 42.4545 30.6023V27.2046H36.5455V30.6023C34.9205 31.0455 33.5909 31.9319 32.4091 32.966L29.4545 31.341L26.5 36.5114L29.4545 38.2841C29.3068 39.0228 29.1591 39.7614 29.1591 40.6478C29.1591 41.5341 29.3068 42.2728 29.4545 43.0114L26.5 44.7841L29.4545 49.9546L32.4091 48.1819C33.5909 49.216 34.9205 50.1023 36.5455 50.5455V53.7955H42.4545V50.3978C44.0795 49.9546 45.4091 49.0682 46.5909 48.0341L49.5455 49.8069L52.5 44.6364L49.5455 43.0114C49.6932 42.125 49.8409 41.2387 49.8409 40.5V40.5Z"
-                        stroke="#2F80ED"
-                        stroke-miterlimit="10"
-                      />
-                    </svg>
 
-                    <h3>
-                      Refined Digital <br />
-                      Transformation Strategy
-                    </h3>
+                  <div className="flip-card" tabIndex={0}>
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div className="whySynectics_card">
+                          <svg
+                            width="80"
+                            height="80"
+                            viewBox="0 0 80 80"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.3523 30.1589C16.3068 22.9203 21.9205 17.3066 29.1591 14.3521"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M39.5 72.9998C41.9476 72.9998 43.9318 71.0156 43.9318 68.568C43.9318 66.1203 41.9476 64.1362 39.5 64.1362C37.0523 64.1362 35.0681 66.1203 35.0681 68.568C35.0681 71.0156 37.0523 72.9998 39.5 72.9998Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M39.5 16.8636C41.9476 16.8636 43.9318 14.8794 43.9318 12.4318C43.9318 9.98419 41.9476 8 39.5 8C37.0523 8 35.0681 9.98419 35.0681 12.4318C35.0681 14.8794 37.0523 16.8636 39.5 16.8636Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M67.5683 44.9321C70.0159 44.9321 72.0001 42.9479 72.0001 40.5003C72.0001 38.0526 70.0159 36.0684 67.5683 36.0684C65.1206 36.0684 63.1365 38.0526 63.1365 40.5003C63.1365 42.9479 65.1206 44.9321 67.5683 44.9321Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M11.4318 44.9321C13.8794 44.9321 15.8636 42.9479 15.8636 40.5003C15.8636 38.0526 13.8794 36.0684 11.4318 36.0684C8.98419 36.0684 7 38.0526 7 40.5003C7 42.9479 8.98419 44.9321 11.4318 44.9321Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M21.7725 12.7271L29.1589 14.3521L27.5339 21.8862"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M66.091 51.1362C63.2842 58.3748 57.5228 63.9884 50.2842 66.943"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M57.8183 68.5679L50.2842 66.943L51.9092 59.5566"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M29.1591 67.091C22.0682 64.1365 16.3068 58.3751 13.5 51.2842"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M11.875 58.6705L13.5 51.2842L20.8864 52.9092"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M50.2842 14.3521C57.3751 17.1589 63.1365 22.9203 66.091 30.1589"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M67.5682 22.625L66.091 30.1591L58.5569 28.5341"
+                              stroke="white"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M43.9318 40.5003C43.9318 43.0116 41.8636 44.9321 39.5 44.9321C36.9886 44.9321 35.0681 42.8639 35.0681 40.5003C35.0681 37.9889 37.1363 36.0684 39.5 36.0684C42.0113 36.0684 43.9318 37.9889 43.9318 40.5003Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M49.8409 40.5C49.8409 39.6137 49.6932 38.875 49.5455 38.1364L52.5 36.5114L49.5455 31.341L46.5909 32.966C45.4091 31.7841 43.9318 31.0455 42.4545 30.6023V27.2046H36.5455V30.6023C34.9205 31.0455 33.5909 31.9319 32.4091 32.966L29.4545 31.341L26.5 36.5114L29.4545 38.2841C29.3068 39.0228 29.1591 39.7614 29.1591 40.6478C29.1591 41.5341 29.3068 42.2728 29.4545 43.0114L26.5 44.7841L29.4545 49.9546L32.4091 48.1819C33.5909 49.216 34.9205 50.1023 36.5455 50.5455V53.7955H42.4545V50.3978C44.0795 49.9546 45.4091 49.0682 46.5909 48.0341L49.5455 49.8069L52.5 44.6364L49.5455 43.0114C49.6932 42.125 49.8409 41.2387 49.8409 40.5V40.5Z"
+                              stroke="#2F80ED"
+                              stroke-miterlimit="10"
+                            />
+                          </svg>
+
+                          <h3>
+                            Refined Digital <br />
+                            Transformation Strategy
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="flip-card-back">
+                        <div className="whySynectics_card whySynectics_card-back">
+                          <p>
+                            By implementing the advanced digital business
+                            transformation changes, innovative businesses become
+                            more responsive and flexible to market trends and
+                            demands.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
