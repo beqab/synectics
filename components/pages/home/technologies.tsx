@@ -10,36 +10,44 @@ const TechnologiesObject = [
     categoryName: "Cloud and Infrastructure",
     TechnologiesList: [
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/aws.svg",
+        title: "AWS",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/GCP.svg",
+        title: "GCP",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/Kubernetes.svg",
+        title: "Kubernetes",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/Terraform.svg",
+        title: "Terraform",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/Chef.svg",
+        title: "Chef",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/Jenkins.svg",
+        title: "Jenkins",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/GitLab.svg",
+        title: "GitLab",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/CloudandInfrastructur/GitHub.svg",
+        title: "GitHub",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/CircleCI.svg",
+        title: "CircleCI",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/ArgoCD.svg",
+        title: "ArgoCD",
       },
     ],
   },
@@ -387,7 +395,7 @@ const Technologies = () => {
             )}
           </div>
         </div>
-        <div className=" d-md-none d-md-block">
+        <div className=" d-none d-md-block">
           <OwlCarousel options={options}>
             {TechnologiesObject[activeCategory].TechnologiesList.map(
               (el, i) => {
