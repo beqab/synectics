@@ -55,36 +55,57 @@ const TechnologiesObject = [
     categoryName: "Web Development",
     TechnologiesList: [
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/Python.svg",
+        title: "Python",
+      },
+
+      {
+        img: "/technologies/web/java.svg",
+        title: "java",
+      },
+      {
+        img: "/technologies/web/Node.svg",
+        title: "Node.js",
+      },
+      {
+        img: "/technologies/web/laravel.svg",
+        title: "Laravel",
       },
       {
         img: "php.png",
         title: "php",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/React.svg",
+        title: "React",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/nextjs.svg",
+        title: "Next.js",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/Angular.svg",
+        title: "Angular",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/Vue.svg",
+        title: "Vue.js",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/vista.svg",
+        title: "Vista",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/web/MySql.svg",
+        title: "MYSQL",
+      },
+      {
+        img: "/technologies/web/postgresql.svg",
+        title: "Postgresql",
+      },
+      {
+        img: "/technologies/web/Oracle.svg",
+        title: "Oracle",
       },
     ],
   },
