@@ -113,196 +113,164 @@ const TechnologiesObject = [
     categoryName: "Mobile Development",
     TechnologiesList: [
       {
-        img: "php.png",
-        title: "22php",
+        img: "/technologies/mobile/Java.svg",
+        title: "Java",
       },
       {
-        img: "php.png",
-        title: "21php",
+        img: "/technologies/mobile/Node.svg",
+        title: "Node.js",
       },
       {
-        img: "php.png",
-        title: "23php",
+        img: "/technologies/mobile/Swift.svg",
+        title: "Swift",
       },
       {
-        img: "php.png",
-        title: "21php",
+        img: "/technologies/mobile/Kotlin.svg",
+        title: "Kotlin",
       },
       {
-        img: "php.png",
-        title: "23php",
+        img: "/technologies/mobile/go.svg",
+        title: "go",
       },
       {
-        img: "php.png",
-        title: "21php",
+        img: "/technologies/mobile/dotnet.svg",
+        title: ".net",
+      },
+
+      {
+        img: "/technologies/mobile/codideep.svg",
+        title: "codideep",
+      },
+
+      {
+        img: "/technologies/mobile/Xamarin.svg",
+        title: "Xamarin",
       },
       {
-        img: "php.png",
-        title: "23php",
+        img: "/technologies/mobile/Ionic.svg",
+        title: "Ionic",
+      },
+      {
+        img: "/technologies/mobile/unity.svg",
+        title: "unity",
+      },
+      {
+        img: "/technologies/mobile/Oracle.svg",
+        title: "Oracle",
       },
     ],
   },
-  {
-    categoryName: "ERP Solutions",
-    TechnologiesList: [
-      {
-        img: "23php.png",
-        title: "php",
-      },
-      {
-        img: "23php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-    ],
-  },
-  {
-    categoryName: "CRM SOlutions",
-    TechnologiesList: [
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-    ],
-  },
+
   {
     categoryName: "BigData and Data Analytics",
     TechnologiesList: [
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Python.svg",
+        title: "Python",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Node.svg",
+        title: "node.js",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/r.svg",
+        title: "r",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Confluent.svg",
+        title: "Confluent",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Kafka.svg",
+        title: "Kafka",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Spark.svg",
+        title: "Spark",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Hadoop.svg",
+        title: "Hadoop",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/Flink.svg",
+        title: "Flink",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/bgData/BigQuery.svg",
+        title: "BigQuery",
+      },
+      {
+        img: "/technologies/bgData/Mongo.svg",
+        title: "Mongo",
+      },
+      {
+        img: "/technologies/bgData/Cassandra.svg",
+        title: "Cassandra",
       },
     ],
   },
+
+  {
+    categoryName: "CRM SOlutions",
+    TechnologiesList: [
+      {
+        img: "/technologies/crm/SAP.svg",
+        title: "SAP",
+      },
+      {
+        img: "/technologies/crm/SalesForce.svg",
+        title: "SalesForce",
+      },
+      {
+        img: "/technologies/crm/Microsoft.svg",
+        title: "Microsoft",
+      },
+      {
+        img: "/technologies/crm/ZOHO.svg",
+        title: "ZOHO",
+      },
+      {
+        img: "/technologies/crm/HubSpot.svg",
+        title: "HubSpot",
+      },
+      {
+        img: "/technologies/crm/SogarCRM.svg",
+        title: "SogarCRM",
+      },
+    ],
+  },
+
   {
     categoryName: "Blockchain",
     TechnologiesList: [
       {
-        img: "ssphp.png",
-        title: "php",
+        img: "ss/technologies/Blockchain/blockchin.com.svg",
+        title: "Blockchain.com",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/bnb.svg",
+        title: "bnb",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/eth.svg",
+        title: "eth",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/metamask.svg",
+        title: "metamask",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/Java.svg",
+        title: "Java",
       },
       {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/Python.svg",
+        title: "Python",
       },
       {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "php.png",
-        title: "php",
+        img: "/technologies/Blockchain/Node.svg",
+        title: "Node.js",
       },
     ],
   },
@@ -361,7 +329,6 @@ const categories = [
   "Web Development",
   "Mobile Development",
   "BigData and Data Analytics",
-  "ERP Solutions",
   "CRM Solutions",
   "Blockchain",
 ];
