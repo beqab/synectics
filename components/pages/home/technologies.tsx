@@ -60,7 +60,7 @@ const TechnologiesObject = [
       },
 
       {
-        img: "/technologies/web/java.svg",
+        img: "/technologies/web/Java.svg",
         title: "java",
       },
       {
@@ -121,7 +121,7 @@ const TechnologiesObject = [
         title: "Node.js",
       },
       {
-        img: "/technologies/mobile/Swift.svg",
+        img: "/technologies/mobile/swift.svg",
         title: "Swift",
       },
       {
@@ -197,7 +197,7 @@ const TechnologiesObject = [
         title: "Flink",
       },
       {
-        img: "/technologies/bgData/BigQuery.svg",
+        img: "/technologies/bgData/bigQuery.svg",
         title: "BigQuery",
       },
       {
@@ -245,7 +245,7 @@ const TechnologiesObject = [
     categoryName: "Blockchain",
     TechnologiesList: [
       {
-        img: "ss/technologies/Blockchain/blockchin.com.svg",
+        img: "ss/technologies/Blockchain/blockchincom.svg",
         title: "Blockchain.com",
       },
       {
