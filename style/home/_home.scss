@@ -153,6 +153,26 @@
     display: none;
   }
 
+  .owlWrapper {
+    width: 1320px;
+  }
+  .owlOut {
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      z-index: 20;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100px;
+      // background: rgba(0, 0, 0, 0.176);
+      right: 0;
+      top: 0;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+  }
   .servicePrev {
     position: absolute;
     top: -100px;

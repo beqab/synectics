@@ -299,10 +299,9 @@ const options = {
 
   `,
   ],
-  rewind: true,
+  // rewind: true,
   autoplay: true,
   loop: true,
-  Infinity: true,
 
   responsiveClass: true,
   responsive: {
@@ -317,7 +316,7 @@ const options = {
     1000: {
       items: 6,
       nav: true,
-      loop: false,
+      loop: true,
     },
   },
 
@@ -384,18 +383,20 @@ const Technologies = () => {
           </div>
         </div>
         <div className=" d-none d-md-block">
-          <OwlCarousel options={options}>
-            {TechnologiesObject[activeCategory].TechnologiesList.map(
-              (el, i) => {
-                return (
-                  <div className="technology_item">
-                    <img src={"/imgs/" + el.img} alt="The Last of us" />
-                    <h4>{el.title}</h4>
-                  </div>
-                );
-              }
-            )}
-            {/* <div className="technology_item">
+          <div className="owlOut">
+            <div className="owlWrapper">
+              <OwlCarousel options={options}>
+                {TechnologiesObject[activeCategory].TechnologiesList.map(
+                  (el, i) => {
+                    return (
+                      <div className="technology_item">
+                        <img src={"/imgs/" + el.img} alt="The Last of us" />
+                        <h4>{el.title}</h4>
+                      </div>
+                    );
+                  }
+                )}
+                {/* <div className="technology_item">
               <img src="/imgs/php.svg" alt="The Last of us" />
               <h4>PHP</h4>
             </div>
@@ -423,7 +424,9 @@ const Technologies = () => {
               <img src="/imgs/php.png" alt="The Last of us" />
               <h4>PHP</h4>
             </div> */}
-          </OwlCarousel>
+              </OwlCarousel>
+            </div>
+          </div>
         </div>
       </div>
     </>
