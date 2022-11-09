@@ -138,53 +138,51 @@ const TechnologiesObject = [
     categoryName: "Web Development",
     TechnologiesList: [
       {
+        img: "/technologies/web/PHP.svg",
+        title: "PHP",
+      },
+      {
         img: "/technologies/web/Python.svg",
         title: "Python",
       },
 
       {
-        img: "/technologies/web/Java.svg",
-        title: "java",
-      },
-      {
         img: "/technologies/web/Node.svg",
-        title: "Node.js",
+        title: "NodeJS",
       },
-      {
-        img: "/technologies/web/laravel.svg",
-        title: "Laravel",
-      },
-      {
-        img: "php.png",
-        title: "php",
-      },
-      {
-        img: "/technologies/web/React.svg",
-        title: "React",
-      },
-      {
-        img: "/technologies/web/nextjs.svg",
-        title: "Next.js",
-      },
+      // {
+      //   img: "/technologies/web/laravel.svg",
+      //   title: "Laravel",
+      // },
+
       {
         img: "/technologies/web/Angular.svg",
         title: "Angular",
       },
       {
+        img: "/technologies/web/React.svg",
+        title: "ReactJS",
+      },
+
+      {
         img: "/technologies/web/Vue.svg",
-        title: "Vue.js",
+        title: "VueJS",
       },
       {
         img: "/technologies/web/vista.svg",
-        title: "Vista",
+        title: "Vuetify",
+      },
+      {
+        img: "/technologies/web/nextjs.svg",
+        title: "NextJS",
       },
       {
         img: "/technologies/web/MySql.svg",
-        title: "MYSQL",
+        title: "MySQL",
       },
       {
         img: "/technologies/web/postgresql.svg",
-        title: "Postgresql",
+        title: "PostgreSQL",
       },
       {
         img: "/technologies/web/Oracle.svg",
@@ -196,50 +194,62 @@ const TechnologiesObject = [
     categoryName: "Mobile Development",
     TechnologiesList: [
       {
-        img: "/technologies/mobile/Java.svg",
-        title: "Java",
-      },
-      {
-        img: "/technologies/mobile/Node.svg",
-        title: "Node.js",
+        img: "/technologies/mobile/Kotlin.svg",
+        title: "Kotlin",
       },
       {
         img: "/technologies/mobile/swift.svg",
         title: "Swift",
       },
       {
-        img: "/technologies/mobile/Kotlin.svg",
-        title: "Kotlin",
-      },
-      {
-        img: "/technologies/mobile/go.svg",
-        title: "go",
-      },
-      {
-        img: "/technologies/mobile/dotnet.svg",
-        title: ".net",
-      },
-
-      {
-        img: "/technologies/mobile/codideep.svg",
-        title: "codideep",
+        img: "/technologies/mobile/Ionic.svg",
+        title: "Ionic",
       },
 
       {
         img: "/technologies/mobile/Xamarin.svg",
         title: "Xamarin",
       },
+
       {
-        img: "/technologies/mobile/Ionic.svg",
-        title: "Ionic",
+        img: "/technologies/mobile/Flutter.svg",
+        title: "Flutter",
       },
       {
         img: "/technologies/mobile/unity.svg",
-        title: "unity",
+        title: "Unity",
       },
       {
-        img: "/technologies/mobile/Oracle.svg",
+        img: "/technologies/mobile/ObjectC.svg",
+        title: "ObjectC",
+      },
+      {
+        img: "/technologies/mobile/go.svg",
+        title: "GO",
+      },
+      {
+        img: "/technologies/mobile/net.svg",
+        title: ".NET",
+      },
+
+      {
+        img: "/technologies/mobile/Node.svg",
+        title: "NodeJS",
+      },
+
+      {
+        img: "/technologies/mobile/oracle.svg",
         title: "Oracle",
+      },
+
+      {
+        img: "/technologies/mobile/MySql.svg",
+        title: "MySQL",
+      },
+
+      {
+        img: "/technologies/mobile/postgresql.svg",
+        title: "PostgreSQL",
       },
     ],
   },
@@ -479,34 +489,6 @@ const Technologies = () => {
                     );
                   }
                 )}
-                {/* <div className="technology_item">
-              <img src="/imgs/php.svg" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/python.png" alt="The Last of us" />
-              <h4>PYTHON</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/php.png" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/php.png" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/php.png" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/php.png" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div>
-            <div className="technology_item">
-              <img src="/imgs/php.png" alt="The Last of us" />
-              <h4>PHP</h4>
-            </div> */}
               </OwlCarousel>
             </div>
           </div>
