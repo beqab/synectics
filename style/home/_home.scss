@@ -707,6 +707,11 @@
 
 .earth2 {
   // width: ;
+  .isActive {
+    // &:hover {
+    fill: #b7d7ff;
+    // }
+  }
 }
 .earth2Wrapper {
   overflow: hidden;
