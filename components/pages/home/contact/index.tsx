@@ -58,7 +58,7 @@ const Contact = ({ formPriceContainer }: any) => {
           <div className="col-md-6">
             {formPriceContainer ? (
               <div className="stepsIndicator">
-                Step <span>5</span>/5
+                Step <span>4</span>/4
               </div>
             ) : null}
             <ContactForm />

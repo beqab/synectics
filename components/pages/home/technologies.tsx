@@ -14,6 +14,10 @@ const TechnologiesObject = [
         title: "AWS",
       },
       {
+        img: "/technologies/CloudandInfrastructur/azure.svg",
+        title: "azure",
+      },
+      {
         img: "/technologies/CloudandInfrastructur/GCP.svg",
         title: "GCP",
       },
@@ -22,13 +26,23 @@ const TechnologiesObject = [
         title: "Kubernetes",
       },
       {
+        img: "/technologies/CloudandInfrastructur/doker.svg",
+        title: "Docker",
+      },
+      {
         img: "/technologies/CloudandInfrastructur/Terraform.svg",
         title: "Terraform",
       },
+
       {
-        img: "/technologies/CloudandInfrastructur/Chef.svg",
-        title: "Chef",
+        img: "/technologies/CloudandInfrastructur/Puppet.svg",
+        title: "Puppet",
       },
+      {
+        img: "/technologies/CloudandInfrastructur/Ansible.svg",
+        title: "Ansible",
+      },
+
       {
         img: "/technologies/CloudandInfrastructur/Jenkins.svg",
         title: "Jenkins",
@@ -42,12 +56,81 @@ const TechnologiesObject = [
         title: "GitHub",
       },
       {
+        img: "/technologies/CloudandInfrastructur/ArgoCD.svg",
+        title: "ArgoCD",
+      },
+      {
         img: "/technologies/CloudandInfrastructur/CircleCI.svg",
         title: "CircleCI",
       },
       {
-        img: "/technologies/CloudandInfrastructur/ArgoCD.svg",
-        title: "ArgoCD",
+        img: "/technologies/CloudandInfrastructur/Prometheus.svg",
+        title: "Prometheus",
+      },
+
+      {
+        img: "/technologies/CloudandInfrastructur/Grafana.svg",
+        title: "Grafana",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/k6s.svg",
+        title: "k6s",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/dynotrace.svg",
+        title: "dynotrace",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/NewRelic.svg",
+        title: "New Relic",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/dataDog.svg",
+        title: "dataDog",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/zabbix.svg",
+        title: "zabbix",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/nagios.svg",
+        title: "nagios",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/pagerduty.svg",
+        title: "Pagerduty",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/cisofy.svg",
+        title: "cisofy",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/blackduck.svg",
+        title: "blackduck",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/Rapid7.svg",
+        title: "Rapid7",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/sonarCube.svg",
+        title: "SonarCube",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/phython.svg",
+        title: "Python",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/go.svg",
+        title: "GO",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/Yaml.svg",
+        title: "Yaml",
+      },
+      {
+        img: "/technologies/CloudandInfrastructur/bash.svg",
+        title: "Bash",
       },
     ],
   },

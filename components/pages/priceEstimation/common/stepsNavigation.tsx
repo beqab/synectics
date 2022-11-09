@@ -8,7 +8,7 @@ const StepsNavigation: React.FC = ({ children }) => {
   return (
     <div>
       <div className="stepsIndicator">
-        Step <span>{currentStepIndex + 1}</span>/5
+        Step <span>{currentStepIndex + 1}</span>/4
       </div>
       {children}
       <div className="d-flex  justify-content-between mt-5 stepsController ">

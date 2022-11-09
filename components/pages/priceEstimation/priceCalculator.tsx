@@ -51,12 +51,12 @@ export const priceCalculatorObject = [
       "MsSQL",
     ],
   },
-  {
-    title: "What is your project's expected duration?",
-    description: "Please select at least one option.",
-    type: "slider",
-    key: "expectedDuration",
-  },
+  // {
+  //   title: "What is your project's expected duration?",
+  //   description: "Please select at least one option.",
+  //   type: "slider",
+  //   key: "expectedDuration",
+  // },
   {
     title: "Tell us more about your Project",
     description:

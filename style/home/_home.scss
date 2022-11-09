@@ -705,6 +705,13 @@
   }
 }
 
+.earth2 {
+  // width: ;
+}
+.earth2Wrapper {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
   .sutGlobal_wrapper .mapWrapper svg {
     width: 174%;
@@ -925,6 +932,7 @@
   .collaboration_img {
     max-width: 100%;
     padding-top: 20px;
+    width: 100%;
   }
 
   .ourApproach_cardsContainer {
@@ -1199,4 +1207,10 @@
 }
 
 .technology {
+}
+
+.collaboration_img {
+  max-width: 100%;
+  padding-top: 20px;
+  width: 100%;
 }

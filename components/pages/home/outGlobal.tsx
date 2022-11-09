@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Earth from "../../svgs/earth";
+import Earth2 from "../../svgs/earth2";
 
 const OutGlobal = () => {
   return (
@@ -34,8 +35,9 @@ const OutGlobal = () => {
           </Link>
         </div> */}
       </div>
-
-      <Earth />
+      <div className="earth2Wrapper">
+        <Earth2 />
+      </div>
     </div>
   );
 };
