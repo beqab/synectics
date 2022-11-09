@@ -258,48 +258,80 @@ const TechnologiesObject = [
     categoryName: "BigData and Data Analytics",
     TechnologiesList: [
       {
-        img: "/technologies/bgData/Python.svg",
-        title: "Python",
+        img: "/technologies/bgData/aws.svg",
+        title: "AWS",
       },
       {
-        img: "/technologies/bgData/Node.svg",
-        title: "node.js",
+        img: "/technologies/bgData/GSP.svg",
+        title: "GCP",
       },
       {
-        img: "/technologies/bgData/r.svg",
-        title: "r",
+        img: "/technologies/bgData/readHead.svg",
+        title: "Rea Head",
       },
       {
-        img: "/technologies/bgData/Confluent.svg",
-        title: "Confluent",
+        img: "/technologies/mobile/oracle.svg",
+        title: "Oracle",
       },
       {
         img: "/technologies/bgData/Kafka.svg",
         title: "Kafka",
       },
       {
-        img: "/technologies/bgData/Spark.svg",
-        title: "Spark",
-      },
-      {
-        img: "/technologies/bgData/Hadoop.svg",
-        title: "Hadoop",
-      },
-      {
         img: "/technologies/bgData/Flink.svg",
         title: "Flink",
       },
       {
+        img: "/technologies/bgData/Spark.svg",
+        title: "Spark",
+      },
+      {
         img: "/technologies/bgData/bigQuery.svg",
-        title: "BigQuery",
+        title: "Big Query",
+      },
+      {
+        img: "/technologies/bgData/r.svg",
+        title: "r",
+      },
+      {
+        img: "/technologies/bgData/java.svg",
+        title: "Java",
+      },
+      {
+        img: "/technologies/bgData/Python.svg",
+        title: "Python",
+      },
+      {
+        img: "/technologies/web/Node.svg",
+        title: "nodeJS",
       },
       {
         img: "/technologies/bgData/Mongo.svg",
         title: "Mongo",
       },
+
       {
         img: "/technologies/bgData/Cassandra.svg",
         title: "Cassandra",
+      },
+      {
+        img: "/technologies/bgData/ELK.svg",
+        title: "ELK",
+      },
+
+      {
+        img: "/technologies/mobile/MySql.svg",
+        title: "MySQL",
+      },
+
+      {
+        img: "/technologies/mobile/postgresql.svg",
+        title: "PostgreSQL",
+      },
+
+      {
+        img: "/technologies/bgData/Metabace.svg",
+        title: "Metabace",
       },
     ],
   },
@@ -308,28 +340,30 @@ const TechnologiesObject = [
     categoryName: "CRM SOlutions",
     TechnologiesList: [
       {
+        img: "/technologies/crm/Microsoft.svg",
+        title: "Microsoft",
+      },
+      {
         img: "/technologies/crm/SAP.svg",
         title: "SAP",
       },
       {
         img: "/technologies/crm/SalesForce.svg",
-        title: "SalesForce",
+        title: "Salesforce",
       },
       {
-        img: "/technologies/crm/Microsoft.svg",
-        title: "Microsoft",
+        img: "/technologies/crm/HubSpot.svg",
+        title: "Hubspot",
       },
+
       {
         img: "/technologies/crm/ZOHO.svg",
         title: "ZOHO",
       },
-      {
-        img: "/technologies/crm/HubSpot.svg",
-        title: "HubSpot",
-      },
+
       {
         img: "/technologies/crm/SogarCRM.svg",
-        title: "SogarCRM",
+        title: "Sogarcrm",
       },
     ],
   },
@@ -338,32 +372,63 @@ const TechnologiesObject = [
     categoryName: "Blockchain",
     TechnologiesList: [
       {
-        img: "ss/technologies/Blockchain/blockchincom.svg",
+        img: "/technologies/bgData/aws.svg",
+        title: "AWS",
+      },
+      {
+        img: "/technologies/Blockchain/blockchincom.svg",
         title: "Blockchain.com",
       },
       {
-        img: "/technologies/Blockchain/bnb.svg",
-        title: "bnb",
+        img: "/technologies/Blockchain/Bitcoin.svg",
+        title: "Bitcoin",
       },
       {
         img: "/technologies/Blockchain/eth.svg",
-        title: "eth",
+        title: "Ethereum",
       },
+      {
+        img: "/technologies/Blockchain/Solidity.svg",
+        title: "Solidity",
+      },
+
+      {
+        img: "/technologies/Blockchain/bnb.svg",
+        title: "Binance",
+      },
+      {
+        img: "/technologies/Blockchain/Web3.svg",
+        title: "Web3",
+      },
+
       {
         img: "/technologies/Blockchain/metamask.svg",
         title: "metamask",
-      },
-      {
-        img: "/technologies/Blockchain/Java.svg",
-        title: "Java",
       },
       {
         img: "/technologies/Blockchain/Python.svg",
         title: "Python",
       },
       {
-        img: "/technologies/Blockchain/Node.svg",
-        title: "Node.js",
+        img: "/technologies/Blockchain/Java.svg",
+        title: "Java",
+      },
+
+      {
+        img: "/technologies/web/Node.svg",
+        title: "nodeJS",
+      },
+      {
+        img: "/technologies/web/MySql.svg",
+        title: "MySQL",
+      },
+      {
+        img: "/technologies/web/postgresql.svg",
+        title: "PostgreSQL",
+      },
+      {
+        img: "/technologies/web/Oracle.svg",
+        title: "Oracle",
       },
     ],
   },
