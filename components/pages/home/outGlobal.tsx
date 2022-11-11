@@ -24,7 +24,7 @@ const OutGlobal = () => {
             <h3 className="onelINe"> Projects Completed </h3>
           </div>
           <div>
-            <span>4</span>
+            <span>5</span>
             <h3 className="b-0">Countries </h3>
           </div>
         </div>

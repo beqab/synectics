@@ -253,11 +253,11 @@ export const EngineeringData = [
   },
 
   {
-    title: "CRM Solution",
+    title: "CRM Solutions",
     href: "CRMSolution",
     renderBlock: (data) => (
       <EngineeringBlock
-        title="CRM Solution"
+        title="CRM Solutions"
         description={() => {
           return (
             <>
@@ -450,7 +450,7 @@ export const EngineeringData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/bch5.svg",
+            technologyImg: "/technologies/hyperledger.svg",
           },
           {
             technologyName: "php",

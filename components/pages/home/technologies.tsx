@@ -238,7 +238,7 @@ const TechnologiesObject = [
       },
 
       {
-        img: "/technologies/mobile/oracle.svg",
+        img: "/technologies/web/Oracle.svg",
         title: "Oracle",
       },
 
@@ -270,7 +270,7 @@ const TechnologiesObject = [
         title: "Rea Head",
       },
       {
-        img: "/technologies/mobile/oracle.svg",
+        img: "/technologies/web/Oracle.svg",
         title: "Oracle",
       },
       {
@@ -458,7 +458,7 @@ const options = {
   `,
   ],
   // rewind: true,
-  autoplay: true,
+  // autoplay: true,
   loop: true,
 
   responsiveClass: true,
@@ -543,18 +543,31 @@ const Technologies = () => {
         <div className=" d-none d-md-block">
           <div className="owlOut">
             <div className="owlWrapper">
-              <OwlCarousel options={options}>
-                {TechnologiesObject[activeCategory].TechnologiesList.map(
-                  (el, i) => {
-                    return (
-                      <div className="technology_item">
-                        <img src={"/imgs/" + el.img} alt="The Last of us" />
-                        <h4>{el.title}</h4>
-                      </div>
-                    );
-                  }
-                )}
-              </OwlCarousel>
+              {categories.map((el, index) => {
+                return (
+                  <div
+                    className={classNames({
+                      "d-none": index !== activeCategory,
+                    })}
+                  >
+                    <OwlCarousel options={options}>
+                      {TechnologiesObject[index].TechnologiesList.map(
+                        (el, i) => {
+                          return (
+                            <div className="technology_item">
+                              <img
+                                src={"/imgs/" + el.img}
+                                alt="The Last of us"
+                              />
+                              <h4>{el.title}</h4>
+                            </div>
+                          );
+                        }
+                      )}
+                    </OwlCarousel>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
