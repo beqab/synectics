@@ -93,6 +93,15 @@
   max-width: 247px;
 }
 
+.collaboration_container {
+  .col-md-7 {
+    padding-left: calc((100vw - 1340px) / 2);
+  }
+  .col-md-5 {
+    overflow: hidden;
+  }
+}
+
 //////////////@at-root
 ///
 .checkboxContainer {

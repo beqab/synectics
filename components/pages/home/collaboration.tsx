@@ -16,7 +16,7 @@ const Collaboration = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid collaboration_container">
       <div className="row">
         <div className="col-md-7">
           <h2>Collaboration Models</h2>
@@ -206,10 +206,7 @@ const Collaboration = () => {
         </div>
         <div className="col-md-5 d-md-block ">
           {/* <CollaboratorImg /> */}
-          <img
-            className="mt-md-5 collaboration_img "
-            src="/imgs/Group 1000001917.svg"
-          />
+          <img className="mt-md-5 collaboration_img " src="/imgs/macBook.svg" />
 
           <div className="d-flex d-md-none align-items-center collaboration_more ">
             <Link href={"/itOutsourcing"}>
