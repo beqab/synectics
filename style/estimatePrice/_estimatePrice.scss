@@ -58,8 +58,8 @@
 
   /* Text & Icons/Primary */
   border: 0 !important;
-  background: #1c55e9;
-  border-radius: 24px;
+  background: #2f80ed;
+  border-radius: 12px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -73,9 +73,14 @@
   height: 46px;
   left: 809px;
   top: 713px;
-  background: rgba(91, 94, 123, 0.3);
-  border-radius: 24px;
-  color: #fff;
+  background: #f5f8fd;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+
+  color: #182939;
   svg {
     margin-right: 5px;
   }
@@ -85,6 +90,7 @@
 }
 
 .stepsController {
+  max-width: 247px;
 }
 
 //////////////@at-root
