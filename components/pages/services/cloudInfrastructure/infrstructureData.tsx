@@ -303,15 +303,14 @@ export const InfrastructureData = [
           return (
             <>
               <p>
-                We help transform your software delivery process to achieve
-                higher efficiency, accelerate product release cycle time, and
-                improve quality of software builds with early identification of
-                emerging issues. We automate and standardize the processes for
-                infrastructure and application deployment where enterprises get
-                faster innovation, better operational efficiency, improved
-                deployment quality, and tangible returns on investment. Faster
-                deployment, increased availability, reduced MTTR and reduced
-                human errors is a result of our DevOps solutions we provide.
+                Database Administration Service (DBAaaS) takes care of the
+                maintenance and optimisation of your database, improving cost
+                and work efficiencies for your business. <br />A fully
+                functioning and available database is vital to the health and
+                performance of your applications. Outsourcing the management and
+                maintenance of this vital task via our DBAaaS solution will help
+                reduce risks, cut costs, and improve your agility and quality of
+                service.
               </p>
             </>
           );
@@ -382,7 +381,8 @@ export const InfrastructureData = [
                 Storage Management plays a similar role in the modern technology
                 of bits and bytes. If data is managed and stored effectively
                 then it can be accessed quickly when any catastrophe strikes.
-                The efficiently stored data can be used as reference material
+                The efficiently stored data can be used as reference material{" "}
+                <br />
                 Synectics understands the pre-requisites of managing the
                 storage, in the present era of technology. We provide efficient
                 solutions to maintain the storage of an organization coherently.

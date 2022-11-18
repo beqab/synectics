@@ -20,7 +20,7 @@ const Contact = ({ formPriceContainer }: any) => {
             <h2>Let’s Discuss your Project</h2>
             <p className="contact_p">
               Fill out the form below to receive a free consultation and find
-              out how Andersen can help your business grow.
+              out how Synectics can help your business grow.
             </p>
             <div className="contact_steps">
               <h3>What happens next?</h3>
