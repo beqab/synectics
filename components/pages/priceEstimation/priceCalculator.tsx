@@ -2,10 +2,13 @@ import React, { useContext } from "react";
 import Slider from "./stepTypes/slider";
 import { PriceCalculatorContext } from "./priceContainerContext";
 import Choice from "./stepTypes/choice";
+import DependingChoice from "./stepTypes/dependingChoice";
 import FirstStep from "./stepTypes/firstStep";
 import TextArea from "./stepTypes/textarea";
 import ContactInfo from "./stepTypes/contactInfo";
 import CompleteStep from "./stepTypes/completeStep";
+import { categories } from "../home/technologies";
+import { TechnologiesObject } from "../home/technologies";
 
 export const priceCalculatorObject = [
   // {
@@ -20,36 +23,16 @@ export const priceCalculatorObject = [
     type: "choice",
     key: "service",
     withOtherBlock: false,
-    options: [
-      "Software Development",
-      "UX/UI",
-      "Cloud/DevOps",
-      "Data Science & Engineering",
-      "Machine Learning",
-      "Machine Learning",
-      "Product Ideation and Validation",
-    ],
+    options: categories,
   },
   {
     title: "Any specific technologies you’re looking for?",
     description: "Please select at least one option.",
-    type: "choice",
+    type: "dependingChoice",
     key: "technologies",
     withOtherBlock: true,
-    options: [
-      "IOS",
-      "Android",
-      "React Native",
-      "Java",
-      "NET",
-      "Node.js",
-      "PHP",
-      "Angular",
-      "Kendo UI",
-      "Framework7",
-      "Oracle Database as a Service",
-      "MsSQL",
-    ],
+    dependingChoice: true,
+    options: TechnologiesObject,
   },
   // {
   //   title: "What is your project's expected duration?",
@@ -97,6 +80,18 @@ const PriceCalculator = () => {
           title={currentStep.title}
           description={currentStep.description}
           withOtherBlock={currentStep.withOtherBlock}
+          dependingChoice={currentStep.dependingChoice}
+        />
+      );
+    case "dependingChoice":
+      return (
+        <DependingChoice
+          options={currentStep.options}
+          stepKey={currentStep.key}
+          title={currentStep.title}
+          description={currentStep.description}
+          withOtherBlock={currentStep.withOtherBlock}
+          dependingChoice={currentStep.dependingChoice}
         />
       );
     case "slider":

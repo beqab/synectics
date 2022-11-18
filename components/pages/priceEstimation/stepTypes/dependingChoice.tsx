@@ -1,13 +1,15 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import StepsNavigation from "../common/stepsNavigation";
 import StepsContainer from "../common/stepsContainer";
 import { useSelector } from "react-redux";
 import { PriceCalculatorContext } from "../priceContainerContext";
+import { TechnologiesObject } from "../../home/technologies";
+// import { TechnologiesObject } from "../../";
 
 interface IProps {
   title: string;
   description: string;
-  options: string[];
+  options: any;
   stepKey: string;
   withOtherBlock: boolean;
   dependingChoice?: boolean;
@@ -26,21 +28,43 @@ function Choice({
   const [showOtherBlock, setShowOtherBlock] = useState(false);
   console.log(stepKey, "key");
 
+  const [normalizedOptions, setNormalizedOptions] = useState([]);
+
+  //   TechnologiesObject;
+
   const inputRef = useRef(null);
 
   let value = values[stepKey] ? values[stepKey] : [];
+
+  useEffect(() => {
+    let Ots = TechnologiesObject.filter((el) =>
+      values.service.includes(el.categoryName)
+    )
+      .map((el) => el.TechnologiesList)
+
+      .flat()
+      .map((el) => el.title)
+      .filter(function (item, pos, a) {
+        return a.indexOf(item) == pos;
+      });
+
+    setNormalizedOptions(Ots);
+    console.log(Ots, "Ots");
+  }, [value.service]);
+  //
+  //   return <div>ddd</div>;
   return (
     <>
       <StepsContainer title={title} description={description}>
         <div className="d-flex flex-wrap">
           {/* <div
-            onClick={() => {
-              console.log(values, "vvvvvvvvvvv");
-            }}
-          >
-            tet
-          </div> */}
-          {options.map((el, i) => {
+          onClick={() => {
+            console.log(values, "vvvvvvvvvvv");
+          }}
+        >
+          tet
+        </div> */}
+          {normalizedOptions.map((el, i) => {
             return (
               <label
                 key={i}
@@ -85,7 +109,7 @@ function Choice({
             className="addExtraOptions_container"
           >
             {value
-              .filter((el) => !options.includes(el))
+              .filter((el) => !normalizedOptions.includes(el))
               .map((el) => {
                 return (
                   <span>

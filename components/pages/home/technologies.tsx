@@ -5,12 +5,12 @@ import classNames from "classnames";
 
 import OwlCarousel from "react-owl-carousel2";
 
-const TechnologiesObject = [
+export const TechnologiesObject = [
   {
     categoryName: "Cloud and Infrastructure",
     TechnologiesList: [
       {
-        img: "/technologies/CloudandInfrastructur/aws.svg",
+        img: "/technologies/CloudandInfra structur/aws.svg",
         title: "AWS",
       },
       {
@@ -481,7 +481,7 @@ const options = {
   // navigator:
 };
 
-const categories = [
+export const categories = [
   "Cloud and Infrastructure",
   "Web Development",
   "Mobile Development",
