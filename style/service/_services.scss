@@ -240,9 +240,10 @@
         margin-right: 0 !important;
         // margin-left: 0 !important;
         // width: 0 !important;
-        min-width: calc((100vw - 1190px) / 4) !important;
+        min-width: 0 !important;
         margin-left: calc((100vw - 1190px) / 8);
         height: 1px;
+        margin-right: 0px;
       }
       min-width: 1190px;
       margin-left: calc((100vw - 1190px) / 8);
