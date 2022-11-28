@@ -170,6 +170,43 @@ input:focus + label {
     align-items: center;
     justify-content: center;
     padding-left: 11px;
+    position: relative;
+    img,
+    svg {
+      width: 22px;
+      height: 18px;
+      border-radius: 12px;
+    }
+    .dropDown {
+      position: absolute;
+      top: 46px;
+      background: #fff;
+      z-index: 2;
+
+      box-shadow: 1px 20px 40px #2b59ff1c;
+      border-radius: 5px;
+      max-height: 300px;
+      overflow: auto;
+      height: 0px;
+      padding: 0;
+      z-index: 2;
+      &.isOpen {
+        height: 300px;
+        padding: 10px 5px 10px 15px;
+      }
+      &_item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.179);
+        white-space: nowrap;
+        display: flex;
+        cursor: pointer;
+        padding: 3px 6px;
+        span {
+          display: inline-block;
+          width: 70px;
+          margin-left: 7px;
+        }
+      }
+    }
   }
   input {
     border: none;

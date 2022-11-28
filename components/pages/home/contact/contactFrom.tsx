@@ -1,10 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { FormGroup, Button, Input } from "../../../common/form";
 import classnames from "classnames";
 // import { ProfileService } from "../../../services/profile/profile.http";
 import { ToastContainer, toast } from "react-toastify";
+// import CountryList, {getList, findFlag} from "country-list-with-dial-code-and-flag";
+import flags, {
+  getList,
+  findFlagByDialCode,
+} from "country-list-with-dial-code-and-flag";
+import countryListMap, { getCountryListMap } from "country-flags-dial-code";
+import classNames from "classnames";
 
 interface IContactForm {
   name: string;
@@ -28,7 +35,9 @@ interface IErrorMsg {
 
 function Contact() {
   const [load, setLoad] = useState(false);
+  const [openCountryOptions, setOpenCountryOptions] = useState(false);
   const [filesArray, setFilesArray] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState("US");
   const {
     register,
     handleSubmit,
@@ -83,9 +92,43 @@ function Contact() {
   });
   // console.log(watch("name"), "getValues");
 
+  const getCountryOptions = () => {
+    let countries = getCountryListMap();
+
+    let list = [];
+
+    for (var key in countries) {
+      list.push(
+        <div
+          key={key}
+          onClick={() => {
+            setSelectedCountry(key);
+            setOpenCountryOptions(false);
+          }}
+          className="dropDown_item"
+        >
+          <div dangerouslySetInnerHTML={{ __html: countries[key].flag }}>
+            {/* {} */}
+          </div>
+          <span>{countries[key].dialCode}</span>
+        </div>
+      );
+    }
+
+    return list;
+  };
+
   const selectRef = useRef(null);
 
   const fileInputRef = useRef(null);
+  useEffect(() => {
+    console.log(getCountryListMap(), "CountryListCountryList");
+    const closeOptions = () => setOpenCountryOptions(false);
+    console.log(findFlagByDialCode("+972"));
+    window.addEventListener("click", closeOptions);
+    return () => window.removeEventListener("click", closeOptions);
+  }, []);
+
   return (
     <form onSubmit={submit} className="contactSection_from">
       <ToastContainer />
@@ -202,63 +245,27 @@ function Contact() {
           </FormGroup>
         </div> */}
         <div className="PhoneNumberContainer">
-          <div className="phoneCodeSelect">
-            <div className="PhoneNumberContainer_selected d-flex align-items-center">
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+            className="phoneCodeSelect"
+          >
+            <div
+              onClick={() => {
+                setOpenCountryOptions(true);
+              }}
+              className="PhoneNumberContainer_selected d-flex align-items-center"
+            >
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: getCountryListMap()[selectedCountry].flag,
+                }}
+              ></span>
+              {/* <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" /> */}
+              <span> {getCountryListMap()[selectedCountry]["dialCode"]}</span>
               <svg
-                width="22"
-                height="18"
-                viewBox="0 0 22 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_384_5916)">
-                  <path
-                    d="M20 0H2C0.89543 0 0 0.89543 0 2V16C0 17.1046 0.89543 18 2 18H20C21.1046 18 22 17.1046 22 16V2C22 0.89543 21.1046 0 20 0Z"
-                    fill="white"
-                  />
-                  <path d="M12.5 18L12.5 0L9.5 0V18H12.5Z" fill="#FC5B70" />
-                  <path d="M22 7.5H0V10.5H22V7.5Z" fill="#FC5B70" />
-                  <path
-                    d="M6.30078 4.30005V3.30005H3.30078V4.30005H6.30078Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M5.30078 2.30005H4.30078V5.30005H5.30078V2.30005Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M18.6992 4.30005V3.30005H15.6992V4.30005H18.6992Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M17.6992 2.30005H16.6992V5.30005H17.6992V2.30005Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M6.30078 14.7V13.7H3.30078V14.7H6.30078Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M5.30078 12.7H4.30078V15.7H5.30078V12.7Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M18.6992 14.7V13.7H15.6992V14.7H18.6992Z"
-                    fill="#FC5B70"
-                  />
-                  <path
-                    d="M17.6992 12.7H16.6992V15.7H17.6992V12.7Z"
-                    fill="#FC5B70"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_384_5916">
-                    <rect width="22" height="18" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span>+995</span>
-              <svg
+                style={{ width: "12px" }}
                 width="12"
                 height="8"
                 viewBox="0 0 12 8"
@@ -270,6 +277,13 @@ function Contact() {
                   fill="#525F6A"
                 />
               </svg>
+            </div>
+            <div
+              className={classNames("dropDown", {
+                isOpen: openCountryOptions,
+              })}
+            >
+              {getCountryOptions()}
             </div>
           </div>
           <FormGroup
