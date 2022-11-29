@@ -34,19 +34,19 @@ export const priceCalculatorObject = [
     dependingChoice: true,
     options: TechnologiesObject,
   },
-  // {
-  //   title: "What is your project's expected duration?",
-  //   description: "Please select at least one option.",
-  //   type: "slider",
-  //   key: "expectedDuration",
-  // },
   {
-    title: "Tell us more about your Project",
-    description:
-      "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
-    type: "textarea",
-    key: "aboutProject",
+    title: "What is your project's expected duration?",
+    description: "Please choose expected duration.",
+    type: "slider",
+    key: "expectedDuration",
   },
+  // {
+  //   title: "Tell us more about your Project",
+  //   description:
+  //     "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+  //   type: "textarea",
+  //   key: "aboutProject",
+  // },
   {
     title: "Leave us your contact Info",
     description:

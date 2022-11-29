@@ -38,7 +38,7 @@ function Choice({
 
   useEffect(() => {
     let Ots = TechnologiesObject.filter((el) =>
-      values.service.includes(el.categoryName)
+      values.service?.includes(el.categoryName)
     )
       .map((el) => el.TechnologiesList)
 

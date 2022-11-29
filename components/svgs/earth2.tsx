@@ -1727,7 +1727,7 @@ function Earth2() {
                 </tspan>
               </text>
               <text
-                id="+1 908 928 4328"
+                id="+1 203 872 1565"
                 fill="#182939"
                 xmlSpace="preserve"
                 font-family="Poppins"
@@ -1735,7 +1735,7 @@ function Earth2() {
                 letter-spacing="0em"
               >
                 <tspan x="250" y="338.2">
-                  +1 908 928 4328
+                  +1 203 872 1565
                 </tspan>
               </text>
             </g>

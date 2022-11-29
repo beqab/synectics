@@ -24,21 +24,21 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="footer_menuTitle">Company</div>
             <div>
-              <Link href={"#services"}>
+              <Link href="/cloudinfrastructure?page=devops">
                 <a>
                   <span>Services</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"#technologies"}>
+              <Link href={"/#technologies"}>
                 <a>
                   <span>Technologies</span>
                 </a>
               </Link>
             </div>
             <div>
-              <Link href={"#ourApproach"}>
+              <Link href={"/#ourApproach"}>
                 <a>
                   <span>Our Approach </span>
                 </a>
@@ -104,7 +104,7 @@ const Footer = () => {
                 />
               </svg>
 
-              <span>+995 555 54 88 99 </span>
+              <span>+1 203 872 1565 </span>
             </div>
             <div className="d-flex">
               <svg
@@ -133,8 +133,9 @@ const Footer = () => {
               </svg>
 
               <span>
-                Barnovi Street 60; <br />
-                Tbilisi; Georgia
+                16 East 34th Street
+                <br />
+                New York, NY 10016
               </span>
             </div>
           </div>
@@ -142,7 +143,7 @@ const Footer = () => {
             <div className="footer_menuTitle">Let’s Connect</div>
             <div className="socials">
               <Link target="_blank" href="https://www.facebook.com/synectics">
-                <a>
+                <a target="_blank">
                   <svg
                     width="48"
                     height="48"
@@ -170,7 +171,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://www.linkedin.com/company/synecticsdevelopment/"
               >
-                <a>
+                <a target="_blank">
                   <svg
                     width="48"
                     height="48"
@@ -198,8 +199,8 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="/">
-                <a>
+              <Link href="https://api.whatsapp.com/send?phone=12038721565">
+                <a target="_blank">
                   <svg
                     width="48"
                     height="48"
@@ -230,7 +231,7 @@ const Footer = () => {
                 </a>
               </Link>
               <Link target="_blank" href="https://t.me/synectics_bot">
-                <a>
+                <a target="_blank">
                   <svg
                     width="48"
                     height="48"
