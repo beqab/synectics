@@ -186,13 +186,32 @@ input:focus + label {
       box-shadow: 1px 20px 40px #2b59ff1c;
       border-radius: 5px;
       max-height: 300px;
-      overflow: auto;
+      overflow: hidden;
       height: 0px;
       padding: 0;
       z-index: 2;
+
+      .options {
+        height: 300px;
+        overflow: auto;
+        padding-top: 4px;
+      }
+      .searchInput {
+        // position: absolute;
+        margin-bottom: 4px;
+        border-color: $brandColor;
+        margin-right: 10px;
+        input {
+          max-width: 150px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
       &.isOpen {
         height: 300px;
         padding: 10px 5px 10px 15px;
+        // padding-top: 40px;
       }
       &_item {
         border-bottom: 1px solid rgba(0, 0, 0, 0.179);

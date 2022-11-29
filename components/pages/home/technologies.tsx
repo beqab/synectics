@@ -98,7 +98,7 @@ export const TechnologiesObject = [
       },
       {
         img: "/technologies/CloudandInfrastructur/pagerduty.svg",
-        title: "Pagerduty",
+        title: "PagerDuty",
       },
       {
         img: "/technologies/CloudandInfrastructur/cisofy.svg",
@@ -114,7 +114,7 @@ export const TechnologiesObject = [
       },
       {
         img: "/technologies/CloudandInfrastructur/sonarCube.svg",
-        title: "SonarCube",
+        title: "SonarQube",
       },
       {
         img: "/technologies/CloudandInfrastructur/phython.svg",
@@ -267,7 +267,7 @@ export const TechnologiesObject = [
       },
       {
         img: "/technologies/bgData/readHead.svg",
-        title: "Rea Head",
+        title: "RedHat",
       },
       {
         img: "/technologies/web/Oracle.svg",
@@ -331,7 +331,7 @@ export const TechnologiesObject = [
 
       {
         img: "/technologies/bgData/Metabace.svg",
-        title: "Metabace",
+        title: "Metabase",
       },
     ],
   },
@@ -353,7 +353,7 @@ export const TechnologiesObject = [
       },
       {
         img: "/technologies/crm/HubSpot.svg",
-        title: "Hubspot",
+        title: "HubSpot",
       },
 
       {
@@ -363,7 +363,7 @@ export const TechnologiesObject = [
 
       {
         img: "/technologies/crm/SogarCRM.svg",
-        title: "Sogarcrm",
+        title: "SugarCRM",
       },
     ],
   },
@@ -377,7 +377,7 @@ export const TechnologiesObject = [
       },
       {
         img: "/technologies/Blockchain/blockchincom.svg",
-        title: "Blockchain.com",
+        title: "Blockchain",
       },
       {
         img: "/technologies/Blockchain/Bitcoin.svg",

@@ -43,7 +43,7 @@ export const InfrastructureData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/do2.svg",
+            technologyImg: "/technologies/CloudandInfrastructur/azure.svg",
           },
           {
             technologyName: "php",
@@ -224,7 +224,7 @@ export const InfrastructureData = [
           return (
             <>
               <p>
-                hink of server virtualization as the dividing and conquering of
+                Think of server virtualization as the dividing and conquering of
                 one master server. By moving all operations from one, large
                 server to a number of smaller ones, a company becomes more
                 agile. Each of these virtual servers can run its own operating

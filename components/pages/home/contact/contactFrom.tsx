@@ -36,6 +36,7 @@ interface IErrorMsg {
 function Contact() {
   const [load, setLoad] = useState(false);
   const [openCountryOptions, setOpenCountryOptions] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const [filesArray, setFilesArray] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("US");
   const {
@@ -98,21 +99,26 @@ function Contact() {
     let list = [];
 
     for (var key in countries) {
-      list.push(
-        <div
-          key={key}
-          onClick={() => {
-            setSelectedCountry(key);
-            setOpenCountryOptions(false);
-          }}
-          className="dropDown_item"
-        >
-          <div dangerouslySetInnerHTML={{ __html: countries[key].flag }}>
-            {/* {} */}
+      if (
+        countries[key]?.country?.toLowerCase().includes(searchValue) ||
+        countries[key]?.dialCode?.toLowerCase().includes(searchValue)
+      ) {
+        list.push(
+          <div
+            key={key}
+            onClick={() => {
+              setSelectedCountry(key);
+              setOpenCountryOptions(false);
+            }}
+            className="dropDown_item"
+          >
+            <div dangerouslySetInnerHTML={{ __html: countries[key].flag }}>
+              {/* {} */}
+            </div>
+            <span>{countries[key].dialCode}</span>
           </div>
-          <span>{countries[key].dialCode}</span>
-        </div>
-      );
+        );
+      }
     }
 
     return list;
@@ -283,7 +289,16 @@ function Contact() {
                 isOpen: openCountryOptions,
               })}
             >
-              {getCountryOptions()}
+              <div className="searchInput">
+                <input
+                  onChange={(e) => {
+                    setSearchValue(e.target.value);
+                  }}
+                  value={searchValue}
+                  placeholder="search"
+                />
+              </div>
+              <div className="options">{getCountryOptions()}</div>
             </div>
           </div>
           <FormGroup

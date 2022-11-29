@@ -141,7 +141,7 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="footer_menuTitle">Let’s Connect</div>
             <div className="socials">
-              <Link href="/">
+              <Link target="_blank" href="https://www.facebook.com/synectics">
                 <a>
                   <svg
                     width="48"
@@ -166,7 +166,10 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="/">
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/company/synecticsdevelopment/"
+              >
                 <a>
                   <svg
                     width="48"
@@ -226,7 +229,7 @@ const Footer = () => {
                   </svg>
                 </a>
               </Link>
-              <Link href="/">
+              <Link target="_blank" href="https://t.me/synectics_bot">
                 <a>
                   <svg
                     width="48"

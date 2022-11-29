@@ -162,7 +162,7 @@ export const EngineeringData = [
           },
           {
             technologyName: "php",
-            technologyImg: "/technologies/mobile10.svg",
+            technologyImg: "/technologies/mobile/flutter22.svg",
           },
           {
             technologyName: "php",
@@ -326,7 +326,7 @@ export const EngineeringData = [
                 increase, while analytics technology will become more advanced.
                 For businesses, the ability to leverage Big Data is becoming
                 increasingly critical. Those companies that view data as a
-                strategic asset are the ones that are going to win and scale- up
+                strategic asset are the ones that are going to win and scale-up
               </p>
             </>
           );
