@@ -213,12 +213,12 @@ const ItOutsourcing = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 text-center text-md-left">
                 <img src="/imgs/Group 1000002231.svg" />
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-3 ">
+            <div className="row flex-column-reverse flex-md-row">
+              <div className="col-md-3 text-center text-md-left ">
                 <img src="/imgs/Group 1000002250.svg" />
               </div>
               <div className="col-md-9">
@@ -263,13 +263,13 @@ const ItOutsourcing = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3  text-center text-md-left ">
                 <img src="/imgs/Group 1000002234.svg" />
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-md-3 ">
+            <div className="row flex-column-reverse flex-md-row">
+              <div className="col-md-3  text-center text-md-left  ">
                 <img src="/imgs/Group 1000002252.svg" />
               </div>
               <div className="col-md-9">

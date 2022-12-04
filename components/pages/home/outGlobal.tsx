@@ -36,7 +36,9 @@ const OutGlobal = () => {
         </div> */}
       </div>
       <div className="earth2Wrapper">
-        <Earth2 />
+        <div>
+          <Earth2 />
+        </div>
       </div>
     </div>
   );

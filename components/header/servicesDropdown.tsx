@@ -10,7 +10,7 @@ interface IProps {
   closeMenu?: () => void;
 }
 
-const menuObject = [
+export const menuObject = [
   {
     title: "Cloud And Infrastructure",
     items: [

@@ -860,22 +860,83 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .priceEstiamateSection {
+    padding-top: 110px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+
+      color: #ffffff;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .btn {
+      max-width: 100%;
+      padding: 11px;
+    }
+  }
+  .whySynectics {
+    padding-top: 107px;
+    padding-right: 15px;
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .innerPageContactSection {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .whySynectics {
+    padding-bottom: 100px;
+
+    .flip-card {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  .whySynectics_card {
+    width: 100%;
+  }
   .serviceHeading {
+    padding-top: 120px;
+    padding-bottom: 120px;
     svg {
       max-height: 70px;
     }
     h1 {
       font-weight: 700;
       font-size: 40px;
-      line-height: 48px;
+      line-height: 56px;
       margin-top: 26px;
       margin-bottom: 15px;
     }
     p {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      padding: 0 30px;
+      font-size: 16px;
+      line-height: 32px;
+      padding: 0 15px;
+
+      color: rgba(255, 255, 255, 0.7);
+      padding-right: 23px !important;
     }
   }
   .engineeringBlock_content {
@@ -975,6 +1036,9 @@
   }
 
   .ServiceBlockContainer {
+    box-shadow: none;
+    padding-left: 0px;
+    padding-right: 0px;
     h2 {
       font-weight: 700;
       font-size: 24px;
@@ -1055,21 +1119,44 @@
     left: 50%;
   }
   .cooperation {
-    padding-top: 50px;
+    padding-top: 0px;
+
     svg {
       max-height: 70px;
     }
     h2 {
       font-weight: 700;
-      font-size: 32px;
-      line-height: 38px;
+      font-size: 24px;
+      line-height: 36px;
     }
     p {
       font-weight: 400;
       font-size: 14px;
-      line-height: 16px;
-      color: #050f2b;
+      line-height: 24px;
+
+      color: #5d6974;
+
+      opacity: 0.7;
     }
+  }
+  .serviceContent .pl-90 {
+    padding-left: 0;
+  }
+  .serviceContent .pr-90 {
+    padding-right: 0px;
+  }
+  .serviceContent .row {
+    padding-top: 20px;
+  }
+  .AgileList li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    margin-bottom: 8px;
+    color: #5d6974;
+
+    opacity: 0.7;
   }
   .faqSection {
     padding-top: 40px;

@@ -498,3 +498,43 @@
   padding-right: 40px;
   max-width: 700px;
 }
+
+@media only screen and (max-width: 768px) {
+  .estimatePricePage {
+    padding-top: 100px;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      margin-top: 12px;
+    }
+    .stepsIndicator {
+    }
+  }
+  .stepsLeftSide {
+    padding-right: 15px;
+  }
+  .stepSlider_container {
+    width: calc(100% - 5px);
+  }
+  .stepBlank_container {
+    > div {
+      margin-left: -8px;
+    }
+  }
+  .checkboxContainer .label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .stepBlank_container {
+    min-width: auto;
+  }
+}

@@ -102,8 +102,8 @@ const ItConsulting = () => {
           text="Synectics technology consulting services help business to advance in the modern digital transformation environment"
         />
         <div className="roundBottom roundBottom-top pt-5">
-          <div className="roundBottom roundBottom-top">
-            <div className="container serviceContent cooperation pt-5 ">
+          <div className="">
+            <div className="container serviceContent cooperation pt-md-5  ">
               <div
                 ref={TechnologyConsulting}
                 style={{ position: "relative", top: "-100px" }}
@@ -135,7 +135,7 @@ const ItConsulting = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 text-center text-md-left">
                   <img src="/imgs/Group 1000001946.svg" />
                 </div>
               </div>
@@ -143,8 +143,8 @@ const ItConsulting = () => {
                 ref={ProjectManagementConsulting}
                 style={{ position: "relative", top: "-70px" }}
               />
-              <div className="row">
-                <div className="col-md-3 ">
+              <div className="row flex-column-reverse flex-row ">
+                <div className="col-md-3 text-center text-md-left my-3 my-md-0 ">
                   <img src="/imgs/Delivery Management.svg" />
                 </div>
                 <div className="col-md-9">
@@ -188,7 +188,7 @@ const ItConsulting = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 text-center text-md-left">
                   <img src="/imgs/Group 1000001948.svg" />
                 </div>
               </div>
@@ -196,8 +196,8 @@ const ItConsulting = () => {
                 ref={ITProcessOptimizationConsulting}
                 style={{ position: "relative", top: "-70px" }}
               />
-              <div className="row">
-                <div className="col-md-3 ">
+              <div className="row flex-column-reverse flex-md-row">
+                <div className="col-md-3 text-center text-md-left ">
                   <img src="/imgs/Group 1000001943.svg" />
                 </div>
                 <div className="col-md-9">
@@ -250,7 +250,7 @@ const ItConsulting = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 text-center text-md-left">
                   <img src="/imgs/Group 1000001942.svg" />
                 </div>
               </div>

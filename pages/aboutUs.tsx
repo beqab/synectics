@@ -9,12 +9,15 @@ const aboutUs = () => {
     <Layout title="about synectics">
       <section className="about_mainSection roundBottom roundBottom-wight ">
         <div className="container">
-          <div className="row">
+          <div className="row aboutMain">
             <div className="col-md-6 about_mainSection_content">
               <div className="pageTitle">ABOUT US</div>
-              <h1>
+              <h1 className="d-none d-md-block">
                 Do what you do best, we’ll take care <br />
                 of the rest!
+              </h1>
+              <h1 className="d-block d-md-none">
+                Do what you do best, we’ll take care of the rest!
               </h1>
               <p>
                 We offer a wide range of Software Development, DevOps, and
@@ -961,7 +964,7 @@ const aboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="ourMissionSection roundBottom roundBottom-top roundBottom-wight">
+      <section className="ourMissionSection ourMissionSection-textSection roundBottom roundBottom-top roundBottom-wight">
         <div className="container">
           <div className="row">
             <div className="col-md-5 ourMissionSection_content">
@@ -973,7 +976,7 @@ const aboutUs = () => {
                 delivering tangible results.
               </p>
             </div>
-            <div className="col-md-7 d-md-block d-none pl-3">
+            <div className="col-md-7 d-md-block  pl-3">
               <h2>Our Mission</h2>
               <p>
                 Our main goal is your successful result. We strive not only to
@@ -983,12 +986,12 @@ const aboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-md-5">
             <div className="col-md-5 ourMissionSection_content ">
               <img src="/imgs/unsplash_ocnsb17U6FE.png" />
             </div>
-            <div className="col-md-7 d-md-block d-none pl-3">
-              <h2>Who are we?</h2>
+            <div className="col-md-7 d-md-block  pl-3">
+              <h2 className="mt-5 mt-md-0">Who are we?</h2>
               <p>
                 Synectics is a global technology partner enabling change and
                 transformation across industries, and generating long-lasting

@@ -5,7 +5,7 @@ import ContactSection from "../components/pages/home/contact";
 function Contact() {
   return (
     <Layout title="contact">
-      <div className="contactPage">
+      <div className="contactPage  roundBottom roundBottom-wight ">
         <ContactSection />
       </div>
     </Layout>

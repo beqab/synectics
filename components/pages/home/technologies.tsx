@@ -467,7 +467,7 @@ class="serviceNext"
       nav: true,
     },
     600: {
-      items: 2,
+      items: 3,
       nav: false,
     },
     1000: {
@@ -520,7 +520,7 @@ const Technologies = () => {
           <li>BigData and Data Analytics</li>
           <li>Blockchain</li> */}
         </ul>
-        <div className="technologies_mobile d-block d-md-none">
+        {/* <div className="technologies_mobile d-block d-md-none">
           <div className="roww">
             {TechnologiesObject[activeCategory].TechnologiesList.map(
               (el, i) => {
@@ -538,8 +538,8 @@ const Technologies = () => {
               }
             )}
           </div>
-        </div>
-        <div className=" d-none d-md-block">
+        </div> */}
+        <div className=" d-block d-md-block">
           <div className="owlOut">
             <div className="owlWrapper">
               {categories.map((el, index) => {

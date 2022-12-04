@@ -6,6 +6,7 @@ import MobileMenu from "./mobileMenu";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   const toggleMenu = (flag?: boolean) => {
     setOpenMenu(flag);
@@ -14,6 +15,7 @@ const Header = () => {
   useEffect(() => {
     const closeMenu = () => {
       setOpenMenu(false);
+      setOpenMobileMenu(false);
     };
 
     window.addEventListener("click", closeMenu);
@@ -23,8 +25,19 @@ const Header = () => {
 
   return (
     <header>
-      <MobileMenu openMenu={openMenu} setOpenMenu={() => setOpenMenu(false)} />
-      <div className="container ">
+      <MobileMenu
+        openMenu={openMobileMenu}
+        setOpenMenu={(e) => {
+          e.stopPropagation();
+          return setOpenMobileMenu(false);
+        }}
+      />
+      <div
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+        className="container "
+      >
         <div className="d-flex align-items-center justify-content-between">
           <Link href={"/"}>
             <a>
@@ -35,8 +48,12 @@ const Header = () => {
             onClick={() => toggleMenu(!openMenu)}
             className="menuIcon_wrapper d-block d-md-none"
           >
-            {!openMenu ? (
+            {!openMobileMenu ? (
               <svg
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenMobileMenu(true);
+                }}
                 className="openIcon"
                 width="24"
                 height="24"
@@ -52,7 +69,14 @@ const Header = () => {
                 />
               </svg>
             ) : (
-              <X />
+              <span
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenMobileMenu(false);
+                }}
+              >
+                <X />
+              </span>
             )}
           </div>
           <div className="nav d-none d-md-block ">
@@ -146,6 +170,7 @@ const Header = () => {
           />
         </div>
       ) : null}
+      {openMobileMenu ? <div className="outBlur"></div> : null}
     </header>
   );
 };

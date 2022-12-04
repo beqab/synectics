@@ -32,28 +32,38 @@ function SliderComponent({
   const { values, setValues } = useContext(PriceCalculatorContext);
 
   return (
-    <StepsContainer title={title} description={description}>
-      <div className="stepSlider_container">
-        <Slider
-          min={1}
-          marks={marks}
-          max={24}
-          step={1}
-          // included={false}
-          defaultValue={1}
-          onChange={(e) => {
-            console.log(e, "eee");
-            setValues({ ...values, [stepKey]: e });
-          }}
-          // handleRender={(handlerProps) => (
-          //   <Handle {...handlerProps}>
-          //     <div> ddd </div>
-          //   </Handle>
-          // )}
-          handleRender={handleRender}
-        />
+    <div>
+      <StepsContainer title={title} description={description}>
+        <div className="stepSlider_container">
+          <Slider
+            min={1}
+            marks={marks}
+            max={24}
+            step={1}
+            // included={false}
+            defaultValue={1}
+            onChange={(e) => {
+              console.log(e, "eee");
+              setValues({ ...values, [stepKey]: e });
+            }}
+            // handleRender={(handlerProps) => (
+            //   <Handle {...handlerProps}>
+            //     <div> ddd </div>
+            //   </Handle>
+            // )}
+            handleRender={handleRender}
+          />
+        </div>
+      </StepsContainer>
+      <div
+        onClick={() => {
+          console.log(values, "valuesvaluesvalues");
+        }}
+        className=""
+      >
+        get values
       </div>
-    </StepsContainer>
+    </div>
   );
 }
 

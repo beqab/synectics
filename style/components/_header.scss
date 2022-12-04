@@ -155,6 +155,14 @@ header {
   z-index: 32;
   background: #fff;
   width: 100%;
+  // > .container {
+  //   box-shadow: 0px 4px 16px 4px rgba(47, 128, 237, 0.04);
+  //   padding-top: 11px;
+  //   position: relative;
+  //   z-index: 30;
+  //   padding-bottom: 11px;
+  //   background-color: #fff;
+  // }
 }
 
 .mobileMenu {
@@ -166,6 +174,24 @@ header {
   max-height: 0;
   overflow: hidden;
   transition: 0.4s;
+  top: 61px;
+  z-index: 20;
+  // padding-bottom: 32px;s
+
+  ul {
+    padding-top: 24px;
+    li {
+      margin-bottom: 16px;
+
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #182939;
+      }
+    }
+  }
 
   // &_open {
   //   display: block;
@@ -201,6 +227,76 @@ header {
   }
 }
 
+.mobileMenu_leftSide {
+  // position: relative;
+  padding-bottom: 32px;
+  .rightSide {
+    position: absolute;
+    width: 30%;
+
+    &.img-1 {
+      background: rgba(47, 128, 237, 0.04);
+    }
+    right: -20px;
+    top: 0;
+    height: calc(100%);
+    background-position: center;
+    background-size: 80%;
+  }
+}
+
+.mobileMenu_wrapper {
+  position: relative;
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #182939;
+    margin-top: 16px;
+    margin-bottom: -10px;
+  }
+}
+
+.mobileMenuMap {
+  padding-top: 24px;
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2f80ed;
+  }
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #182939;
+  }
+  svg {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.mb-4px {
+  margin-bottom: 4px !important;
+  a {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 24px !important;
+
+    text-align: center;
+  }
+}
+
+.outBlur {
+  position: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  background-color: #09070752;
+}
+
 @media only screen and (max-width: 1400px) {
   .serviceSubmenu {
     > div {
@@ -216,6 +312,28 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+    padding-bottom: 0;
+    box-shadow: none;
+
+    position: fixed;
+    z-index: 32;
+    background: #fff;
+    width: 100%;
+    > .container {
+      box-shadow: 0px 4px 16px 4px rgba(47, 128, 237, 0.04);
+      padding-top: 11px;
+      position: relative;
+      z-index: 30;
+      padding-bottom: 11px;
+      background-color: #fff;
+    }
+  }
+  header {
+    position: relative;
+    z-index: 1;
+  }
   .mobileMenu {
     &_open {
       max-height: 7000px;

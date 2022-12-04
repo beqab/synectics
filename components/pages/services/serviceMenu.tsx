@@ -34,7 +34,7 @@ const ServiceMenu: React.FC<IProp> = ({ serviceList, center, pageTitle }) => {
     <>
       <div
         className={classNames(
-          "ServiceMenuDropdown dropdownComponent d-block d-md-none",
+          "ServiceMenuDropdown dropdownComponent d-none d-md-none",
           {
             isOpen: openSelect,
           }
@@ -82,7 +82,7 @@ const ServiceMenu: React.FC<IProp> = ({ serviceList, center, pageTitle }) => {
         </ul>
       </div>
       <div
-        className={classNames("ServiceMenu d-none d-md-flex", {
+        className={classNames("ServiceMenu d-flex", {
           center: center,
         })}
       >

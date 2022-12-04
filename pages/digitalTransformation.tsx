@@ -118,7 +118,7 @@ const ItOutsourcing = () => {
             </svg>
           }
         ></ServiceHeading>
-        <div className="roundBottom roundBottom-top">
+        <div className="pb-5 pb-md-0 roundBottom roundBottom-top">
           <div className="container serviceContent cooperation ">
             <div
               ref={CloudTransformation}
@@ -147,7 +147,7 @@ const ItOutsourcing = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 text-center text-md-left">
                 <img src="/imgs/Group 1000001938.svg" />
               </div>
             </div>
@@ -155,8 +155,8 @@ const ItOutsourcing = () => {
               ref={AgileTransformation}
               style={{ position: "relative", top: "-70px" }}
             />
-            <div className="row">
-              <div className="col-md-3 ">
+            <div className="row flex-column-reverse flex-md-row">
+              <div className="col-md-3 text-center text-md-left mt-3 mt-md-0 ">
                 <img src="/imgs/Group 1000001923.svg" />
               </div>
               <div className="col-md-9">
@@ -251,7 +251,7 @@ const ItOutsourcing = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-3 text-center text-md-left">
                 <img src="/imgs/IT Strategy Development.svg" />
               </div>
             </div>
@@ -268,7 +268,7 @@ const ItOutsourcing = () => {
               </p>
 
               <div className="col-12">
-                <div className=" d-flex justify-content-between">
+                <div className=" d-flex flex-column flex-md-row justify-content-between">
                   <div className="flip-card" tabIndex={0}>
                     <div className="flip-card-inner">
                       <div className="flip-card-front">

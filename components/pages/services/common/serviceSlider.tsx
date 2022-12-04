@@ -55,9 +55,9 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
     <>
       <div className="d-block d-md-none">
         {data.map((el, i) => {
-          if (router.asPath.includes(el.href)) {
-            return el.renderBlock(el);
-          }
+          // if (router.asPath.includes(el.href)) {
+          return el.renderBlock(el);
+          // }
         })}
       </div>
       <div
