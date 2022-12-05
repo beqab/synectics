@@ -49,6 +49,24 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
         }
       });
     }
+
+    if (window.innerWidth < 769) {
+      let blockIndex = data
+        .map((el) => el.href)
+        .indexOf(router.query.page.toString());
+      const element = document.getElementsByClassName("ServiceBlockContainer ")[
+        blockIndex
+      ];
+      console.log(
+        blockIndex,
+        router.query.page,
+        data.map((el) => el.href)
+      );
+      if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }, [router.query]);
 
   return (
