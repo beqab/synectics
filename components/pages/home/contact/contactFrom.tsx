@@ -407,11 +407,12 @@ function Contact() {
       </div>
       {filesArray.length ? (
         <div className="stepUploadedFiles">
-          {filesArray.map((el) => {
+          {filesArray.map((el, p) => {
             return (
               <span className="coloBlack">
                 {el.name}
                 <svg
+                  key={p}
                   onClick={() => {
                     setFilesArray(
                       filesArray.filter((item) => item.name !== el.name)

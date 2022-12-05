@@ -151,6 +151,7 @@ const ServicesDropdown: React.FC<IProps> = ({
             {menuObject.map((el, i) => {
               return (
                 <li
+                  key={i}
                   onClick={() => {
                     if (el.href) {
                       router.push(el.href);
@@ -197,6 +198,7 @@ const ServicesDropdown: React.FC<IProps> = ({
             {menuObject[activeSubMenu].items.map((el) => {
               return (
                 <li
+                  key={el.title}
                   onClick={() => {
                     closeMenu();
                   }}

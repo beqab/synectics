@@ -150,6 +150,7 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
                     <li>
                       <Link href={"/"}>
                         <a
+                          key={i}
                           onClick={(e) => {
                             e.preventDefault();
                             if (el.items.length) {
@@ -229,7 +230,7 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
                   if (el.title === menuStep) {
                     return el.items.map((item, index) => {
                       return (
-                        <li className="mb-4px">
+                        <li key={index} className="mb-4px">
                           <Link href={item.href}>
                             <a className="d-flex w-100 align-items-center justify-content-between">
                               <span>{item.title}</span>

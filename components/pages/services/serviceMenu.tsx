@@ -63,7 +63,7 @@ const ServiceMenu: React.FC<IProp> = ({ serviceList, center, pageTitle }) => {
         <ul className="list-inline dropdownComponent_list ">
           {serviceList.map((el, i) => {
             return (
-              <li>
+              <li key={i}>
                 <Link
                   href={router.pathname + "/?page=" + el.href}
                   scroll={false}

@@ -110,9 +110,9 @@ function Choice({
           >
             {value
               .filter((el) => !normalizedOptions.includes(el))
-              .map((el) => {
+              .map((el, i) => {
                 return (
-                  <span>
+                  <span key={i}>
                     {el}
 
                     <svg

@@ -502,6 +502,7 @@ const Technologies = () => {
           {categories.map((el, i) => {
             return (
               <li
+                key={i}
                 onClick={() => {
                   setActiveCategory(i);
                 }}
@@ -545,6 +546,7 @@ const Technologies = () => {
               {categories.map((el, index) => {
                 return (
                   <div
+                    key={index}
                     className={classNames({
                       "d-none": index !== activeCategory,
                     })}
@@ -553,7 +555,7 @@ const Technologies = () => {
                       {TechnologiesObject[index].TechnologiesList.map(
                         (el, i) => {
                           return (
-                            <div className="technology_item">
+                            <div key={i} className="technology_item">
                               <img
                                 src={"/imgs/" + el.img}
                                 alt="The Last of us"
