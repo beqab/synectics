@@ -12,6 +12,7 @@ import flags, {
 } from "country-list-with-dial-code-and-flag";
 import countryListMap, { getCountryListMap } from "country-flags-dial-code";
 import classNames from "classnames";
+import { ProfileService } from "../../../../services/profile/profile.http";
 
 interface IContactForm {
   name: string;
@@ -20,7 +21,7 @@ interface IContactForm {
   email: string;
   phoneNumber: string;
   countryCode: string;
-  about: string;
+  message: string;
 }
 
 interface IErrorMsg {
@@ -30,7 +31,7 @@ interface IErrorMsg {
   name?: string | Array<string>;
   text?: string | Array<string>;
   last_name?: string | Array<string>;
-  about?: string | Array<string>;
+  message?: string | Array<string>;
 }
 
 function Contact() {
@@ -54,6 +55,13 @@ function Contact() {
 
   const submit = handleSubmit((data) => {
     console.log({ ...data, files: filesArray }, " dddddd");
+    ProfileService.contact({ ...data, files: filesArray })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err, "errr");
+      });
     // console.log(errors);
     // ProfileService.contactForm({
     //   firstname: data.name,
@@ -333,8 +341,8 @@ function Contact() {
             })}
           >
             <textarea
-              {...register("about", {
-                required: "about",
+              {...register("message", {
+                required: "message",
               })}
               placeholder="Tell us about your project"
             ></textarea>

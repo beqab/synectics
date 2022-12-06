@@ -125,7 +125,7 @@ const ItOutsourcing = () => {
               style={{ position: "relative", top: "-70px" }}
             />
             <div className="row pt-0">
-              <div className="col-md-9">
+              <div className="col-md-9 pt-5 pt-md-0">
                 <div className=" pr-90">
                   <h2 className="serviceContent_title">Cloud Transformation</h2>
                   <p>

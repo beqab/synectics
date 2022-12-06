@@ -4,8 +4,8 @@ import axios from "axios";
 import { backEndRoutes } from "../backend-routes";
 
 class _ProfileService {
-  getUser = (token: string) => {
-    return axios.get(backEndRoutes.profile.getUser(token));
+  contact = (data: any) => {
+    return axios.post(backEndRoutes.profile.contact(), data);
   };
 }
 

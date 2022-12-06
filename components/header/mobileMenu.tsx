@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import X from "../svgs/x";
 import classnames from "classnames";
 import { menuObject } from "./servicesDropdown";
@@ -17,6 +17,12 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
   const [menuStep, setMenuStep] = useState<any>("");
 
   const router = useRouter();
+
+  useEffect(() => {
+    if (!openMenu) {
+      setMenuStep("");
+    }
+  }, [openMenu]);
 
   return (
     <div

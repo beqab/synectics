@@ -12,7 +12,7 @@ export const backEndRoutes = {
       `${BASE_URL}/api/resend/verification/${email}`,
   },
   profile: {
-    getUser: (token: string) => `${BASE_URL}​/api/users/getUser`,
+    contact: () => `${BASE_URL}​/mail.php`,
   },
   questions: {
     getQuestions: () => `${BASE_URL}​/questions`,
