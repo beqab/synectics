@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { FormGroup, Button, Input } from "../../../common/form";
@@ -13,6 +13,7 @@ import flags, {
 import countryListMap, { getCountryListMap } from "country-flags-dial-code";
 import classNames from "classnames";
 import { ProfileService } from "../../../../services/profile/profile.http";
+import { PriceCalculatorContext } from "../../priceEstimation/priceContainerContext";
 
 interface IContactForm {
   name: string;
@@ -34,7 +35,7 @@ interface IErrorMsg {
   message?: string | Array<string>;
 }
 
-function Contact() {
+function Contact({ formPriceContainer }: { formPriceContainer: any }) {
   const [load, setLoad] = useState(false);
   const [openCountryOptions, setOpenCountryOptions] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -51,17 +52,34 @@ function Contact() {
     formState: { errors },
   } = useForm<IContactForm>();
 
+  const { values, setValues } = useContext(PriceCalculatorContext);
+
   // const;
 
   const submit = handleSubmit((data) => {
     console.log({ ...data, files: filesArray }, " dddddd");
-    ProfileService.contact({ ...data, files: filesArray })
-      .then((res) => {
-        console.log(res);
+    if (formPriceContainer) {
+      ProfileService.contact({ ...data, files: filesArray })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err, "errr");
+        });
+    } else {
+      ProfileService.priceCalc({
+        ...data,
+        files: filesArray,
+        ...values,
       })
-      .catch((err) => {
-        console.log(err, "errr");
-      });
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err, "errr");
+        });
+    }
+
     // console.log(errors);
     // ProfileService.contactForm({
     //   firstname: data.name,

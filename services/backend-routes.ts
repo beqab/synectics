@@ -13,6 +13,7 @@ export const backEndRoutes = {
   },
   profile: {
     contact: () => `${BASE_URL}​/mail.php`,
+    priceCalc: () => `${BASE_URL}​/send-cost-calculator.php`,
   },
   questions: {
     getQuestions: () => `${BASE_URL}​/questions`,

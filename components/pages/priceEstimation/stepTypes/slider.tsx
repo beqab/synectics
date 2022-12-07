@@ -32,7 +32,7 @@ function SliderComponent({
   const { values, setValues } = useContext(PriceCalculatorContext);
 
   return (
-    <div>
+    <>
       <StepsContainer title={title} description={description}>
         <div className="stepSlider_container">
           <Slider
@@ -63,7 +63,7 @@ function SliderComponent({
       >
         get values
       </div>
-    </div>
+    </>
   );
 }
 

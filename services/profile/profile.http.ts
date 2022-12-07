@@ -7,6 +7,10 @@ class _ProfileService {
   contact = (data: any) => {
     return axios.post(backEndRoutes.profile.contact(), data);
   };
+
+  priceCalc = (data: any) => {
+    return axios.post(backEndRoutes.profile.priceCalc(), data);
+  };
 }
 
 export const ProfileService = new _ProfileService();
