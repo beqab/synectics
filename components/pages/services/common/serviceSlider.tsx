@@ -50,7 +50,7 @@ const ServiceSlider: React.FC<IServiceSlider> = ({ data }) => {
       });
     }
 
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 769 && router.query.page) {
       let blockIndex = data
         .map((el) => el.href)
         .indexOf(router.query.page.toString());

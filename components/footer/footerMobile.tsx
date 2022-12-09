@@ -123,20 +123,18 @@ const FooterMobile = () => {
         Your Journey To Digital <br />
         Transformation Starts Here
       </p>
-      <div className="mobileFooter_dropDown">
+      <div
+        onClick={() => {
+          if (openDropdown !== "Company") {
+            setOpenDropdown("Company");
+          } else {
+            setOpenDropdown("");
+          }
+        }}
+        className="mobileFooter_dropDown"
+      >
         <div className="d-flex justify-content-between align-items-center">
-          <div
-            onClick={() => {
-              if (openDropdown !== "Company") {
-                setOpenDropdown("Company");
-              } else {
-                setOpenDropdown("");
-              }
-            }}
-            className="mobileFooter_dropDown_title"
-          >
-            Company
-          </div>
+          <div className="mobileFooter_dropDown_title">Company</div>
           <svg
             className={classNames({
               rotate: openDropdown === "Company",
@@ -192,19 +190,17 @@ const FooterMobile = () => {
         </div>
       </div>
       <div className="mobileFooter_dropDown">
-        <div className="d-flex justify-content-between align-items-center">
-          <div
-            onClick={() => {
-              if (openDropdown !== "Contact") {
-                setOpenDropdown("Contact");
-              } else {
-                setOpenDropdown("");
-              }
-            }}
-            className="mobileFooter_dropDown_title"
-          >
-            Contact
-          </div>
+        <div
+          onClick={() => {
+            if (openDropdown !== "Contact") {
+              setOpenDropdown("Contact");
+            } else {
+              setOpenDropdown("");
+            }
+          }}
+          className="d-flex justify-content-between align-items-center"
+        >
+          <div className="mobileFooter_dropDown_title">Contact</div>
           <svg
             className={classNames({
               rotate: openDropdown === "Contact",
@@ -230,15 +226,16 @@ const FooterMobile = () => {
           })}
         >
           <div className="">
-            <span>info@synetics.commm</span>
+            <span>Info@Synetics.dev</span>
           </div>
           <div>
-            <span>+995 555 54 88 99</span>
+            <span>+1 203 872 1565</span>
           </div>
           <div>
             <span>
-              BARNOVI STREET #60 <br />
-              TBILISI, GEORGIA
+              16 East 34th Street
+              <br />
+              New York, NY 10016
             </span>
           </div>
         </div>

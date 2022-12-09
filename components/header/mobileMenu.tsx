@@ -238,7 +238,12 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
                       return (
                         <li key={index} className="mb-4px">
                           <Link href={item.href}>
-                            <a className="d-flex w-100 align-items-center justify-content-between">
+                            <a
+                              onClick={(e) => {
+                                setOpenMenu(e);
+                              }}
+                              className="d-flex w-100 align-items-center justify-content-between"
+                            >
                               <span>{item.title}</span>
                             </a>
                           </Link>
