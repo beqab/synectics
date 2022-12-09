@@ -7,7 +7,7 @@ import { PriceCalculatorContext } from "../../priceEstimation/priceContainerCont
 
 // import { FormGroup } from "../../../common/form";
 
-const Contact = ({ formPriceContainer }: any) => {
+const Contact = ({ formPriceContainer }: { formPriceContainer?: boolean }) => {
   const { currentStepIndex, setCurrentStepIndex, values } = useContext(
     PriceCalculatorContext
   );
@@ -61,7 +61,7 @@ const Contact = ({ formPriceContainer }: any) => {
                 Step <span>4</span>/4
               </div>
             ) : null}
-            <ContactForm />
+            <ContactForm formPriceContainer={formPriceContainer} />
             {formPriceContainer ? (
               <svg
                 onClick={() => {

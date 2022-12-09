@@ -18,23 +18,6 @@ export const useCheckAuth = (redirect = true) => {
         setAuthorizationToken(localStorage.getItem("token")!);
 
         if (!loadUser) {
-          setLoadUser(true);
-          ProfileService.getUser(localStorage.getItem("token"))
-            .then((res) => {
-              (window as any).hasCheckedAuth = true;
-              debugger;
-              // dispatch(setCurrentUser(res.data));
-              setLoadUser(false);
-            })
-            .catch((err) => {
-              setLoadUser(false);
-
-              // localStorage.removeItem("token");
-              // localStorage.removeItem("user");
-              if (redirect) {
-                // router.push("/login");
-              }
-            });
         }
       }
     } else {
