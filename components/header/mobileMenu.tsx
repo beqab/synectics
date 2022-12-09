@@ -46,7 +46,13 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
               <ul className="list-unstyled">
                 <li>
                   <Link href={"/"}>
-                    <a>Home</a>
+                    <a
+                      onClick={(e) => {
+                        setOpenMenu(e);
+                      }}
+                    >
+                      Home
+                    </a>
                   </Link>
                 </li>
                 <li>
@@ -80,22 +86,46 @@ const MobileMenu: React.FC<IProps> = ({ setOpenMenu, openMenu }) => {
                 </li>
                 <li>
                   <Link href={"/#technologies"}>
-                    <a>Technologies</a>
+                    <a
+                      onClick={(e) => {
+                        setOpenMenu(e);
+                      }}
+                    >
+                      Technologies
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/#ourApproach"}>
-                    <a>Our Approach</a>
+                    <a
+                      onClick={(e) => {
+                        setOpenMenu(e);
+                      }}
+                    >
+                      Our Approach
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/aboutUs"}>
-                    <a>About Us</a>
+                    <a
+                      onClick={(e) => {
+                        setOpenMenu(e);
+                      }}
+                    >
+                      About Us
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href={"/contact"}>
-                    <a>Contact US</a>
+                    <a
+                      onClick={(e) => {
+                        setOpenMenu(e);
+                      }}
+                    >
+                      Contact US
+                    </a>
                   </Link>
                 </li>
               </ul>
