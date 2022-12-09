@@ -320,6 +320,14 @@
 
   .flip-card:focus {
     outline: 0;
+    .flip-card-front {
+      // background: linear-gradient(to left, #4364f7, #6fb1fc);
+      color: black;
+      z-index: 6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .flip-card:hover .flip-card-inner,
@@ -337,7 +345,7 @@
   .flip-card-front {
     // background: linear-gradient(to left, #4364f7, #6fb1fc);
     color: black;
-    z-index: 2;
+    z-index: 7;
     display: flex;
     justify-content: center;
     align-items: center;
